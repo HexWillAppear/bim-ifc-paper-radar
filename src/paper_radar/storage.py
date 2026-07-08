@@ -46,6 +46,7 @@ def write_csv(path: Path, papers: list[dict[str, Any]]) -> None:
         "pdf_url",
         "score",
         "matched_terms",
+        "ai_summary_zh",
     ]
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)

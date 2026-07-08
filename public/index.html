@@ -127,11 +127,20 @@
       }
 
       .byline,
+      .summary,
       .abstract,
       .links {
         margin: 8px 0 0;
         color: var(--muted);
         font-size: 14px;
+      }
+
+      .summary {
+        color: #1f3938;
+        background: #f1f8f6;
+        border-left: 3px solid var(--accent);
+        border-radius: 6px;
+        padding: 10px 12px;
       }
 
       .abstract {
@@ -253,6 +262,7 @@
         return [
           paper.title,
           paper.abstract,
+          paper.ai_summary_zh,
           paper.source,
           paper.venue,
           paper.authors?.join(" "),
@@ -324,8 +334,11 @@
             const pdf = paper.pdf_url ? `<a href="${escapeHtml(paper.pdf_url)}">PDF</a>` : "";
             const venue = paper.venue ? ` · ${escapeHtml(paper.venue)}` : "";
             const source = paper.source ? ` · ${escapeHtml(paper.source)}` : "";
+            const summary = paper.ai_summary_zh
+              ? `<p class="summary"><strong>AI中文摘要：</strong>${escapeHtml(paper.ai_summary_zh)}</p>`
+              : "";
             const abstract = paper.abstract
-              ? `<p class="abstract">${escapeHtml(paper.abstract).slice(0, 520)}${paper.abstract.length > 520 ? "..." : ""}</p>`
+              ? `<p class="abstract"><strong>原始摘要：</strong>${escapeHtml(paper.abstract).slice(0, 520)}${paper.abstract.length > 520 ? "..." : ""}</p>`
               : "";
 
             return `
@@ -333,6 +346,7 @@
                 <h2><a href="${url}">${title}</a></h2>
                 <p class="byline">${authors}${authorSuffix}</p>
                 <p class="byline">${formatDate(paper.published)}${venue}${source} · 相关性 ${escapeHtml(paper.score || 0)}</p>
+                ${summary}
                 ${abstract}
                 <div class="tags">${terms}</div>
                 <p class="links"><a href="${url}">论文链接</a>${doi}${pdf}</p>
@@ -373,4 +387,3 @@
     </script>
   </body>
 </html>
-

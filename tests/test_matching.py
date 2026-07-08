@@ -4,6 +4,7 @@ import unittest
 
 from paper_radar.matching import score_text
 from paper_radar.storage import merge_papers
+from paper_radar.summarize import build_summary_prompt, extract_output_text
 
 
 class MatchingTests(unittest.TestCase):
@@ -57,6 +58,25 @@ class MatchingTests(unittest.TestCase):
         self.assertEqual(len(merged), 1)
         self.assertEqual(merged[0]["source_id"], "openalex-b")
         self.assertEqual(merged[0]["score"], 11)
+
+    def test_summary_prompt_requires_chinese(self) -> None:
+        prompt = build_summary_prompt({"title": "IFC schema mapping", "abstract": "A mapping method."})
+
+        self.assertIn("中文AI摘要", prompt)
+        self.assertIn("80-140个汉字", prompt)
+
+    def test_extract_output_text(self) -> None:
+        payload = {
+            "output": [
+                {
+                    "content": [
+                        {"type": "output_text", "text": "这是中文摘要。"},
+                    ]
+                }
+            ]
+        }
+
+        self.assertEqual(extract_output_text(payload), "这是中文摘要。")
 
 
 if __name__ == "__main__":

@@ -11,12 +11,20 @@ from .config import DEFAULT_DAYS, DEFAULT_MAX_PER_SOURCE
 from .matching import score_text
 from .sources import fetch_all
 from .storage import load_papers, merge_papers, write_csv, write_json
+from .summarize import default_summary_limit, summarize_missing_papers
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 
-def collect(days: int, max_per_source: int, data_dir: Path, public_dir: Path) -> dict[str, Any]:
+def collect(
+    days: int,
+    max_per_source: int,
+    data_dir: Path,
+    public_dir: Path,
+    summarize_limit: int | None = None,
+    refresh_summaries: bool = False,
+) -> dict[str, Any]:
     since = dt.date.today() - dt.timedelta(days=days)
     incoming, warnings = fetch_all(since=since, max_per_source=max_per_source)
     relevant = []
@@ -34,6 +42,12 @@ def collect(days: int, max_per_source: int, data_dir: Path, public_dir: Path) ->
     public_path = public_dir / "papers.json"
     existing = load_papers(data_path)
     merged = [paper for paper in merge_papers(existing, relevant) if not _is_future_paper(paper)]
+    summarized, summary_warnings = summarize_missing_papers(
+        merged,
+        limit=summarize_limit,
+        refresh=refresh_summaries,
+    )
+    warnings.extend(summary_warnings)
 
     write_json(data_path, merged, days=days, warnings=warnings)
     write_json(public_path, merged, days=days, warnings=warnings)
@@ -43,6 +57,7 @@ def collect(days: int, max_per_source: int, data_dir: Path, public_dir: Path) ->
         "incoming": len(incoming),
         "relevant": len(relevant),
         "total": len(merged),
+        "summarized": summarized,
         "warnings": warnings,
         "data_path": str(data_path),
         "public_path": str(public_path),
@@ -69,15 +84,33 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--data-dir", type=Path, default=PROJECT_ROOT / "data")
     parser.add_argument("--public-dir", type=Path, default=PROJECT_ROOT / "public")
+    parser.add_argument(
+        "--summarize-limit",
+        type=int,
+        default=default_summary_limit(),
+        help="Maximum missing Chinese AI summaries to generate when OPENAI_API_KEY is set.",
+    )
+    parser.add_argument(
+        "--refresh-summaries",
+        action="store_true",
+        help="Regenerate existing Chinese AI summaries.",
+    )
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    summary = collect(days=args.days, max_per_source=args.max_per_source, data_dir=args.data_dir, public_dir=args.public_dir)
+    summary = collect(
+        days=args.days,
+        max_per_source=args.max_per_source,
+        data_dir=args.data_dir,
+        public_dir=args.public_dir,
+        summarize_limit=args.summarize_limit,
+        refresh_summaries=args.refresh_summaries,
+    )
     print(
         "Collected {incoming} candidates, kept {relevant} relevant papers, "
-        "{total} total records.".format(**summary)
+        "{total} total records, wrote {summarized} Chinese AI summaries.".format(**summary)
     )
     if summary["warnings"]:
         print("Completed with source warnings:")

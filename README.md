@@ -1,6 +1,6 @@
 # BIM/IFC Paper Radar
 
-这个项目用于每天自动收集 BIM、IFC、openBIM、Industry Foundation Classes 相关论文，去重后生成 `JSON`、`CSV` 和一个可部署到 GitHub Pages 的静态页面。配置 `OPENAI_API_KEY` 后，还会为新论文生成中文 AI 摘要。
+这个项目用于每天自动收集 BIM、IFC、openBIM、Industry Foundation Classes 相关论文，去重后生成 `JSON`、`CSV` 和一个可部署到 GitHub Pages 的静态页面。配置 `DEEPSEEK_API_KEY` 或 `OPENAI_API_KEY` 后，还会为新论文生成中文 AI 摘要。
 
 ## 功能逻辑拆解
 
@@ -9,7 +9,7 @@
 3. **标准化**：把不同来源的标题、摘要、作者、发布日期、DOI、PDF 链接、来源期刊/会议统一成同一种记录结构。
 4. **相关性判断**：优先命中 `building information modeling`、`industry foundation classes`、`openBIM` 等明确短语；对 `BIM`、`IFC` 这类歧义缩写，则要求它们和建筑、施工、AEC、数字孪生、设施管理等上下文共同出现。
 5. **去重合并**：按 DOI、论文 URL、来源 ID、标题指纹建立多键索引，只要任一键命中就合并同一篇论文。
-6. **中文 AI 摘要**：如果存在 `OPENAI_API_KEY`，采集器会为缺失摘要的论文生成 `ai_summary_zh`，默认每次最多 20 篇。
+6. **中文 AI 摘要**：如果存在 `DEEPSEEK_API_KEY` 或 `OPENAI_API_KEY`，采集器会为缺失摘要的论文生成 `ai_summary_zh`，默认每次最多 20 篇，优先使用 DeepSeek。
 7. **结果输出**：生成 `data/papers.json`、`data/papers.csv`，并同步到 `public/papers.json`，供静态页面读取。
 8. **自动部署**：Workflow 提交更新后的数据，然后把 `public/` 部署到 GitHub Pages。
 
@@ -28,7 +28,7 @@ python -m unittest discover -s tests -v
 如果要在本地生成中文 AI 摘要：
 
 ```bash
-set OPENAI_API_KEY=你的密钥
+set DEEPSEEK_API_KEY=你的密钥
 python -m paper_radar.collect --days 30 --summarize-limit 5
 ```
 
@@ -50,9 +50,11 @@ python -m paper_radar.collect --days 30 --summarize-limit 5
 1. 新建 GitHub 仓库并推送本项目。
 2. 在仓库 `Settings -> Pages` 中将 Build and deployment 的 Source 设为 `GitHub Actions`。
 3. 可选：在 `Settings -> Secrets and variables -> Actions` 添加 `OPENALEX_MAILTO`，让 OpenAlex 请求进入 polite pool。
-4. 如需中文 AI 摘要，在 `Settings -> Secrets and variables -> Actions -> Secrets` 添加 `OPENAI_API_KEY`。
+4. 如需中文 AI 摘要，在 `Settings -> Secrets and variables -> Actions -> Secrets` 添加 `DEEPSEEK_API_KEY`；也可以添加 `OPENAI_API_KEY` 作为备用。
 5. 可选：在 `Settings -> Secrets and variables -> Actions -> Variables` 添加：
+   - `DEEPSEEK_MODEL`：默认 `deepseek-v4-flash`。
    - `OPENAI_MODEL`：默认 `gpt-5.5`。
+   - `AI_SUMMARY_MODEL`：通用模型名变量，优先级低于 `DEEPSEEK_MODEL` 和 `OPENAI_MODEL`。
    - `AI_SUMMARY_LIMIT`：每天最多补多少篇中文摘要，默认 `20`。
 6. 打开 `Actions -> Daily BIM/IFC paper radar`，手动运行一次；之后它会每天自动采集并部署。
 
@@ -69,4 +71,3 @@ python -m paper_radar.collect --days 30 --summarize-limit 5
 
 - [OpenAlex Works API](https://docs.openalex.org/api-entities/works)
 - [arXiv API](https://info.arxiv.org/help/api/index.html)
-

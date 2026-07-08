@@ -1,4 +1,4 @@
-"""Optional Chinese AI summaries through the OpenAI Responses API."""
+"""Optional Chinese AI summaries through OpenAI-compatible model APIs."""
 
 from __future__ import annotations
 
@@ -11,7 +11,9 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
+DEEPSEEK_CHAT_URL = "https://api.deepseek.com/chat/completions"
 OPENAI_RESPONSES_URL = "https://api.openai.com/v1/responses"
+DEFAULT_DEEPSEEK_MODEL = "deepseek-v4-flash"
 DEFAULT_SUMMARY_MODEL = "gpt-5.5"
 DEFAULT_SUMMARY_LIMIT = 20
 
@@ -35,11 +37,10 @@ def summarize_missing_papers(
     limit: int | None = None,
     refresh: bool = False,
 ) -> tuple[int, list[str]]:
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
-    if not api_key:
+    summarizer = build_summarizer()
+    if summarizer is None:
         return 0, []
 
-    summarizer = OpenAISummarizer(api_key=api_key)
     remaining = default_summary_limit() if limit is None else max(0, limit)
     warnings: list[str] = []
     updated = 0
@@ -59,12 +60,60 @@ def summarize_missing_papers(
             updated += 1
             remaining -= 1
         except SummaryError as exc:
-            warnings.append(f"OpenAI summary failed for {paper.get('title', 'untitled')}: {exc}")
+            warnings.append(f"AI summary failed for {paper.get('title', 'untitled')}: {exc}")
             break
 
         time.sleep(0.5)
 
     return updated, warnings
+
+
+def build_summarizer() -> "DeepSeekSummarizer | OpenAISummarizer | None":
+    deepseek_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
+    if deepseek_key:
+        return DeepSeekSummarizer(api_key=deepseek_key)
+
+    openai_key = os.getenv("OPENAI_API_KEY", "").strip()
+    if openai_key:
+        return OpenAISummarizer(api_key=openai_key)
+
+    return None
+
+
+class DeepSeekSummarizer:
+    def __init__(self, api_key: str, model: str | None = None) -> None:
+        self.api_key = api_key
+        self.model = (
+            model
+            or os.getenv("DEEPSEEK_MODEL", "").strip()
+            or os.getenv("AI_SUMMARY_MODEL", "").strip()
+            or DEFAULT_DEEPSEEK_MODEL
+        )
+
+    def summarize_paper(self, paper: dict[str, Any]) -> str:
+        prompt = build_summary_prompt(paper)
+        payload = {
+            "model": self.model,
+            "thinking": {"type": "disabled"},
+            "messages": [
+                {
+                    "role": "system",
+                    "content": (
+                        "你是BIM/IFC论文情报助理。请只用简体中文输出摘要，"
+                        "不要编造论文中没有的信息。"
+                    ),
+                },
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": 0.2,
+            "max_tokens": 220,
+            "stream": False,
+        }
+        response = _post_json(DEEPSEEK_CHAT_URL, payload, self.api_key)
+        summary = extract_chat_completion_text(response).strip()
+        if not summary:
+            raise SummaryError("empty model output")
+        return " ".join(summary.split())
 
 
 class OpenAISummarizer:
@@ -101,6 +150,8 @@ def build_summary_prompt(paper: dict[str, Any]) -> str:
     abstract = str(paper.get("abstract") or "").strip()
     if len(abstract) > 1800:
         abstract = abstract[:1800] + "..."
+    if not abstract:
+        abstract = "暂无英文摘要；请仅根据标题、来源和关键词做保守概括，不要补充未给出的实验结果或结论。"
 
     return "\n".join(
         [
@@ -126,6 +177,16 @@ def extract_output_text(response: dict[str, Any]) -> str:
             if content.get("type") == "output_text" and isinstance(content.get("text"), str):
                 chunks.append(content["text"])
     return "\n".join(chunks)
+
+
+def extract_chat_completion_text(response: dict[str, Any]) -> str:
+    choices = response.get("choices")
+    if isinstance(choices, list) and choices:
+        message = choices[0].get("message", {})
+        content = message.get("content")
+        if isinstance(content, str):
+            return content
+    return ""
 
 
 def _post_json(url: str, payload: dict[str, Any], api_key: str) -> dict[str, Any]:

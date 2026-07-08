@@ -42,8 +42,11 @@ jobs:
       - name: Collect recent BIM/IFC papers
         env:
           OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          AI_SUMMARY_MODEL: ${{ vars.AI_SUMMARY_MODEL }}
           AI_SUMMARY_LIMIT: ${{ vars.AI_SUMMARY_LIMIT }}
         run: |
           python -m paper_radar.collect --days 30 --max-per-source 80

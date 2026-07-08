@@ -4,7 +4,7 @@ import unittest
 
 from paper_radar.matching import score_text
 from paper_radar.storage import merge_papers
-from paper_radar.summarize import build_summary_prompt, extract_output_text
+from paper_radar.summarize import build_summary_prompt, extract_chat_completion_text, extract_output_text
 
 
 class MatchingTests(unittest.TestCase):
@@ -77,6 +77,11 @@ class MatchingTests(unittest.TestCase):
         }
 
         self.assertEqual(extract_output_text(payload), "这是中文摘要。")
+
+    def test_extract_chat_completion_text(self) -> None:
+        payload = {"choices": [{"message": {"content": "这是DeepSeek中文摘要。"}}]}
+
+        self.assertEqual(extract_chat_completion_text(payload), "这是DeepSeek中文摘要。")
 
 
 if __name__ == "__main__":

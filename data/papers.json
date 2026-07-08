@@ -1,8 +1,10 @@
 {
-  "generated_at": "2026-07-08T02:18:33.672761+00:00",
-  "query_window_days": 365,
+  "generated_at": "2026-07-08T02:22:28.644609+00:00",
+  "query_window_days": 30,
   "count": 435,
-  "warnings": [],
+  "warnings": [
+    "arXiv: The read operation timed out"
+  ],
   "papers": [
     {
       "source": "OpenAlex",
@@ -28,7 +30,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -61,7 +63,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -89,7 +91,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -121,7 +123,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -145,7 +147,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -168,7 +170,36 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7167503658",
+      "title": "BIM-Loc: BIM-integrated discrepancy-aware LiDAR-based indoor localization",
+      "abstract": "Accurate and robust localization is a fundamental requirement for service and inspection robots, particularly in feature-sparse indoor environments where traditional systems struggle due to a lack of distinct landmarks. While prior maps can enhance robustness, precise and compact maps capturing real-world details are often unavailable for new or frequently changing environments. This paper presents BIM-Loc, a novel discrepancy-aware LiDAR-based localization method that directly integrates Building Information Models (BIM) from the design phase. BIM-Loc simultaneously estimates trajectories aligned with the BIM coordinate system and identifies discrepancies between real-world observations and the as-designed BIM in an online fashion. Our core contributions include: (1) a novel multi-hit ray casting strategy for efficient BIM-point data association and projection of 3D observations into 2D texture space; (2) a pose graph optimization framework with BIM-integrated factors that enforces consistency among odometry, sequential scans, and BIM structures; and (3) a hierarchical Bayesian inference module that incrementally updates a continuous 2D surface representation for discrepancy detection, propagating updates from the pixel to the structure level. Extensive evaluations in both simulation and real-world applications demonstrate that BIM-Loc significantly outperforms state-of-the-art map-based methods in localization accuracy and robustness. More experimental results are available at our project website: https://bim-loc.github.io/bim-loc .",
+      "authors": [
+        "Yinqiang Zhang",
+        "Lu Liang",
+        "Yipeng Pan",
+        "Maolin Lei",
+        "Yuhan Xie",
+        "Zhanteng Xie",
+        "Xiaowei Luo",
+        "Jia Pan"
+      ],
+      "published": "2026-07-06",
+      "updated": "2026-07-07T14:30:12.667765",
+      "doi": "https://doi.org/10.1177/02783649261462593",
+      "url": "https://doi.org/10.1177/02783649261462593",
+      "venue": "The International Journal of Robotics Research",
+      "score": 18,
+      "matched_terms": [
+        "BIM",
+        "building information model"
+      ],
+      "first_seen": "2026-07-08T02:11:01.470653+00:00",
+      "last_seen": "2026-07-08T02:22:28.630236+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2606.14237v1"
     },
     {
       "source": "OpenAlex",
@@ -189,7 +220,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -214,7 +245,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -239,7 +270,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -265,7 +296,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -290,7 +321,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -312,7 +343,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -346,7 +377,7 @@
         "ifc-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -370,7 +401,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -392,7 +423,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -416,7 +447,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -441,7 +472,7 @@
         "building information model"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -468,7 +499,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -493,7 +524,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -517,7 +548,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -543,7 +574,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -569,7 +600,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -598,7 +629,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -622,7 +653,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -643,7 +674,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -671,7 +702,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -694,7 +725,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -718,7 +749,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -744,7 +775,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -769,7 +800,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -793,7 +824,7 @@
         "scan to bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -814,7 +845,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -851,7 +882,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -879,7 +910,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -904,7 +935,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -931,7 +962,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -961,7 +992,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1050,7 +1081,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1123,7 +1154,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1147,7 +1178,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1181,7 +1212,7 @@
     },
     {
       "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7165476120",
+      "source_id": "https://openalex.org/W7165477927",
       "title": "Readiness Assessment of Construction Firms for Fourth Industrial Revolution Implementation in Nigeria",
       "abstract": "Abstract The construction industry remains one of the least digitalised major economic sectors despite the global diffusion of Fourth Industrial Revolution (4IR) technologies such as building information modelling, the Internet of Things, big data analytics, robotics, drones and cyber-physical systems. This paper examines the readiness of construction firms in Nigeria for 4IR implementation through a structured narrative-systematic review and synthesis of literature on technology readiness, the diffusion of innovation, and Construction 4.0. Based on established readiness models in developed and developing economies, the study develops a sixteen-variable readiness framework across technological, organisational and environmental dimensions. The findings indicate that the readiness of Nigerian construction firms is generally low to moderate, mainly constrained by inadequate ICT infrastructure, limited financial capacity for technology investment, scarcity of digitally skilled personnel, weak government policy support, and cautious organisational culture towards innovation. Emerging enablers include increased awareness among younger professionals and greater exposure to building information modelling in polytechnic and university curricula. The paper argues that the readiness assessment must be conducted before the large-scale 4IR rollout; otherwise misallocation of resources and failure of implementation are likely to occur, especially among small and medium-sized contracting firms that dominate the Nigerian market. It recommends a staged, stakeholder-led adoption pathway based on capacity building, infrastructure investment and supportive policy. The sixteen-variable framework presented is a pragmatic diagnostic tool that construction firms, policymakers and researchers can adapt for empirical readiness assessment in the six geopolitical zones of Nigeria.",
       "authors": [
@@ -1191,9 +1222,9 @@
       ],
       "published": "2026-07-01",
       "updated": "2026-07-01T06:00:48.157686",
-      "doi": "https://doi.org/10.5281/zenodo.20787565",
-      "url": "https://doi.org/10.5281/zenodo.20787565",
-      "pdf_url": "https://doi.org/10.5281/zenodo.20787565",
+      "doi": "https://doi.org/10.5281/zenodo.20787566",
+      "url": "https://doi.org/10.5281/zenodo.20787566",
+      "pdf_url": "https://doi.org/10.5281/zenodo.20787566",
       "venue": "Zenodo (CERN European Organization for Nuclear Research)",
       "score": 22,
       "matched_terms": [
@@ -1201,7 +1232,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1242,6 +1273,30 @@
     },
     {
       "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7167349733",
+      "title": "From Propagation to Prediction: Point-level Uncertainty Evaluation of MLS Point Clouds under Limited Ground Truth",
+      "abstract": "Abstract. Evaluating uncertainty is critical for reliable use of Mobile Laser Scanning (MLS) point clouds in many high-precision applications such as Scan-to-BIM, deformation analysis, and 3D modeling. However, obtaining the ground truth (GT) for evaluation is often costly and infeasible in many real-world applications. To reduce this long-standing reliance on GT in uncertainty evaluation research, this study presents a learning-based framework for MLS point clouds that integrates optimal neighborhood estimation with geometric feature extraction. Experiments on a real-world dataset show that the proposed framework is feasible and the XGBoost model delivers fully comparable accuracy to Random Forest while achieving substantially higher efficiency (about 3 times faster), providing initial evidence that geometric features can be used to predict point-level uncertainty quantified by the C2C distance. In summary, this study shows that MLS point clouds’ uncertainty is learnable, offering a novel learning-based viewpoint towards uncertainty evaluation research.",
+      "authors": [
+        "Zhida Xu",
+        "Olaf Wysocki",
+        "Christoph Holst"
+      ],
+      "published": "2026-07-01",
+      "updated": "2026-07-05T06:17:32.220687",
+      "doi": "https://doi.org/10.5194/isprs-annals-xi-1-2026-463-2026",
+      "url": "https://doi.org/10.5194/isprs-annals-xi-1-2026-463-2026",
+      "pdf_url": "https://doi.org/10.5194/isprs-annals-xi-1-2026-463-2026",
+      "venue": "ISPRS annals of the photogrammetry, remote sensing and spatial information sciences",
+      "score": 13,
+      "matched_terms": [
+        "BIM",
+        "scan-to-bim"
+      ],
+      "first_seen": "2026-07-08T02:11:01.470653+00:00",
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
+    },
+    {
+      "source": "OpenAlex",
       "source_id": "https://openalex.org/W7166846960",
       "title": "Integrating Digital Tools for Automated Circularity Assessment of Construction Products: A Case Study",
       "abstract": "The circular economy is recognised as a key topic that requires the development of user-friendly methodologies for circularity assessment, with digitalisation supporting more accurate evaluation processes. This study proposes an automated digital tool to calculate products’ Circularity Level (LC), defined in UNI/TS 11820:2024 and aligned with ISO/TC 323 circular economy standards (ISO 59004, ISO 59010, and ISO 59020) and the Level(s) EU sustainability framework. Specifically, an Excel-based calculator is developed to encode regulatory requirements, automatically compute LC values, generate radar charts highlighting improvement areas, and export results to MS Word for automated stakeholder reporting. Additionally, for construction materials, an information flow between MS Excel and Autodesk Revit is established using Dynamo, enabling the automated creation of product-related BIM objects and the integration of circularity data into the BIM model. The workflow is demonstrated through its application to a single case, namely the ITER Project, which implements earthen plasters enhanced by by-products from the agricultural and stone supply chains. An LC of 43.77% is obtained, driven by material efficiency and recovery, but limited by renewable energy use and end-of-life management. Future research will investigate AI techniques to optimise indicator scores and enhance digital circularity assessment in the construction sector.",
@@ -1266,7 +1321,7 @@
         "bim model"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1316,7 +1371,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1342,7 +1397,7 @@
         "industry foundation class"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1374,7 +1429,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1399,7 +1454,7 @@
         "ifc files"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1423,7 +1478,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1447,7 +1502,7 @@
         "ifc-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1471,7 +1526,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1495,7 +1550,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1519,7 +1574,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1545,7 +1600,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1568,7 +1623,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1598,7 +1653,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1624,7 +1679,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1650,7 +1705,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1672,7 +1727,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1695,7 +1750,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1717,7 +1772,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1746,7 +1801,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1771,7 +1826,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1796,7 +1851,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1821,7 +1876,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1853,7 +1908,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1882,7 +1937,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1912,7 +1967,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1937,7 +1992,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1967,7 +2022,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1992,7 +2047,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2014,7 +2069,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2041,7 +2096,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2066,7 +2121,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2092,7 +2147,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2114,7 +2169,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2139,7 +2194,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2167,7 +2222,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2194,7 +2249,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2217,7 +2272,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2241,7 +2296,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2267,7 +2322,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2293,7 +2348,7 @@
         "bim models"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2315,7 +2370,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2342,7 +2397,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2363,7 +2418,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2387,7 +2442,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2416,7 +2471,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2443,7 +2498,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2467,7 +2522,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2491,7 +2546,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2515,7 +2570,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2550,7 +2605,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2581,7 +2636,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2614,7 +2669,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2643,7 +2698,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2672,7 +2727,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2706,7 +2761,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2736,7 +2791,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2766,7 +2821,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2794,7 +2849,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2823,7 +2878,7 @@
         "ifc-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2851,7 +2906,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2878,7 +2933,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2906,7 +2961,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2933,7 +2988,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2963,7 +3018,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2991,7 +3046,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3018,7 +3073,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3043,7 +3098,7 @@
         "bim-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3069,7 +3124,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3095,7 +3150,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3121,7 +3176,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3148,7 +3203,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3174,7 +3229,7 @@
         "building information model"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3204,7 +3259,7 @@
         "bim-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3229,7 +3284,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3254,7 +3309,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3282,7 +3337,7 @@
         "ifc models"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3308,7 +3363,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3333,7 +3388,7 @@
         "ifc schema"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3360,7 +3415,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3383,7 +3438,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3406,7 +3461,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3432,7 +3487,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3457,7 +3512,7 @@
         "bim-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3485,7 +3540,7 @@
         "bim model"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3508,7 +3563,7 @@
         "bim model"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3535,7 +3590,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3558,7 +3613,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3582,7 +3637,7 @@
         "ifc-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3607,7 +3662,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3631,7 +3686,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3657,7 +3712,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3682,7 +3737,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3709,7 +3764,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3743,7 +3798,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3772,7 +3827,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3798,7 +3853,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3826,7 +3881,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3851,7 +3906,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3876,7 +3931,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3901,7 +3956,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3923,7 +3978,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "arXiv",
@@ -3989,7 +4044,36 @@
         "ifc-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7165157409",
+      "title": "Geometric Fidelity Uncertainty in Cognitive Digital Twins: Automated Point Cloud Completion, Tessellation, and IFC Recording for Maintenance",
+      "abstract": "Abstract Geometric fidelity is a fundamental prerequisite for reliable cognitive digital twins (CDTs). An incomplete as-is geometric foundation leads to model uncertainty, thereby undermining CDT reasoning and maintenance decisions. However, point cloud data acquired through laser scanning is inevitably subject to occlusions caused by structural obstructions, sensor limitations, and complex MEP configurations. Existing methods fail to address the high-precision full spectrum of occlusion scenarios in real-world Scan-to/vs-BIM workflows, particularly for border truncations and irregular non-Manhattan geometries. This paper proposes a method that systematically reduces geometric uncertainty in CDT construction through three stages. First, a gap classification scheme categorises incomplete point clusters by occlusion severity and object class, enabling targeted treatment of each scenario for both Manhattan and non-Manhattan geometries. The completed clusters are then tessellated into high-resolution meshes and converted into IFC models through a new purpose-designed data structure that embeds laser-scan timestamps and as-designed global identifier links. Together, these stages form a closed-loop geometric DT updating system that continuously reflects the as-is physical state of the building, directly reducing the geometric uncertainty that would otherwise propagate into CDT-based maintenance reasoning and risk assessment. The method is validated on various real-world datasets. The performance is evaluated with ground truth and Chamfer distance, with results benchmarked against LOA requirements to confirm practical ability. The resulting timestamped IFC models provide a geometrically reliable foundation for CDT-based predictive maintenance and facility risk assessment.",
+      "authors": [
+        "Zhiqi Hu",
+        "Hamidreza Alavi (23970834)",
+        "Qianchen Sun",
+        "Soheila Kookalani",
+        "Ioannis Brilakis"
+      ],
+      "published": "2026-06-18",
+      "updated": "2026-06-19T15:51:49.773706",
+      "doi": "https://doi.org/10.1115/1.4072155",
+      "url": "https://doi.org/10.1115/1.4072155",
+      "venue": "ASCE-ASME Journal of Risk and Uncertainty in Engineering Systems Part B Mechanical Engineering",
+      "score": 34,
+      "matched_terms": [
+        "BIM",
+        "digital twin",
+        "IFC",
+        "ifc model",
+        "ifc models"
+      ],
+      "first_seen": "2026-07-08T02:11:01.470653+00:00",
+      "last_seen": "2026-07-08T02:22:28.630236+00:00",
+      "pdf_url": "https://figshare.com/articles/journal_contribution/Geometric_fidelity_uncertainty_in_cognitive_digital_twins_automated_point_cloud_completion_tessellation_and_IFC_recording_for_maintenance/32411685"
     },
     {
       "source": "OpenAlex",
@@ -4013,7 +4097,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4035,7 +4119,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4064,7 +4148,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4109,7 +4193,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4131,7 +4215,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4162,7 +4246,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4188,7 +4272,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4212,7 +4296,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4243,7 +4327,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4269,7 +4353,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4291,7 +4375,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4313,7 +4397,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4339,7 +4423,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4367,35 +4451,6 @@
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
       "last_seen": "2026-07-08T02:18:33.637102+00:00"
-    },
-    {
-      "source": "arXiv",
-      "source_id": "http://arxiv.org/abs/2606.14237v1",
-      "title": "BIM-Loc: BIM-Integrated Discrepancy-Aware LiDAR-based Indoor Localization",
-      "abstract": "Accurate and robust localization is a fundamental requirement for service and inspection robots, particularly in feature-sparse indoor environments where traditional systems struggle due to a lack of distinct landmarks. While prior maps can enhance robustness, precise and compact maps capturing real-world details are often unavailable for new or frequently changing environments. This paper presents BIM-Loc, a novel discrepancy-aware LiDAR-based localization method that directly integrates Building Information Models (BIM) from the design phase. BIM-Loc simultaneously estimates trajectories aligned with the BIM coordinate system and identifies discrepancies between real-world observations and the as-designed BIM in an online fashion. Our core contributions include: (1) a novel multi-hit ray casting strategy for efficient BIM-point data association and projection of 3D observations into 2D texture space; (2) a pose graph optimization framework with BIM-integrated factors that enforces consistency among odometry, sequential scans, and BIM structures; and (3) a hierarchical Bayesian inference module that incrementally updates a continuous 2D surface representation for discrepancy detection, propagating updates from the pixel to the structure level. Extensive evaluations in both simulation and real-world applications demonstrate that BIM-Loc significantly outperforms state-of-the-art map-based methods in localization accuracy and robustness.",
-      "authors": [
-        "Yinqiang Zhang",
-        "Liang Lu",
-        "Yipeng Pan",
-        "Maolin Lei",
-        "Yuhan Xie",
-        "Zhanteng Xie",
-        "Xiaowei Luo",
-        "Jia Pan"
-      ],
-      "published": "2026-06-12T08:20:02Z",
-      "updated": "2026-06-12T08:20:02Z",
-      "doi": "https://doi.org/10.48550/arxiv.2606.14237",
-      "url": "https://arxiv.org/abs/2606.14237v1",
-      "venue": "cs.RO",
-      "score": 18,
-      "matched_terms": [
-        "BIM",
-        "building information model"
-      ],
-      "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00",
-      "pdf_url": "https://arxiv.org/pdf/2606.14237v1"
     },
     {
       "source": "OpenAlex",
@@ -4454,7 +4509,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4596,7 +4651,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4640,7 +4695,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4696,7 +4751,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4723,7 +4778,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4746,7 +4801,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4769,7 +4824,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4797,7 +4852,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4849,7 +4904,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
+      "last_seen": "2026-07-08T02:22:28.630236+00:00"
     },
     {
       "source": "arXiv",
@@ -5608,35 +5663,6 @@
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
       "last_seen": "2026-07-08T02:18:33.637102+00:00"
-    },
-    {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7163608733",
-      "title": "Geometric fidelity uncertainty in cognitive digital twins: automated point cloud completion, tessellation, and IFC recording for maintenance",
-      "abstract": "<p dir=\"ltr\">Geometric fidelity is a fundamental prerequisite for reliable cognitive digital twins (CDTs). An inaccurate or incomplete as-is geometric foundation leads to model uncertainty, thereby undermining CDT reasoning and maintenance decisions. However, point cloud data acquired through laser scanning is inevitably subject to occlusions caused by structural obstructions, sensor limitations, and complex mechanical electrical and plumbing (MEP) configurations, introducing geometric uncertainty that undermines the trustworthiness of as-is digital twin representations. Existing methods fail to address the high-precision full spectrum of occlusion scenarios in real- world Scan-to/vs-BIM workflows, particularly for border truncations and irregular non-Manhattan geometries. This paper proposes a method that systematically reduces geometric uncertainty in CDT construction through three stages. First, a gap classification scheme categorises incomplete point clusters by occlusion severity and object class, enabling targeted treatment of each scenario for both Manhattan and non-Manhattan geometries. The completed clusters are then tessellated into high-resolution meshes and converted into IFC models through a new purpose-designed data structure that embeds laser-scan timestamps and as-designed global identifier links. Together, these stages form a closed-loop geometric DT updating system that continuously reflects the as-is physical state of the building, directly reducing the geometric uncertainty that would otherwise propagate into CDT-based maintenance reasoning and risk assessment. The method is validated on various real-world datasets. The performance is evaluated with ground truth and Chamfer distance, with results benchmarked against Level of Accuracy (LOA) requirements to confirm practical ability. The resulting timestamped IFC models provide a geometrically reliable foundation for CDT-based predictive maintenance and facility risk assessment. <p dir=\"ltr\"><br>",
-      "authors": [
-        "Zhiqi Hu (22011716)",
-        "Hamidreza Alavi (23970834)",
-        "Qianchen Sun",
-        "Soheila Kookalani (23970837)",
-        "Ioannis Brilakis (5151923)"
-      ],
-      "published": "2026-05-28",
-      "updated": "2026-07-02T06:18:51.028212",
-      "doi": "https://doi.org/10.1115/1.4072155",
-      "url": "https://openalex.org/W7163608733",
-      "venue": "Loughborough University Research Repository (Loughborough University)",
-      "score": 34,
-      "matched_terms": [
-        "BIM",
-        "digital twin",
-        "IFC",
-        "ifc model",
-        "ifc models"
-      ],
-      "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00",
-      "pdf_url": "https://figshare.com/articles/journal_contribution/Geometric_fidelity_uncertainty_in_cognitive_digital_twins_automated_point_cloud_completion_tessellation_and_IFC_recording_for_maintenance/32411685"
     },
     {
       "source": "OpenAlex",
@@ -10481,30 +10507,6 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:14:30.612831+00:00",
-      "last_seen": "2026-07-08T02:18:33.637102+00:00"
-    },
-    {
-      "source": "arXiv",
-      "source_id": "http://arxiv.org/abs/2511.03053v1",
-      "title": "From Propagation to Prediction: Point-level Uncertainty Evaluation of MLS Point Clouds under Limited Ground Truth",
-      "abstract": "Evaluating uncertainty is critical for reliable use of Mobile Laser Scanning (MLS) point clouds in many high-precision applications such as Scan-to-BIM, deformation analysis, and 3D modeling. However, obtaining the ground truth (GT) for evaluation is often costly and infeasible in many real-world applications. To reduce this long-standing reliance on GT in uncertainty evaluation research, this study presents a learning-based framework for MLS point clouds that integrates optimal neighborhood estimation with geometric feature extraction. Experiments on a real-world dataset show that the proposed framework is feasible and the XGBoost model delivers fully comparable accuracy to Random Forest while achieving substantially higher efficiency (about 3 times faster), providing initial evidence that geometric features can be used to predict point-level uncertainty quantified by the C2C distance. In summary, this study shows that MLS point clouds' uncertainty is learnable, offering a novel learning-based viewpoint towards uncertainty evaluation research.",
-      "authors": [
-        "Ziyang Xu",
-        "Olaf Wysocki",
-        "Christoph Holst"
-      ],
-      "published": "2025-11-04T22:51:33Z",
-      "updated": "2025-11-04T22:51:33Z",
-      "doi": "https://doi.org/10.5194/isprs-annals-xi-1-2026-463-2026",
-      "url": "https://arxiv.org/abs/2511.03053v1",
-      "pdf_url": "https://arxiv.org/pdf/2511.03053v1",
-      "venue": "cs.CV",
-      "score": 13,
-      "matched_terms": [
-        "BIM",
-        "scan-to-bim"
-      ],
-      "first_seen": "2026-07-08T02:11:01.470653+00:00",
       "last_seen": "2026-07-08T02:18:33.637102+00:00"
     },
     {

@@ -1,4 +1,4 @@
-"""Command-line collector for daily BIM/IFC papers."""
+"""Command-line collector for all configured research-paper topics."""
 
 from __future__ import annotations
 
@@ -12,6 +12,8 @@ from .matching import score_text
 from .sources import fetch_all
 from .storage import load_papers, merge_papers, write_csv, write_json
 from .summarize import default_summary_limit, summarize_missing_papers
+from .topics import DEFAULT_TOPIC, TOPICS, get_topic
+from .topics.base import TopicConfig
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -24,33 +26,41 @@ def collect(
     public_dir: Path,
     summarize_limit: int | None = None,
     refresh_summaries: bool = False,
+    topic: TopicConfig = DEFAULT_TOPIC,
 ) -> dict[str, Any]:
     since = dt.date.today() - dt.timedelta(days=days)
-    incoming, warnings = fetch_all(since=since, max_per_source=max_per_source)
+    incoming, warnings = fetch_all(
+        since=since,
+        max_per_source=max_per_source,
+        topic=topic,
+    )
     relevant = []
 
     for paper in incoming:
-        result = score_text(paper.get("title"), paper.get("abstract"))
+        result = score_text(paper.get("title"), paper.get("abstract"), topic=topic)
         if result.relevant:
             normalized = dict(paper)
             normalized["score"] = result.score
             normalized["matched_terms"] = result.matched_terms
             relevant.append(normalized)
 
-    data_path = data_dir / "papers.json"
-    csv_path = data_dir / "papers.csv"
-    public_path = public_dir / "papers.json"
+    topic_data_dir = data_dir / topic.output_subdir if topic.output_subdir else data_dir
+    topic_public_dir = public_dir / topic.output_subdir if topic.output_subdir else public_dir
+    data_path = topic_data_dir / "papers.json"
+    csv_path = topic_data_dir / "papers.csv"
+    public_path = topic_public_dir / "papers.json"
     existing = load_papers(data_path)
     merged = [paper for paper in merge_papers(existing, relevant) if not _is_future_paper(paper)]
     summarized, summary_warnings = summarize_missing_papers(
         merged,
         limit=summarize_limit,
         refresh=refresh_summaries,
+        topic_title=topic.summary_context,
     )
     warnings.extend(summary_warnings)
 
-    write_json(data_path, merged, days=days, warnings=warnings)
-    write_json(public_path, merged, days=days, warnings=warnings)
+    write_json(data_path, merged, days=days, warnings=warnings, topic=topic)
+    write_json(public_path, merged, days=days, warnings=warnings, topic=topic)
     write_csv(csv_path, merged)
 
     return {
@@ -58,6 +68,8 @@ def collect(
         "relevant": len(relevant),
         "total": len(merged),
         "summarized": summarized,
+        "topic": topic.slug,
+        "topic_title": topic.title,
         "warnings": warnings,
         "data_path": str(data_path),
         "public_path": str(public_path),
@@ -74,7 +86,21 @@ def _is_future_paper(paper: dict[str, Any]) -> bool:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Collect BIM/IFC papers and update static data files.")
+    parser = argparse.ArgumentParser(
+        description="Collect papers for one or every configured radar topic."
+    )
+    topic_group = parser.add_mutually_exclusive_group()
+    topic_group.add_argument(
+        "--topic",
+        choices=tuple(TOPICS),
+        default=DEFAULT_TOPIC.slug,
+        help=f"Topic to collect (default: {DEFAULT_TOPIC.slug}).",
+    )
+    topic_group.add_argument(
+        "--all-topics",
+        action="store_true",
+        help="Collect every configured topic into its own data files.",
+    )
     parser.add_argument("--days", type=int, default=DEFAULT_DAYS, help="Rolling publication-date window.")
     parser.add_argument(
         "--max-per-source",
@@ -88,7 +114,7 @@ def parse_args() -> argparse.Namespace:
         "--summarize-limit",
         type=int,
         default=default_summary_limit(),
-        help="Maximum missing Chinese AI summaries to generate when OPENAI_API_KEY is set.",
+        help="Maximum missing Chinese AI summaries per topic when a model API key is set.",
     )
     parser.add_argument(
         "--refresh-summaries",
@@ -100,24 +126,28 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    summary = collect(
-        days=args.days,
-        max_per_source=args.max_per_source,
-        data_dir=args.data_dir,
-        public_dir=args.public_dir,
-        summarize_limit=args.summarize_limit,
-        refresh_summaries=args.refresh_summaries,
-    )
-    print(
-        "Collected {incoming} candidates, kept {relevant} relevant papers, "
-        "{total} total records, wrote {summarized} Chinese AI summaries.".format(**summary)
-    )
-    if summary["warnings"]:
-        print("Completed with source warnings:")
-        for warning in summary["warnings"]:
-            print(f"- {warning}")
-    print(f"Data: {summary['data_path']}")
-    print(f"Public JSON: {summary['public_path']}")
+    selected_topics = list(TOPICS.values()) if args.all_topics else [get_topic(args.topic)]
+
+    for topic in selected_topics:
+        summary = collect(
+            days=args.days,
+            max_per_source=args.max_per_source,
+            data_dir=args.data_dir,
+            public_dir=args.public_dir,
+            summarize_limit=args.summarize_limit,
+            refresh_summaries=args.refresh_summaries,
+            topic=topic,
+        )
+        print(
+            "[{topic_title}] Collected {incoming} candidates, kept {relevant} relevant papers, "
+            "{total} total records, wrote {summarized} Chinese AI summaries.".format(**summary)
+        )
+        if summary["warnings"]:
+            print(f"[{topic.title}] Completed with source warnings:")
+            for warning in summary["warnings"]:
+                print(f"- {warning}")
+        print(f"Data: {summary['data_path']}")
+        print(f"Public JSON: {summary['public_path']}")
     return 0
 
 

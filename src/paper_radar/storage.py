@@ -10,6 +10,8 @@ import re
 from pathlib import Path
 from typing import Any
 
+from .topics.base import TopicConfig
+
 
 def load_papers(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
@@ -22,7 +24,13 @@ def load_papers(path: Path) -> list[dict[str, Any]]:
     return []
 
 
-def write_json(path: Path, papers: list[dict[str, Any]], days: int, warnings: list[str] | None = None) -> None:
+def write_json(
+    path: Path,
+    papers: list[dict[str, Any]],
+    days: int,
+    warnings: list[str] | None = None,
+    topic: TopicConfig | None = None,
+) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -31,6 +39,12 @@ def write_json(path: Path, papers: list[dict[str, Any]], days: int, warnings: li
         "warnings": warnings or [],
         "papers": papers,
     }
+    if topic is not None:
+        payload["topic"] = {
+            "slug": topic.slug,
+            "title": topic.title,
+            "description": topic.description,
+        }
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 

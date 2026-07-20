@@ -13,7 +13,9 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
-from .config import ARXIV_QUERY_TERMS, DEFAULT_USER_AGENT, OPENALEX_QUERIES
+from .config import DEFAULT_USER_AGENT
+from .topics import DEFAULT_TOPIC
+from .topics.base import TopicConfig
 
 
 OPENALEX_WORKS_URL = "https://api.openalex.org/works"
@@ -77,12 +79,16 @@ def _openalex_mailto() -> str | None:
     return value or None
 
 
-def fetch_openalex(since: dt.date, max_per_query: int) -> list[dict[str, Any]]:
+def fetch_openalex(
+    since: dt.date,
+    max_per_query: int,
+    topic: TopicConfig = DEFAULT_TOPIC,
+) -> list[dict[str, Any]]:
     papers: list[dict[str, Any]] = []
     mailto = _openalex_mailto()
     today = dt.date.today()
 
-    for query in OPENALEX_QUERIES:
+    for query in topic.openalex_queries:
         params: dict[str, Any] = {
             "search": query,
             "filter": f"from_publication_date:{since.isoformat()},to_publication_date:{today.isoformat()}",
@@ -130,8 +136,12 @@ def _normalize_openalex_work(item: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def fetch_arxiv(since: dt.date, max_results: int) -> list[dict[str, Any]]:
-    query = " OR ".join(ARXIV_QUERY_TERMS)
+def fetch_arxiv(
+    since: dt.date,
+    max_results: int,
+    topic: TopicConfig = DEFAULT_TOPIC,
+) -> list[dict[str, Any]]:
+    query = " OR ".join(topic.arxiv_query_terms)
     params = {
         "search_query": query,
         "start": 0,
@@ -200,7 +210,11 @@ def _text(element: ET.Element[str] | None) -> str:
     return (element.text or "").strip() if element is not None else ""
 
 
-def fetch_all(since: dt.date, max_per_source: int) -> tuple[list[dict[str, Any]], list[str]]:
+def fetch_all(
+    since: dt.date,
+    max_per_source: int,
+    topic: TopicConfig = DEFAULT_TOPIC,
+) -> tuple[list[dict[str, Any]], list[str]]:
     sources: list[tuple[str, Any]] = [
         ("OpenAlex", fetch_openalex),
         ("arXiv", fetch_arxiv),
@@ -210,7 +224,7 @@ def fetch_all(since: dt.date, max_per_source: int) -> tuple[list[dict[str, Any]]
 
     for name, fetcher in sources:
         try:
-            papers.extend(fetcher(since, max_per_source))
+            papers.extend(fetcher(since, max_per_source, topic))
         except SourceError as exc:
             message = f"{name}: {exc}"
             warnings.append(message)

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BIM/IFC Paper Radar</title>
+    <title>Research Paper Radar</title>
     <style>
       :root {
         color-scheme: light;
@@ -60,7 +60,7 @@
 
       .toolbar {
         display: grid;
-        grid-template-columns: minmax(220px, 1fr) 160px 160px;
+        grid-template-columns: 210px minmax(220px, 1fr) 150px 150px;
         gap: 10px;
         padding: 18px 0;
       }
@@ -199,14 +199,15 @@
   <body>
     <header>
       <div class="wrap hero">
-        <h1>BIM/IFC Paper Radar</h1>
-        <p class="subtitle">
-          每日自动收集 Building Information Modeling、IFC、openBIM 与 Industry Foundation Classes 相关论文。
+        <h1>Research Paper Radar</h1>
+        <p id="subtitle" class="subtitle">
+          每日自动收集 BIM/IFC、自进化 Agent 与超图 RAG 相关论文。
         </p>
       </div>
     </header>
 
     <section class="wrap toolbar" aria-label="筛选论文">
+      <select id="topic" aria-label="研究主题"></select>
       <input id="search" type="search" placeholder="搜索标题、作者、摘要或关键词" />
       <select id="source">
         <option value="">全部来源</option>
@@ -223,8 +224,31 @@
     </main>
 
     <script>
+      const topics = [
+        {
+          slug: "bim-ifc",
+          title: "BIM/IFC",
+          description: "Building Information Modeling、IFC、openBIM 与 Industry Foundation Classes 相关论文。",
+          dataUrl: "./papers.json",
+        },
+        {
+          slug: "self-evolving-agent",
+          title: "Self-Evolving Agents",
+          description: "自进化、自改进与持续学习的 AI/LLM Agent 相关工作。",
+          dataUrl: "./self-evolving-agent/papers.json",
+        },
+        {
+          slug: "hypergraph-rag",
+          title: "Hypergraph RAG",
+          description: "使用超图进行知识组织、检索或推理的 RAG 相关工作。",
+          dataUrl: "./hypergraph-rag/papers.json",
+        },
+      ];
+
       const state = {
         papers: [],
+        meta: {},
+        topic: "bim-ifc",
         query: "",
         source: "",
         sort: "published",
@@ -233,6 +257,8 @@
       const el = {
         meta: document.querySelector("#meta"),
         papers: document.querySelector("#papers"),
+        subtitle: document.querySelector("#subtitle"),
+        topic: document.querySelector("#topic"),
         search: document.querySelector("#search"),
         source: document.querySelector("#source"),
         sort: document.querySelector("#sort"),
@@ -275,8 +301,9 @@
 
       function renderMeta(meta, count) {
         const generated = meta.generated_at ? formatDate(meta.generated_at) : "尚未生成";
+        const topicTitle = meta.topic?.title || topics.find((topic) => topic.slug === state.topic)?.title || "";
         el.meta.innerHTML = `
-          <span class="pill">${count} 篇论文</span>
+          <span class="pill">${escapeHtml(topicTitle)} · ${count} 篇论文</span>
           <span>数据更新时间：${escapeHtml(generated)}</span>
           <span>回看窗口：${escapeHtml(meta.query_window_days || "-")} 天</span>
         `;
@@ -311,9 +338,9 @@
         return filtered;
       }
 
-      function renderPapers(meta) {
+      function renderPapers() {
         const papers = filteredPapers();
-        renderMeta(meta, papers.length);
+        renderMeta(state.meta, papers.length);
 
         if (!papers.length) {
           el.papers.innerHTML = `<div class="empty">没有匹配的论文。可以放宽搜索词或等待下一次自动采集。</div>`;
@@ -356,31 +383,58 @@
           .join("");
       }
 
-      async function boot() {
+      async function loadTopic(slug) {
+        const topic = topics.find((candidate) => candidate.slug === slug) || topics[0];
+        state.topic = topic.slug;
+        state.source = "";
+        el.topic.value = topic.slug;
+        el.subtitle.textContent = topic.description;
+        el.meta.innerHTML = "";
+        el.papers.innerHTML = `<div class="empty">正在加载 ${escapeHtml(topic.title)} 数据…</div>`;
+
         try {
-          const response = await fetch("./papers.json", { cache: "no-store" });
+          const response = await fetch(topic.dataUrl, { cache: "no-store" });
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const payload = await response.json();
+          state.meta = payload;
           state.papers = payload.papers || [];
           renderSources();
-          renderPapers(payload);
-
-          el.search.addEventListener("input", (event) => {
-            state.query = event.target.value;
-            renderPapers(payload);
-          });
-          el.source.addEventListener("change", (event) => {
-            state.source = event.target.value;
-            renderPapers(payload);
-          });
-          el.sort.addEventListener("change", (event) => {
-            state.sort = event.target.value;
-            renderPapers(payload);
-          });
+          renderPapers();
         } catch (error) {
+          state.meta = {};
+          state.papers = [];
           el.meta.innerHTML = "";
-          el.papers.innerHTML = `<div class="error">无法加载 papers.json：${escapeHtml(error.message)}</div>`;
+          el.papers.innerHTML = `<div class="error">无法加载 ${escapeHtml(topic.title)} 数据：${escapeHtml(error.message)}</div>`;
         }
+      }
+
+      function boot() {
+        for (const topic of topics) {
+          const option = document.createElement("option");
+          option.value = topic.slug;
+          option.textContent = topic.title;
+          el.topic.appendChild(option);
+        }
+
+        el.topic.addEventListener("change", (event) => {
+          location.hash = event.target.value;
+          loadTopic(event.target.value);
+        });
+        el.search.addEventListener("input", (event) => {
+          state.query = event.target.value;
+          renderPapers();
+        });
+        el.source.addEventListener("change", (event) => {
+          state.source = event.target.value;
+          renderPapers();
+        });
+        el.sort.addEventListener("change", (event) => {
+          state.sort = event.target.value;
+          renderPapers();
+        });
+
+        const requestedTopic = location.hash.slice(1);
+        loadTopic(topics.some((topic) => topic.slug === requestedTopic) ? requestedTopic : topics[0].slug);
       }
 
       boot();

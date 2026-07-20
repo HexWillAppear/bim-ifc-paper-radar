@@ -36,8 +36,9 @@ def summarize_missing_papers(
     papers: list[dict[str, Any]],
     limit: int | None = None,
     refresh: bool = False,
+    topic_title: str = "BIM/IFC",
 ) -> tuple[int, list[str]]:
-    summarizer = build_summarizer()
+    summarizer = build_summarizer(topic_title=topic_title)
     if summarizer is None:
         return 0, []
 
@@ -68,21 +69,29 @@ def summarize_missing_papers(
     return updated, warnings
 
 
-def build_summarizer() -> "DeepSeekSummarizer | OpenAISummarizer | None":
+def build_summarizer(
+    topic_title: str = "BIM/IFC",
+) -> "DeepSeekSummarizer | OpenAISummarizer | None":
     deepseek_key = os.getenv("DEEPSEEK_API_KEY", "").strip()
     if deepseek_key:
-        return DeepSeekSummarizer(api_key=deepseek_key)
+        return DeepSeekSummarizer(api_key=deepseek_key, topic_title=topic_title)
 
     openai_key = os.getenv("OPENAI_API_KEY", "").strip()
     if openai_key:
-        return OpenAISummarizer(api_key=openai_key)
+        return OpenAISummarizer(api_key=openai_key, topic_title=topic_title)
 
     return None
 
 
 class DeepSeekSummarizer:
-    def __init__(self, api_key: str, model: str | None = None) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        model: str | None = None,
+        topic_title: str = "BIM/IFC",
+    ) -> None:
         self.api_key = api_key
+        self.topic_title = topic_title
         self.model = (
             model
             or os.getenv("DEEPSEEK_MODEL", "").strip()
@@ -91,7 +100,7 @@ class DeepSeekSummarizer:
         )
 
     def summarize_paper(self, paper: dict[str, Any]) -> str:
-        prompt = build_summary_prompt(paper)
+        prompt = build_summary_prompt(paper, topic_title=self.topic_title)
         payload = {
             "model": self.model,
             "thinking": {"type": "disabled"},
@@ -99,7 +108,7 @@ class DeepSeekSummarizer:
                 {
                     "role": "system",
                     "content": (
-                        "你是BIM/IFC论文情报助理。请只用简体中文输出摘要，"
+                        f"你是{self.topic_title}论文情报助理。请只用简体中文输出摘要，"
                         "不要编造论文中没有的信息。"
                     ),
                 },
@@ -117,19 +126,25 @@ class DeepSeekSummarizer:
 
 
 class OpenAISummarizer:
-    def __init__(self, api_key: str, model: str | None = None) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        model: str | None = None,
+        topic_title: str = "BIM/IFC",
+    ) -> None:
         self.api_key = api_key
+        self.topic_title = topic_title
         self.model = model or os.getenv("OPENAI_MODEL", "").strip() or DEFAULT_SUMMARY_MODEL
 
     def summarize_paper(self, paper: dict[str, Any]) -> str:
-        prompt = build_summary_prompt(paper)
+        prompt = build_summary_prompt(paper, topic_title=self.topic_title)
         payload = {
             "model": self.model,
             "input": [
                 {
                     "role": "developer",
                     "content": (
-                        "你是BIM/IFC论文情报助理。请只用简体中文输出摘要，"
+                        f"你是{self.topic_title}论文情报助理。请只用简体中文输出摘要，"
                         "不要编造论文中没有的信息。"
                     ),
                 },
@@ -145,7 +160,10 @@ class OpenAISummarizer:
         return " ".join(summary.split())
 
 
-def build_summary_prompt(paper: dict[str, Any]) -> str:
+def build_summary_prompt(
+    paper: dict[str, Any],
+    topic_title: str = "BIM/IFC",
+) -> str:
     authors = ", ".join((paper.get("authors") or [])[:6])
     abstract = str(paper.get("abstract") or "").strip()
     if len(abstract) > 1800:
@@ -155,7 +173,7 @@ def build_summary_prompt(paper: dict[str, Any]) -> str:
 
     return "\n".join(
         [
-            "请为下面这篇BIM/IFC相关论文写中文AI摘要。",
+            f"请为下面这篇{topic_title}相关论文写中文AI摘要。",
             "要求：1-2句话，80-140个汉字；说明研究对象、方法或贡献；不输出项目符号；不要说“本文”。",
             "",
             f"标题：{paper.get('title') or ''}",

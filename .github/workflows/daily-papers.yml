@@ -1,4 +1,4 @@
-name: Daily BIM/IFC paper radar
+name: Daily multi-topic paper radar
 
 on:
   workflow_dispatch:
@@ -39,7 +39,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -v
 
-      - name: Collect recent BIM/IFC papers
+      - name: Collect all configured paper topics
         env:
           OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -49,7 +49,7 @@ jobs:
           AI_SUMMARY_MODEL: ${{ vars.AI_SUMMARY_MODEL }}
           AI_SUMMARY_LIMIT: ${{ vars.AI_SUMMARY_LIMIT }}
         run: |
-          python -m paper_radar.collect --days 30 --max-per-source 80
+          python -m paper_radar.collect --all-topics --days 30 --max-per-source 80
 
       - name: Commit updated paper data
         run: |
@@ -59,7 +59,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No paper updates to commit."
           else
-            git commit -m "Update BIM IFC paper radar"
+            git commit -m "Update multi-topic paper radar"
             git push
           fi
 

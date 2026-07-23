@@ -1,9 +1,41 @@
 {
-  "generated_at": "2026-07-22T03:54:08.928219+00:00",
+  "generated_at": "2026-07-23T03:52:08.936814+00:00",
   "query_window_days": 30,
-  "count": 3,
+  "count": 4,
   "warnings": [],
   "papers": [
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2607.19830v1",
+      "title": "VizRAG: Enhancing Retrieval-Augmented Generation with Hypergraph Visualization",
+      "abstract": "Hypergraph-based RAG systems surpass traditional graph-based approaches by organizing complex n-ary atomic facts among entities, rather than relying solely on binary relationships. Despite the advancements in multimodal large language models (MLLMs) with enhanced visual capabilities, current hypergraph-based RAG frameworks predominantly restrict knowledge retrieval and reconstruction to a unimodal, text-centric paradigm. This limitation prevents them from fully leveraging the powerful visual perception capabilities of modern MLLMs. To address this gap, we systematically explore the integration of hypergraph awareness in RAG systems through visual cues. By incorporating visual representations of hypergraphs into the RAG pipeline, we introduce VizRAG, the first RAG system to support visual hypergraph structure awareness. Experimental results demonstrate that VizRAG significantly outperforms strong baselines, validating the promising potential of hypergraph visualization as a novel approach for RAG systems.",
+      "authors": [
+        "Yanbin Wei",
+        "Yang Chen",
+        "Renling Gan",
+        "Ziru Liu",
+        "Xinyu Fu",
+        "Chun Kang",
+        "Ning Lu",
+        "Rui Liu",
+        "Yu Zhang",
+        "James Kwok"
+      ],
+      "published": "2026-07-22T07:09:46Z",
+      "updated": "2026-07-22T07:09:46Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2607.19830v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19830v1",
+      "venue": "cs.CL",
+      "score": 21,
+      "matched_terms": [
+        "hypergraph-based rag",
+        "hypergraph + RAG"
+      ],
+      "ai_summary_zh": "VizRAG提出首个支持超图可视化感知的检索增强生成系统，通过将超图视觉表征融入RAG流程，突破现有超图RAG仅依赖文本的单模态限制。实验表明，该方法显著优于强基线模型，验证了超图可视化作为RAG新范式的潜力。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-23T03:52:08.436488+00:00"
+    },
     {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7169592698",
@@ -24,7 +56,7 @@
         "hypergraphrag"
       ],
       "first_seen": "2026-07-20T11:50:17.357838+00:00",
-      "last_seen": "2026-07-22T03:54:08.927962+00:00",
+      "last_seen": "2026-07-23T03:52:06.688878+00:00",
       "ai_summary_zh": "针对现有知识超图RAG方法在静态检索规划、非自适应执行及结构语义利用不足的问题，提出PRoH动态规划与推理框架，通过上下文感知规划、结构化问题分解为有向无环图及实体加权重叠引导的路径检索，在多项域中F1和生成评估得分分别超越先前最优模型19.73%和8.41%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:35.259639+00:00"
@@ -62,7 +94,7 @@
         "hypergraph + RAG"
       ],
       "first_seen": "2026-07-21T03:55:33.629573+00:00",
-      "last_seen": "2026-07-22T03:54:08.927962+00:00",
+      "last_seen": "2026-07-23T03:52:06.688878+00:00",
       "ai_summary_zh": "EvoGraph-R1提出一种自演化多模态知识超图框架，将检索过程建模为马尔可夫决策过程，通过智能体动态执行查询、扩展、编辑或终止动作，实现知识图谱的持续演化与错误修正。实验表明，该方法在多模态问答任务中显著提升了准确性、覆盖率和可追溯性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:37.236175+00:00"
@@ -90,7 +122,7 @@
         "hypergraph rag"
       ],
       "first_seen": "2026-07-20T11:50:17.357838+00:00",
-      "last_seen": "2026-07-22T03:54:08.927962+00:00",
+      "last_seen": "2026-07-23T03:52:06.688878+00:00",
       "ai_summary_zh": "针对新手数学教师，提出一种名为MisEdu-RAG的误解感知双超图RAG方法，通过构建双超图结构来建模教学中的常见误解，以提升检索增强生成在数学教育中的准确性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:38.880000+00:00"

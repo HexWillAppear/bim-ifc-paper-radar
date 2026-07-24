@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-23T03:52:08.936814+00:00",
+  "generated_at": "2026-07-24T03:52:19.635275+00:00",
   "query_window_days": 30,
-  "count": 4,
+  "count": 5,
   "warnings": [],
   "papers": [
     {
@@ -29,12 +29,14 @@
       "venue": "cs.CL",
       "score": 21,
       "matched_terms": [
-        "hypergraph-based rag",
-        "hypergraph + RAG"
+        "hypergraph + RAG",
+        "hypergraph-based rag"
       ],
       "ai_summary_zh": "VizRAG提出首个支持超图可视化感知的检索增强生成系统，通过将超图视觉表征融入RAG流程，突破现有超图RAG仅依赖文本的单模态限制。实验表明，该方法显著优于强基线模型，验证了超图可视化作为RAG新范式的潜力。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-07-23T03:52:08.436488+00:00"
+      "ai_summary_updated_at": "2026-07-23T03:52:08.436488+00:00",
+      "first_seen": "2026-07-24T03:52:17.567005+00:00",
+      "last_seen": "2026-07-24T03:52:17.567005+00:00"
     },
     {
       "source": "OpenAlex",
@@ -56,7 +58,7 @@
         "hypergraphrag"
       ],
       "first_seen": "2026-07-20T11:50:17.357838+00:00",
-      "last_seen": "2026-07-23T03:52:06.688878+00:00",
+      "last_seen": "2026-07-24T03:52:17.567005+00:00",
       "ai_summary_zh": "针对现有知识超图RAG方法在静态检索规划、非自适应执行及结构语义利用不足的问题，提出PRoH动态规划与推理框架，通过上下文感知规划、结构化问题分解为有向无环图及实体加权重叠引导的路径检索，在多项域中F1和生成评估得分分别超越先前最优模型19.73%和8.41%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:35.259639+00:00"
@@ -94,10 +96,36 @@
         "hypergraph + RAG"
       ],
       "first_seen": "2026-07-21T03:55:33.629573+00:00",
-      "last_seen": "2026-07-23T03:52:06.688878+00:00",
+      "last_seen": "2026-07-24T03:52:17.567005+00:00",
       "ai_summary_zh": "EvoGraph-R1提出一种自演化多模态知识超图框架，将检索过程建模为马尔可夫决策过程，通过智能体动态执行查询、扩展、编辑或终止动作，实现知识图谱的持续演化与错误修正。实验表明，该方法在多模态问答任务中显著提升了准确性、覆盖率和可追溯性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:37.236175+00:00"
+    },
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2607.20506v1",
+      "title": "Optimizing Hypergraph-Based RAG: Toward Better Fact Extraction and Chunk Retrieval",
+      "abstract": "GraphRAG enables deeper reasoning by structuring knowledge as graphs but struggles with n-ary facts. HyperGraphRAG uses hypergraphs for richer semantics, improving accuracy, yet relies on error-prone LLM extraction and inefficient standard chunk retrieval. We address this by employing self-consistency prompting to improve the extraction, and Personalized PageRank algorithm over hypergraph to enhance chunk retrieval.",
+      "authors": [
+        "Houda Khrouf",
+        "Pedro Fillastre",
+        "Sebastiao Correia"
+      ],
+      "published": "2026-07-02T21:36:54Z",
+      "updated": "2026-07-02T21:36:54Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2607.20506v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20506v1",
+      "venue": "cs.AI",
+      "score": 35,
+      "matched_terms": [
+        "hypergraph-based rag",
+        "hypergraphrag",
+        "hypergraph + RAG"
+      ],
+      "ai_summary_zh": "针对超图RAG中LLM事实提取易出错及标准分块检索低效的问题，采用自一致性提示优化提取过程，并利用超图上的个性化PageRank算法增强分块检索，从而提升准确性与效率。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:52:19.135003+00:00"
     },
     {
       "source": "OpenAlex",
@@ -122,7 +150,7 @@
         "hypergraph rag"
       ],
       "first_seen": "2026-07-20T11:50:17.357838+00:00",
-      "last_seen": "2026-07-23T03:52:06.688878+00:00",
+      "last_seen": "2026-07-24T03:52:17.567005+00:00",
       "ai_summary_zh": "针对新手数学教师，提出一种名为MisEdu-RAG的误解感知双超图RAG方法，通过构建双超图结构来建模教学中的常见误解，以提升检索增强生成在数学教育中的准确性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:38.880000+00:00"

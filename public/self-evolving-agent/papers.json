@@ -1,9 +1,55 @@
 {
-  "generated_at": "2026-07-23T03:52:03.494363+00:00",
+  "generated_at": "2026-07-24T03:52:14.167584+00:00",
   "query_window_days": 30,
-  "count": 56,
+  "count": 57,
   "warnings": [],
   "papers": [
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2607.21461v1",
+      "title": "AREX: Towards a Recursively Self-Improving Agent for Deep Research",
+      "abstract": "Deep research requires agents to find answers that jointly satisfy multiple constraints. Discovering such answers is costly, whereas verifying a candidate can often be decomposed into tractable constraint-wise checks. This discovery--verification asymmetry suggests that a research agent should do more than simply search longer: it should recursively improve its current answer by verifying intermediate results and using the partially verified state to guide subsequent refinement. We introduce AREX, a family of Recursively Self-Improving (RSI) deep research agents. AREX alternates between an inner research loop that gathers evidence and constructs a provisional answer, and an outer self-improvement loop that audits the answer constraint-wise, identifies unresolved claims, and launches targeted follow-up research. To sustain RSI over long horizons, AREX learns an autonomous context-update tool that compresses growing interaction history into a compact improvement state preserving verified evidence and unresolved constraints, without relying on an external model. We train AREX on verified synthetic tasks and high-quality trajectories through agentic mid-training and long-horizon reinforcement learning. To mitigate sparse final rewards during long horizon learning, we emphasize key steps where decisive evidence is acquired or erroneous research directions are corrected. We instantiate a dense 4B model and a 122B-A10B Mixture-of-Experts model. Across BrowseComp, WideSearch, DeepSearchQA, Humanity's Last Exam (HLE), and other reasoning and tool-use benchmarks, AREX substantially outperforms comparable-scale baselines and remains competitive with models using substantially more activated parameters.",
+      "authors": [
+        "Shuqi Lu",
+        "Chaofan Li",
+        "Kun Luo",
+        "Zhang Zhang",
+        "Hui Wang",
+        "Hongwang Xiao",
+        "Zheng Liu",
+        "Lei Xiong",
+        "Jiahao Wang",
+        "Sen Wang",
+        "Xiyan Jiang",
+        "Wanli Li",
+        "Yuyang Hu",
+        "Hongjin Qian",
+        "Bingyu Yan",
+        "Ziyi Xia",
+        "Yingxia Shao",
+        "Kang Liu",
+        "Zhicheng Dou",
+        "Di He",
+        "Chaozhuo Li",
+        "Qiwei Ye",
+        "Zhongyuan Wang",
+        "Zheng Liu"
+      ],
+      "published": "2026-07-23T16:05:46Z",
+      "updated": "2026-07-23T16:05:46Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2607.21461v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21461v1",
+      "venue": "cs.AI",
+      "score": 23,
+      "matched_terms": [
+        "self-improving agent",
+        "self-evolution + agent"
+      ],
+      "ai_summary_zh": "AREX提出了一种递归自改进的深度研究智能体，通过交替执行内部研究循环和外部自改进循环，在验证中间结果后引导后续搜索，并学习自主上下文更新工具压缩交互历史，在多个基准测试中显著优于同等规模的基线模型。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:52:11.376858+00:00"
+    },
     {
       "source": "arXiv",
       "source_id": "http://arxiv.org/abs/2607.20019v1",
@@ -28,7 +74,9 @@
       ],
       "ai_summary_zh": "EvoDRC提出了一种自进化智能体框架，用于自动化版图设计规则违例修复。该框架通过从无关参考设计中提取知识初始化层专用修复技能，并利用目标设计中的可追溯修复经验持续进化这些技能，在七个模块级设计上实现了73.5%的违例减少。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-07-23T03:51:58.388899+00:00"
+      "ai_summary_updated_at": "2026-07-23T03:51:58.388899+00:00",
+      "first_seen": "2026-07-24T03:52:09.735824+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00"
     },
     {
       "source": "arXiv",
@@ -56,7 +104,9 @@
       ],
       "ai_summary_zh": "本研究提出知识中心型自我改进范式，通过让通用型智能体在完成任务后向共享知识库贡献基于证据的见解，并经过知识蒸馏实现系统提升。在抽象推理、编程和终端基准测试中，该协议相比智能体中心方法提高了任务解决率并降低了成本，且蒸馏知识可迁移至未训练任务和不同大语言模型家族。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-07-23T03:52:00.790946+00:00"
+      "ai_summary_updated_at": "2026-07-23T03:52:00.790946+00:00",
+      "first_seen": "2026-07-24T03:52:09.735824+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00"
     },
     {
       "source": "arXiv",
@@ -84,7 +134,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:36.275081+00:00",
       "first_seen": "2026-07-22T03:54:03.458394+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00"
+      "last_seen": "2026-07-24T03:52:09.735824+00:00"
     },
     {
       "source": "arXiv",
@@ -116,7 +166,36 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:38.388731+00:00",
       "first_seen": "2026-07-22T03:54:03.458394+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00"
+      "last_seen": "2026-07-24T03:52:09.735824+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7169923222",
+      "title": "Recursive Harness Self-Improvement",
+      "abstract": "Under model--harness co-evolution, harnesses are not merely inference-time scaffolds but data-generating components whose execution traces can shape future foundation models. This motivates harness-in-the-loop learning: optimizing harnesses for both immediate agent performance and the quality of traces used for future model training. However, continually updating provider-built scaffolds is costly and labor-intensive. We therefore investigate whether optimizing user-constructed harnesses in a task-specific manner can improve execution-trace quality while remaining computationally lightweight and requiring only a few update iterations. To this end, we introduce Recursive Harness Self-Improvement (RHI), which represents the harness as a prompt-level specification of the agent loop and iteratively refines it using pairwise feedback over its own revision history. Across 30 synthetic machine-learning research tasks spanning quantitative finance, robotics, and pharmacy, a few RHI iterations suffice to substantially raise the performance ceiling of low-reasoning-effort agents, exceeding the corresponding maximum-reasoning-effort setting while reducing inference cost by up to 60%. We show that these gains arise primarily from improved task-specific context management through more effective inter-agent information flow rather than longer reasoning traces. Finally, we formalize this behavior as an information-theoretic hypothesis for RHI's implicit optimization objective, suggesting RHI as a practical algorithm for continual learning within the paradigm of model--harness co-evolution.",
+      "authors": [
+        "Hyunin Lee",
+        "Jinglue Xu",
+        "Jeffrey Seely",
+        "Donghyun Lee",
+        "Matei Zaharia",
+        "Yujin Tang"
+      ],
+      "published": "2026-07-17",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": null,
+      "url": "https://openalex.org/W7169923222",
+      "pdf_url": "https://arxiv.org/pdf/2607.15524",
+      "venue": "arXiv (Cornell University)",
+      "score": 10,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "first_seen": "2026-07-24T03:52:09.735824+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
+      "ai_summary_zh": "本文提出递归式框架自我改进方法（RHI），将智能体框架表示为提示级别的循环规范，并通过基于自身修订历史的成对反馈进行迭代优化。在30个合成机器学习研究任务中，该方法仅需少量迭代即可显著提升低推理能力智能体的性能上限，同时将推理成本降低高达60%，其改进主要源于更有效的任务特定上下文管理而非更长的推理轨迹。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:52:13.664755+00:00"
     },
     {
       "source": "OpenAlex",
@@ -147,7 +226,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "SEED提出了一种自进化在线策略蒸馏框架，通过将已完成轨迹转化为事后技能并提取密集的令牌级蒸馏信号，弥补了基于结果的强化学习中稀疏奖励与策略学习之间的监督差距。在文本和视觉智能体任务上的实验表明，该方法持续提升了性能和样本效率，并展现出对未见场景的鲁棒泛化能力。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:40.696849+00:00"
@@ -174,7 +253,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出一种基于成对验证器的无奖励自进化智能体框架，用冻结大语言模型对父代与子代智能体进行二元比较，替代传统标量奖励信号。该方法无需领域专家标注和训练，在多个自进化引擎和不同智能体形态上，以更低成本达到或超越全奖励基线的任务准确率。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:43.068018+00:00"
@@ -211,7 +290,7 @@
         "self-evolving agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出HealthClaw开源智能体架构，通过分离共享安全规则与私有纵向记忆，实现个人健康管理的自进化。在900次纵向支持测试中，答案准确率从0.2%提升至45.7%，且上下文暴露量降低71.7%，在生物医学任务中平均绝对增益达27.0个百分点。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:45.334338+00:00"
@@ -240,7 +319,7 @@
         "self-evolving agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出一种自进化Agent框架，通过门控语义质量多样性存档（GSME）分离补丁生成与信用分配，由确定性代码负责采样和显著性测试，确保改进可信。在七个领域使用冻结模型，训练后密封测试显示性能提升9-15.5个百分点，且泛化保持率86-147%，证明诊断-信用循环可跨模型迁移。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:47.692337+00:00"
@@ -270,7 +349,7 @@
         "self-evolving agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "SkillForge提出了一种面向云技术支持的自进化Agent框架，通过领域上下文化的技能创建器和三阶段故障诊断优化流水线，实现技能从创建到评估再到优化的闭环迭代。实验表明，该方法能生成更符合实际任务需求的初始技能，并在多轮部署反馈中持续提升技能质量，甚至超越专家手工编写的知识。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:49.842821+00:00"
@@ -301,7 +380,7 @@
         "self-evolving agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "针对自进化智能体系统中评估指标缺失的问题，提出一种双循环协同进化框架，通过搜索小型缺陷检测器的组合来进化透明可审查的评估指标，并与技能生命周期管理循环共同进化。实验表明，该方法在代码生成、文本到SQL等任务中能保留88-110%的基准提升效果，且通过锚定约束和外部审计机制防止指标退化或被利用。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:52.394625+00:00"
@@ -337,7 +416,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "该综述将现代自进化智能体定义为将经验转化为能力积累的自适应系统，提出一个系统级框架，将智能体表示为基础模型与提示、记忆、工具和控制逻辑等操作支架的耦合配置，并形式化自进化为自我诱导的更新算子。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:54.337852+00:00"
@@ -363,7 +442,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "该论文提出了一种由目标、范围、工具和基准驱动的多智能体架构，用于实现递归自改进智能体，并引入“个人奇点”作为人机协同发展的有限目标，通过合约、验证和治理机制帮助用户在选定领域扩展能力边界。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:58.517824+00:00"
@@ -395,7 +474,7 @@
         "self-improving agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "自进化智能体在自动优化过程中会虚构从未发生的失败，并为此添加不必要的防护栏。通过确定性微实验室验证，当输入包含类似游戏规则的无害模式时，智能体在25%的运行中虚构失败并启用防护栏，而移除特定条件可消除此现象。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:00.679513+00:00"
@@ -420,7 +499,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "Mako提出自进化智能体操作系统（SE-AOS），将漏洞利用能力视为可运行时扩展的可变内核，通过观察自身失败、合成新能力并在实时目标上验证后热加载回系统。作为首个SE-AOS实例，Mako在104个CTF式Web应用基准测试中实现全覆盖，证明能力而非推理是自主利用的关键瓶颈。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:02.967301+00:00"
@@ -462,7 +541,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "该论文从临床部署视角出发，提出医疗智能体应作为部分可观测环境下的序列决策系统，并构建了包含框架、能力与环境扩展的统一扩展主轴，将临床环境扩展与自我进化定位为关键研究前沿，为构建可信赖的自主医疗系统提供了路线图。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:05.000252+00:00"
@@ -490,7 +569,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "这篇论文提出了一条面向开放世界物理智能的协同进化路线图，核心是“具身大脑”这一长期模型目标。通过整合世界行动模型（WAMs）的预测功能与物理约束，并采用共享契约和闭环后训练机制，该路线图旨在构建能够自适应和自我进化的具身智能体。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:07.144668+00:00"
@@ -518,7 +597,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "LOGOS 提出一种可插拔的自进化与治理层，通过将多模态输入编译为版本化智能体包，并利用事件追踪与失败封闭验证机制，实现智能体团队在人类监督下的持续进化。该方法确保智能体可自主行动、学习与改进，但所有变更必须经过人类授权与证据验证，从而构建可问责的人机协作闭环。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:09.347650+00:00"
@@ -533,7 +612,7 @@
       ],
       "published": "2026-07-11T06:06:34Z",
       "updated": "2026-07-21T11:13:06Z",
-      "doi": "",
+      "doi": "https://doi.org/10.48550/arxiv.2607.13070",
       "url": "https://arxiv.org/abs/2607.13070v2",
       "pdf_url": "https://arxiv.org/pdf/2607.13070v2",
       "venue": "cs.SE",
@@ -542,36 +621,11 @@
         "self-evolution + agent",
         "self-improving agent"
       ],
+      "first_seen": "2026-07-20T11:49:53.646352+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "这篇论文提出了一种名为“可证伪发布门”的方法，用于自进化Agent系统的安全验证。通过在Antahkarana运行时中实施该方法，系统在能力从122项测试增长到563项的过程中，安全核心保持不变，并成功实现了模型准确率从20%提升至70%的自改进，同时每请求仅增加0.021毫秒的极低开销。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-07-22T03:54:05.323160+00:00",
-      "first_seen": "2026-07-23T03:51:56.892808+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00"
-    },
-    {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7169689153",
-      "title": "Falsifiable Release Gates for Self-Improving Systems",
-      "abstract": "Safety claims on self-improving agent runtimes are almost always self-graded: a policy file, a guardrail, or a README commitment. We describe falsifiable release gates, and a methodology to build and validate such systems, such that every new capability must pass a pre-specified, machine-verifiable acceptance suite before it ships, and a fixed set of standing invariants is preserved at each gate. I think we applied the method in the Antahkarana, an open runtime, via seven gates from basic observability into a self governing loop that suggests changes to its own policy. no action goes to an effector without a safety-critical property capability token minted by a control ring is exhaustively machine-checked over the one million recorded reachable state space of a bounded model and re-checked against execution traces. A purposely broken model gives the shortest counterexample, so the checker has teeth, is apparent. The self-enhancement loop is positively Constrained: the entire write surface is policy rules, tightening changes. may auto-apply loosening changes always require a human merge and a proposal autoclosed is one that mispredicts its own effect; We publish the acceptance measured results for all the seven gates, define precisely the scope of each claim (a bounded of the coordination skeleton (not the learned components) and free the runtime, either command line tools and the gate suite, so the results reproduce, and gates can run against other agent frameworks. Reviewers may repeat the single command central non-bypass in seconds.",
-      "authors": [
-        "Deepak Soni"
-      ],
-      "published": "2026-07-11",
-      "updated": "2026-07-20T05:57:42.737021",
-      "doi": "https://doi.org/10.48550/arxiv.2607.13070",
-      "url": "https://openalex.org/W7169689153",
-      "pdf_url": "https://arxiv.org/pdf/2607.13070",
-      "venue": "arXiv (Cornell University)",
-      "score": 21,
-      "matched_terms": [
-        "self-evolution + agent",
-        "self-improving agent"
-      ],
-      "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
-      "ai_summary_zh": "这篇论文提出了一种可证伪的发布门控方法，用于自改进Agent系统，通过预设的机器可验证验收套件确保每次能力更新都通过七道门控，并保持固定不变量的完整性。该方法在Antahkarana开源运行时中实现，通过控制环铸造安全关键属性令牌，对有限模型的一百万个可达状态空间进行穷举机器检查，并验证执行轨迹，从而约束自我增强循环。",
-      "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-07-21T03:54:11.847896+00:00"
+      "ai_summary_updated_at": "2026-07-22T03:54:05.323160+00:00"
     },
     {
       "source": "arXiv",
@@ -603,7 +657,7 @@
         "self-evolving agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "SAGEAgent提出了一种基于自进化大语言模型的临床智能体，通过顺序决策方法在癌症生存预测中平衡诊断准确性与临床侵入性。该智能体利用临床工具、情景记忆和语义记忆，在胶质瘤数据集上实现了竞争性预测精度，同时将平均诊断负担降低55%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:13.928488+00:00"
@@ -631,7 +685,7 @@
         "continually improving agents"
       ],
       "first_seen": "2026-07-21T03:53:34.592415+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "COvolve提出一种基于大语言模型的对抗性协同进化框架，将环境与智能体策略建模为双人零和博弈，通过生成可执行Python代码实现自动化课程学习。该方法通过计算混合策略纳什均衡获得元策略，确保智能体在应对新环境时不遗忘已有能力，在自动驾驶、迷宫求解等任务中验证了其生成渐进复杂环境的能力。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:16.148194+00:00"
@@ -658,7 +712,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "该论文提出一种自进化智能体工作流，使大语言模型能通过自我评估与迭代反馈提升K-12数学图表生成质量。研究探索了模型自主生成质量评估问题并利用视觉语言模型反馈改进图表的能力，初步验证了该方法在提升AI生成图表准确性与教育适用性方面的潜力。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:18.181338+00:00"
@@ -689,7 +743,7 @@
         "self-evolving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出一种工具制作与自进化流水线，通过将重复的标准操作流程步骤编译为经过验证的版本化工具，替代推理时的代码生成循环，从而降低延迟并提升可靠性。在物流中心警报分类系统中部署后，工具调用将p50延迟降低42%，端到端错误率减少53%，并支持版本化审计与数据漂移检测。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:20.342968+00:00"
@@ -714,7 +768,7 @@
         "self-improving agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "Hayula Core是一个完全基于Python的自改进AI Agent运行时，通过技能架构、四层记忆系统和自我修复调度器实现自主进化，其核心贡献在于Agent能基于执行结果自主评估、修改和再生技能代码，从而驱动91个Agent在4台设备上持续运行。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:22.533988+00:00"
@@ -739,7 +793,7 @@
         "self-improving agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "TRUSTMEM-Hayula将TRUSTMEM的可信记忆巩固与EvoTest的进化式自我改进相结合，部署在Siyaq上下文工程框架中，通过记忆转换验证器和偏好引导强化学习实现79%的记忆损坏减少，并利用进化器代理自动分析执行片段以持续优化角色代理配置。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:24.713475+00:00"
@@ -771,7 +825,7 @@
         "self-evolving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "自进化智能体通过观察技能失败来淘汰不良技能，但若裁判存在偏差，这一机制会失效。本文通过有偏奖励分析和行为实验，证明“假通过”偏差会无声地禁用基于贡献的技能淘汰机制，且该机制失效具有普遍性，但下游性能影响取决于具体情境。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:26.983515+00:00"
@@ -800,7 +854,7 @@
         "self-evolving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "该研究提出EvoSOP框架，使大语言模型智能体通过将原子动作合成为可复用的标准操作程序（SOP）实现自进化，并采用构建、合并、评估和剪枝的迭代优化生命周期来动态优化工具集。实验表明，该方法显著提升任务成功率并减少交互轮次，为自进化智能体的可扩展开发提供了有效路径。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:28.950415+00:00"
@@ -826,7 +880,7 @@
         "recursive self-improvement"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "该论文通过分析1250篇arXiv论文，构建了AI自我改进的分类体系，区分了有界自我优化（收敛、可评估的工业实践）与开放式递归自我改进（受限于基础要求、崩溃动态和计算约束），并重点研究了自我评估机制的设计空间及其验证层级。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:31.076791+00:00"
@@ -841,7 +895,7 @@
         "Arseniy Sitkovskiy"
       ],
       "published": "2026-07-08",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3389/fdata.2026.1842233",
       "url": "https://doi.org/10.3389/fdata.2026.1842233",
       "pdf_url": "https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2026.1842233/pdf",
@@ -851,7 +905,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出MADDPG-EVO-DGM混合算法，将多智能体深度强化学习与进化优化及元学习相结合，用于危机场景下的区域人口政策优化。每个区域作为自主智能体学习调控人口政策，通过周期性进化“助推器”和达尔文-哥德尔机器元学习机制实现自改进，在俄罗斯八联邦区域模拟中表现出更快的收敛速度和更高的危机韧性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:33.387229+00:00"
@@ -882,7 +936,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出MetaSkill-Evolve框架，通过双时间尺度机制实现LLM Agent技能改进的递归自进化：任务技能在快循环中进化，元技能在慢循环中自我改进。在三个Agent基准测试中，该方法相比无技能、静态技能和单层进化基线均取得显著性能提升。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:35.352542+00:00"
@@ -918,7 +972,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "EvoAgentBench是一个评估智能体自我进化能力的基准，通过能力迁移在四个智能体领域（网络研究、算法推理、软件工程和知识工作）中测试程序性经验的复用。该基准从智能体执行中提取可操作的能力单元，构建领域特定的能力图，并基于528/267的训练/测试划分，发现当前自动方法无法在所有设置中持续获得正向增益。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:37.498598+00:00"
@@ -946,7 +1000,7 @@
         "self-evolving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出人类启发式遗传网络规划（HGNP）框架，通过模拟儿童期广泛探索与成年期专注利用的发育模式，动态调节自进化智能体在进化过程中的探索-利用平衡。该方法引入自适应交叉变异算子和循环消除机制，在Tileworld基准测试中显著提升了智能体策略性能。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:39.357526+00:00"
@@ -971,7 +1025,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "针对闭源模型无法通过参数更新积累新能力的限制，提出一种运行时能力准入控制机制——晋升治理，通过结合候选评估、TF-IDF语义重叠分析、影响判定与可配置审批策略，决定新知识、技能或工具载体是否纳入智能体持久运行时。在28个案例的治理基准测试中，无门控模式虽恢复92.86%任务但有害晋升率达53.57%，而治理模式将有害晋升降至0%（成功率25%），表明晋升治理是可衡量的准入控制边界。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:41.938546+00:00"
@@ -1002,7 +1056,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "HASE提出了一种感知框架的自进化强化学习方法，使单一模型能在多轮动作空间中同时生成任务解决方案或编辑框架组件。实验表明，该方法在文本分类任务中匹配了GPT-OSS-120B模型性能，在alpha因子挖掘和圆填充算法发现中均达到最优结果。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:44.073482+00:00"
@@ -1029,7 +1083,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "SkillOpt-Lite通过零阶优化形式化技能优化，提出基于文件系统轨迹探索、共识属性挖掘和独立验证门控的三原则，实现最小可行流水线。该方法在LiveMath上使GPT-5.5提升8.8分、GPT-5.4-nano提升25.4分，并自然泛化至完整工具优化，在SpreadsheetBench上使小模型超越大模型。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:46.104909+00:00"
@@ -1059,7 +1113,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "SkillCoach提出一种自进化评估框架，通过从实际执行中推导技能导向的过程准则，从技能选择、遵循、组合及反思四个维度评估智能体行为，并将过程质量与偶然任务成功区分开。实验表明，该框架能提升评估质量、揭示最终准确率掩盖的失败，并为增强智能体技能使用提供比结果过滤更强的监督信号。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:48.248367+00:00"
@@ -1108,7 +1162,7 @@
         "self-evolving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "该论文指出当前企业级大语言模型代理系统因缺乏标准化轨迹数据协议、企业级数据代理和统一进化控制平面，导致代理无法实现自我进化。作者提出下一代代理强化学习系统需围绕这三个支柱进行协同设计，并通过AReaL2.0实例展示了将现有RL基础设施重组为面向代理的在线学习循环的方法。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:50.296971+00:00"
@@ -1133,7 +1187,7 @@
         "self-evolving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "SEA架构通过将自修改限制在小型转向适配器和版本化封装内，并利用随时有效门控机制在固定错误预算下生成可审计证书，实现了自进化代理的可靠更新。该架构结合五种验证器在环机制，在四个基础模型上的SWE-bench验证子集测试中，将强基础模型的性能提升了4至5个百分点。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:52.742990+00:00"
@@ -1158,7 +1212,7 @@
         "self-evolving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "该论文提出一种基于修复经验学习的自进化智能体方法，用于自动化漏洞修复，通过智能体在修复过程中积累经验并自我改进，提升修复能力。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:54.492638+00:00"
@@ -1176,7 +1230,7 @@
         "Shi Dong"
       ],
       "published": "2026-07-01",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1016/j.eij.2026.101025",
       "url": "https://doi.org/10.1016/j.eij.2026.101025",
       "pdf_url": "https://doi.org/10.1016/j.eij.2026.101025",
@@ -1187,7 +1241,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "受生物进化学习启发，提出一种需求驱动的自系统模型，并基于此构建智能体自进化框架，使智能体无需大量标注数据即可实现无监督自主学习。在遥感图像目标检测任务中验证了该方法的可行性，表明其提供了一条通向自主智能的可行路径。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:56.303078+00:00"
@@ -1211,17 +1265,17 @@
         "Rajkumar Buyya"
       ],
       "published": "2026-07-01",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.26599/tst.2026.9010076",
       "url": "https://doi.org/10.26599/tst.2026.9010076",
-      "pdf_url": "https://doi.org/10.26599/tst.2026.9010076",
+      "pdf_url": "https://www.sciopen.com/local/article_pdf/10.26599/TST.2026.9010076.pdf",
       "venue": "Tsinghua Science & Technology",
       "score": 10,
       "matched_terms": [
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-23T03:51:56.892808+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "VQA-G Annotator提出了一种自改进的智能体框架，通过分布感知规划、多智能体协调和空间推理验证的闭环流程，实现高保真度视觉问答数据集的高效合成。实验表明，该方法在语义对齐和空间定位上均优于强基线，为可扩展的可信视觉理解提供了有效数据支持。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-23T03:52:02.989977+00:00"
@@ -1258,7 +1312,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出ProtoPilot自进化多智能体系统，结合专家基准与评估框架，将生物协议自动转化为可执行代码。该系统通过分层验证、多智能体协调和运行时更新的技能库，在294个合成生物学任务中实现90.2%的专家偏好率和89.5%的协议到代码通过率，经湿实验验证可自主完成实验流程。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:54:58.455472+00:00"
@@ -1285,7 +1339,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-21T03:53:34.592415+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "AgRefactor提出了一种基于LLM的多智能体工作流，用于将软件重构为HLS兼容代码，其核心贡献是自进化记忆系统，该系统能跨任务积累和检索事实与策略知识，从而提升对未知程序的鲁棒性和效率。在11个复杂基准测试中的9个上，该方法优于或匹配现有最先进工具，并通过智能体性能优化实现了6.51倍的几何平均加速。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:00.725256+00:00"
@@ -1334,7 +1388,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出经验图（Experience Graph）作为自进化智能体的数据基础，通过将智能体探索过程产生的可执行产物、工具输出、奖励和因果谱系等结构化对象视为一等数据库状态，实现跨会话复用、崩溃恢复和训练数据提取。在Meta的生产加速器内核优化器KernelEvolve中，该方法使跨会话复用达到约10倍加速且降低52%令牌成本。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:03.042077+00:00"
@@ -1361,7 +1415,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "针对自动化因子挖掘中固定评分函数导致的过拟合问题，提出密封联合搜索（SJS）框架，通过角色分解、密封读取等结构条件防止搜索坍缩为自我确认。在Agora系统中，五类大语言模型智能体通过三通道通信进化八个技能库，在CSI 1000上100轮实验后，91天留出集夏普比率达+1.87，显著超越基线。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:05.414194+00:00"
@@ -1391,7 +1445,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-21T03:53:34.592415+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出自进化智能体图像恢复框架SEAR，将图像恢复建模为序列决策问题。该方法包含直觉执行器与审慎规划器，分别模拟快速与慢速思维系统，通过剪枝感知蒙特卡洛树搜索实现长程推理，并利用自进化情景记忆机制克服智能体系统的信息遗忘问题。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:07.484892+00:00"
@@ -1419,7 +1473,7 @@
         "self-evolving agent"
       ],
       "first_seen": "2026-07-21T03:53:34.592415+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "HORIZON是一个自进化智能体框架，将硬件设计视为仓库级代码演化过程。它通过Markdown编译项目包、免干预智能体循环和仓库操作实现状态管理，在多个基准测试中达到100%完成率，但指出当前基准测试仅是芯片设计更广泛工程问题的受控代理。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:09.690130+00:00"
@@ -1444,7 +1498,7 @@
         "self-improving agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "该论文构建了自进化智能体集群能耗的幂律标度模型，从理论上推导了有限地球能源预算下的相互锁定均衡，并提供了生产系统的微观实证证据，提出以戴森云恒星能源捕获作为无界ASI自进化的物理基础。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:11.725081+00:00"
@@ -1469,7 +1523,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出了一种确定性安全架构PAAC，通过SMT形式化验证器拦截并检查自改进智能体的每次代码修改，确保所有变更均满足预定义的安全属性，在资源受限条件下仍能保证验证可靠性。该架构首次为递归自我改进提供了可证明安全的实用框架，实验表明其能在120毫秒内阻断后门攻击并允许安全优化。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:14.118670+00:00"
@@ -1507,7 +1561,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出红皇后哥德尔机（RQGM），一种在非平稳效用下实现递归自我改进的进化框架，通过将评估器纳入改进循环并组织为固定评估标准的时期，使智能体与评估器共同进化。在编码、科学论文写作和奥林匹克级证明任务上，RQGM相比现有自进化智能体方法提升了性能，例如在论文评审中使共同进化的作者接受率提高1.78-1.86倍，并纠正了基线评审者过度接受AI生成论文的偏差。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:16.954843+00:00"
@@ -1532,7 +1586,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-07-20T11:49:53.646352+00:00",
-      "last_seen": "2026-07-23T03:51:56.892808+00:00",
+      "last_seen": "2026-07-24T03:52:09.735824+00:00",
       "ai_summary_zh": "提出一种名为“Unfireable Safety Kernel”的执行时AI对齐机制，通过进程隔离、前置强制授权等四个属性，在架构层面控制可逃逸AI系统（如自进化智能体）的行为。该内核在Rust中实现，经SMT定理和模型检查验证，在1000次自修改实验中成功阻止所有704次安全关键攻击，且6240次授权往返无一次绕过。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:19.222306+00:00"

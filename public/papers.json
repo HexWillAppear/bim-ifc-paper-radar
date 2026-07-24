@@ -1,9 +1,296 @@
 {
-  "generated_at": "2026-07-23T03:51:50.406436+00:00",
+  "generated_at": "2026-07-24T03:52:02.673927+00:00",
   "query_window_days": 30,
-  "count": 574,
+  "count": 593,
   "warnings": [],
   "papers": [
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170086028",
+      "title": "From BIM–SAR Fusion to API-Based Digital Twin Services for Building Deformation Monitoring",
+      "abstract": "Abstract. The integration of multi-temporal SAR interferometry with Building Information Modelling (BIM) provides new opportunities for object-level deformation monitoring in urban environments. The BIMSAR framework demonstrated the feasibility of linking Persistent Scatterer Interferometry (PSI) results with IFC-based BIM models to derive building-specific deformation indicators. Multi-frequency InSAR data from Sentinel-1, TerraSAR-X, and PALSAR-2 are processed using a PSI-based strategy to derive millimetre-scale deformation velocities and time series. Building on this methodological foundation, this study reports the transition of BIM–SAR fusion toward an API-enabled Digital Twin service, including the delivery of a structured deformation database and the presentation of an interoperable API design for scalable building deformation monitoring. Deformation measurements are semantically associated with BIM objects and, where applicable, building components. The fused information is stored in a structured database that has been implemented and delivered as part of the service development, and is exposed through a RESTful API to provide standardized access to deformation indicators and quality metadata. A pilot implementation in the city of Ahlen, Germany, demonstrates the end-to-end workflow from MTInSAR processing to BIM-linked data storage and API-based digital twin visualization. The results show that deformation time series can be systematically integrated into BIM environments and served through interoperable interfaces, supporting reproducible and scalable geospatial digital twin services for building deformation monitoring.",
+      "authors": [
+        "Chia-Hsiang Yang",
+        "C. Stemmler",
+        "Nils Wolf",
+        "Florian Lahn",
+        "Boris Idesman",
+        "Joana Miguéns",
+        "Oliver Buck"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-583-2026",
+      "url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-583-2026",
+      "pdf_url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-583-2026",
+      "venue": "The international archives of the photogrammetry, remote sensing and spatial information sciences/International archives of the photogrammetry, remote sensing and spatial information sciences",
+      "score": 45,
+      "matched_terms": [
+        "BIM",
+        "bim models",
+        "building information modelling",
+        "digital twin",
+        "IFC",
+        "ifc-based"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "该研究将多时相SAR干涉测量与基于IFC的BIM模型融合，通过PSI策略处理多频InSAR数据获取毫米级形变信息，并开发了RESTful API驱动的数字孪生服务，在德国阿伦市验证了从形变数据处理到BIM关联存储及可视化的工作流。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:18.922533+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170090892",
+      "title": "Editorial: Digital transformation in construction: integrating metaverse, digital twin, and BIM",
+      "abstract": "The Research Topic \"Digital Transformation in Construction: Integrating Metaverse, Digital Twin, and BIM\" brings together scholarship on how data-rich, model-based, and immersive technologies are reshaping the built environment. Its aim is to examine how BIM, digital twins, and metaverse-related technologies can improve sustainability, resilience, safety, productivity, and lifecycle decision-making in construction and infrastructure. This focus is timely because immersive technology for the built world was identified among the World Economic Forum top emerging technologies of 2024 (World Economic Forum, 2024), while buildings and construction account for about 37% of global emissions in recent global reporting (UNEP and GlobalABC, 2025).The articles in this Research Topic advance the field by moving beyond isolated digital tools toward connected cyber-physical and socio-technical ecosystems. BIM provides structured object, process, and asset information; digital twins extend this information through sensing, feedback, simulation, and lifecycle updating; and metaverse environments offer immersive spaces for visualization, training, coordination, and decision support. This progression is consistent with earlier research that framed the digital twin as a bridge between physical systems and their virtual representations (Kritzinger et al., 2018), emphasized the need for semantic construction digital twins (Boje et al., 2020), and mapped the evolution from BIM to digital twins in the AEC-FM industry (Deng et al., 2021). This Research Topic contributes to knowledge by connecting research streams that are often examined separately: BIM-based information management, AI-enabled analytics, sensing and reality capture, digital twin workflows, immersive visualization, and digital transformation for sustainability. The papers operate across project, asset, enterprise, and sector scales, addressing safety communication, inspection, drawing digitization, heritage documentation, road models, procurement, carbon reduction, circularity, and regulatory digitalization. Together, they show that digital transformation is not a single technology shift, but a coordinated change in data, workflows, skills, governance, and human interaction.The broader contribution of the collection is its emphasis on implementation. The papers move beyond conceptual enthusiasm for BIM, digital twins, and metaverse technologies by showing how these tools can be evaluated through pilot studies, computational models, systematic reviews, case studies, and methods papers. They also identify persistent research needs, including interoperability, semantic enrichment, cybersecurity, data governance, ethical use, workforce adoption, and field validation. In doing so, the collection helps define an applied research agenda for a built environment that is more intelligent, resilient, sustainable, and inclusive. Figure 1 summarizes the overarching themes of this Research Topic and shows how BIM, digital twins, immersive technologies, and data-driven intelligence collectively support digital transformation in the built environment. The published contributions can be organized into five article-type categories: Original Research, Systematic Review, Review, Methods, and Opinion. The Original Research papers provide empirical, computational, and casebased evidence on digital safety, structural engineering, digital twins, heritage documentation, road modeling, carbon reduction, and circular material tracking. The Systematic Review and Review papers consolidate evidence on immersive technologies, engineering procurement, bridge maintenance, and digital twins for energy and indoor environmental quality. The Methods and Opinion papers address regulatory document digitalization and the conceptual transition from BIM to digital twins and the metaverse.The Original Research category begins with studies focused on safety, AI, and construction intelligence. Baikati et al. (2026), in \"Integrating BIM and VR for enhanced safety communication and training in construction,\" develop BIM-enabled VR safety training for multilingual construction environments. Ying et al. (2026), in \"An Efficient Deep Learning Framework for Text Detection and Recognition in Engineering Drawings,\" propose deep learning for extracting rebar annotations from complex drawings. Kookalani et al. (2026), in \"Interpretable machine learning for predicting the bearing capacity of double shear-bolted connections,\" combine predictive modeling with interpretability to support data-driven steel design. Prabhu et al. (2026), in \"Artificial intelligence-driven safety assessment of scaffolding using LiDAR sensing,\" present a cloud-based workflow for automated scaffolding inspection.A second group addresses digital twins, reality capture, heritage, infrastructure semantics, enterprise transformation, and circularity. Ramón-Constantí et al. (2026), in \"Integrating thermal point clouds into BIM-GIS environments,\" propose a BIM-GIS workflow for multi-layer thermal digital twins. Li and Willkens (2026), in \"Digital transformation through multi-device HBIM workflow,\" present a scan-to-HBIM workflow for adaptive reuse of the Odd Fellows Building in Atlanta. Crampen and Blankenbach (2025), in \"Data enrichment for semantic segmentation of point clouds for the generation of geometric-semantic road models,\" enrich point-cloud segmentation with semantic information for road modeling. Zhao et al. (2025), in \"Digital transformation of construction enterprises and carbon emission reduction,\" provide listed-company evidence on digital transformation and carbon reduction. Shehu et al. (2025), in \"Opportunities for digital tracking technologies in the precast concrete sector in Sweden,\" examine digital tracking technologies for circular economy practices in precast concrete.The Systematic Review category is represented by Sornoza-Parrales et al. (2025), whose paper, \"Evolution and research trends in virtual reality and augmented reality technologies for the architecture, engineering, and construction industry,\" uses systematic review and science mapping methods to clarify the development of AR and VR research in AEC. The paper helps situate immersive technologies within broader trends involving digital twins, metaverse applications, and project lifecycle integration.The Review category expands the collection from immersive environments to procurement, infrastructure maintenance, and building performance. Awodele et al. (2026), in \"The Role of Digital Technologies in Engineering Procurement,\" synthesize literature on AI, blockchain, IoT, BIM, robotic process automation, and eprocurement, showing how engineering procurement is becoming a strategic, data-driven capability. Medrano-Sanchez and Martos (2025), in \"Strategies for bridge maintenance using BIM,\" review BIM-based bridge maintenance methods and tools, identify gaps in interoperability and skills, and highlight the importance of preventive and data-driven asset management. Venkateswarlu and Sathiyamoorthy (2025), in \"Sustainable innovations in digital twin technology,\" review digital twin research related to energy efficiency and indoor environmental quality, showing how digital twins can support sustainable building operation and occupant wellbeing.The Methods category is represented by Kabzhan et al. (2025), whose paper, \"Semantic and ontology-based analysis of regulatory documents for construction industry digitalization,\" develops an automated approach for analyzing construction regulatory documents using ontology modeling and natural language processing. This contribution addresses a central barrier to digital transformation: the conversion of complex, changing, and textheavy regulatory requirements into structured knowledge that can support digital workflows. The Opinion category is represented by Noroozinejad Farsangi et al. (2024), \"Transitioning from BIM to Digital Twin to Metaverse,\" which provides a conceptual framing for the movement from static information models to dynamic digital twins and then to immersive, interconnected metaverse environments. This opinion paper helps anchor the collection by clarifying the conceptual pathway that links many of the empirical and review contributions.Collectively, the papers in this Research Topic show that digital transformation in construction is entering a more integrated and evidence-based phase. The field is moving from stand-alone BIM models and isolated visualization tools toward interoperable digital twins, intelligent sensing, AI-enabled analytics, semantic information structures, immersive interfaces, and digitally supported sustainability strategies. The collection advances knowledge by connecting technical innovation with real problems in safety, infrastructure management, heritage conservation, procurement, carbon reduction, circularity, and regulatory modernization.Future work may extend this discussion toward generative AI, secure and ethical digital twins, metaverse-enabled collaboration, digital product passports, cyber-physical jobsites, and human-centered adoption.",
+      "authors": [
+        "Izuru Takewaki",
+        "Zheng Lu",
+        "Salman Azhar",
+        "Vagelis Plevris",
+        "Zhen Chen",
+        "Sakdirat Kaewunruen",
+        "Umberto Berardi"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.3389/fbuil.2026.1905914",
+      "url": "https://doi.org/10.3389/fbuil.2026.1905914",
+      "pdf_url": "https://doi.org/10.3389/fbuil.2026.1905914",
+      "venue": "Frontiers in Built Environment",
+      "score": 27,
+      "matched_terms": [
+        "BIM",
+        "bim models",
+        "bim-based",
+        "digital twin"
+      ],
+      "ai_summary_zh": "该研究聚焦建筑行业数字化转型，探讨如何整合BIM、数字孪生与元宇宙技术，以提升可持续性、韧性、安全性和全生命周期决策能力。通过构建连接物理与虚拟系统的协同生态，推动从孤立工具向数据驱动的智能建造体系演进。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:21.142744+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170046848",
+      "title": "Estrategias para reducir la huella de carbono en proyectos de Ingeniería Civil: una revisión sistemática",
+      "abstract": "This study aimed to analyze the scientific evidence on strategies for reducing the carbon footprint in civil engineering projects. To achieve this, a systematic review was conducted following the PRISMA methodology, considering 20 scientific articles published between 2021 and 2026, selected from Scopus, ScienceDirect, EBSCO, and SciELO using inclusion and exclusion criteria. The results showed that Life Cycle Assessment (LCA) is the predominant methodology for measuring the carbon footprint, complemented by tools such as Building Information Modeling (BIM), Digital Twin, and Machine Learning. Furthermore, the main mitigation strategies include the use of low-carbon materials, prefabrication, structural optimization, and the digitalization of construction processes. It is concluded that the integration of these strategies contributes to the development of more sustainable infrastructure and the decarbonization of the civil engineering sector.",
+      "authors": [
+        "Jherson Henry Castañeda Ravichagua",
+        "Dammer Felipe Trigoso Ruiz",
+        "Frey Franco Sánchez Marcos",
+        "Leticia Leiva Arauco"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.60112/erc.v6.i3.845",
+      "url": "https://doi.org/10.60112/erc.v6.i3.845",
+      "pdf_url": "https://doi.org/10.60112/erc.v6.i3.845",
+      "venue": "Emergentes - Revista Científica",
+      "score": 20,
+      "matched_terms": [
+        "BIM",
+        "building information modeling",
+        "digital twin"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "通过系统综述PRISMA方法分析2021-2026年间20篇文献，发现生命周期评估（LCA）是测量碳足迹的主要方法，并结合BIM、数字孪生和机器学习等工具，提出使用低碳材料、预制化、结构优化及流程数字化等减排策略，以推动土木工程项目的可持续发展。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:23.214797+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170075315",
+      "title": "BIM-integrated visual programming framework for automated universal accessibility compliance assessment in contemporary building design",
+      "abstract": "Contemporary Building Information Modeling (BIM) applications predominantly address generic building code verification, yet reliable systems for universal accessibility compliance remain underdeveloped, creating persistent barriers to inclusive design implementation. This study develops and validates a comprehensive BIM-integrated visual programming framework utilizing Autodesk Dynamo for automated accessibility compliance assessment according to Americans with Disabilities Act standards. The research employs a sequential mixed-methods approach encompassing systematic literature analysis of 22 compliance inefficiencies validated through expert survey (n = 48, Cronbach's α = 0.905). This is followed by visual programming framework development incorporating 978 integrated nodes across eight building element categories. Comprehensive validation through institutional building case study analysis completes the methodology. The automated system achieved 98.3% overall accuracy with 45.5-second processing time for 411 building elements, successfully identifying 83 compliance violations across doors (74.0% compliance), toilet facilities (66.7% compliance), parking spaces (84.4% compliance), and circulation elements. Statistical analysis using Relative Importance Index revealed cost consumption (RII = 0.801) and temporal inefficiency (RII = 0.786) as critical compliance barriers. The framework translates complex spatial relationship requirements into executable geometric algorithms, enabling practitioners without extensive programming expertise to conduct comprehensive accessibility evaluation during design phases rather than post-construction remediation. This study establishes foundational methodology for democratizing automated accessibility compliance verification, directly addressing the systematic exclusion of 1.3 billion persons with disabilities from built environments.",
+      "authors": [
+        "Maimoona Gul",
+        "Khurram Iqbal Ahmad Khan",
+        "Hilal Khan"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.1080/17452007.2026.2701467",
+      "url": "https://doi.org/10.1080/17452007.2026.2701467",
+      "pdf_url": null,
+      "venue": "Architectural Engineering and Design Management",
+      "score": 20,
+      "matched_terms": [
+        "BIM",
+        "building information modeling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "提出一种基于Autodesk Dynamo的BIM集成可视化编程框架，用于根据美国残疾人法案标准自动评估建筑无障碍合规性。该框架通过978个集成节点覆盖八类建筑构件，在411个元素的案例验证中达到98.3%的准确率，并将处理时间缩短至45.5秒，有效识别了门、卫生间等区域的合规违规问题。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:25.729304+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170092532",
+      "title": "Single-image to model registration for semantic enrichment of indoor BIM",
+      "abstract": "Abstract. Effective integration of geometric and semantic data within Building Information Models (BIM) is essential for the efficient life cycle management of modern facilities. However, maintaining accurate as-is BIM models for existing buildings remains a significant challenge, as manual updates are labour-intensive and full 3D reconstruction is often impractical for incremental changes. In such cases, image-based approaches offer a fast and flexible alternative, but require reliable alignment of 2D imagery with existing BIM geometry. To address this challenge, this study introduces a streamlined pipeline for semantic enrichment that uses a single-image visual localisation approach to directly align 2D imagery with existing BIM geometry. The proposed method integrates transformer-based panoptic segmentation (Mask2Former) with a closed-form Perspective-n-Line solver to estimate 6-degrees-of-freedom (6-DoF) camera poses. The novelty of the proposed approach lies in the explicit use of semantic information as a geometric constraint to guide the selection of 2D–3D correspondences for pose estimation. Semantic labels are utilised to filter line correspondences, ensuring that only stable architectural boundaries (e.g., walls, floors, and ceilings) are used in the registration process. Such semantic filtering stabilises correspondence selection, effectively mitigating pose ambiguity in repetitive indoor layouts or scenes where structural elements are partially obscured by furniture and clutter. Experimental results confirm high accuracy, achieving a median position error of 9.84 cm and an orientation error of 1.05° in complex indoor environments. This robust registration framework provides a reliable foundation for the downstream semantic enrichment and digital twin updates.",
+      "authors": [
+        "Dorota Włodarczyk",
+        "Małgorzata Jarząbek-Rychard"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-575-2026",
+      "url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-575-2026",
+      "pdf_url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-575-2026",
+      "venue": "The international archives of the photogrammetry, remote sensing and spatial information sciences/International archives of the photogrammetry, remote sensing and spatial information sciences",
+      "score": 18,
+      "matched_terms": [
+        "BIM",
+        "bim models",
+        "digital twin"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "提出一种基于单幅图像与现有BIM模型配准的语义增强方法，利用Mask2Former全景分割和透视-n-线求解器估计六自由度相机位姿，并通过语义标签过滤线对应关系以稳定配准过程。实验表明，该方法在复杂室内环境中实现了9.84厘米的中位位置误差和1.05°的方向误差，为数字孪生更新提供了可靠基础。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:27.964218+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170061995",
+      "title": "Integration of multi-source point clouds for bridge inventory – case study",
+      "abstract": "Abstract. The accurate inventory of hydro-technical infrastructure, such as bridge structures, requires the seamless integration of data capturing both above-water and submerged geometries. This study presents a comprehensive workflow for the fusion of multi-source point clouds acquired using an integrated Norbit iLidar and Winghead i77h multibeam echosounder (MBES) system. A primary focus is placed on the challenges of data acquisition in demanding environmental conditions, specifically under-bridge areas characterized by degraded GNSS reception and multipath interference. To ensure survey-grade accuracy and geometric consistency, a rigorous field calibration procedure, including a specialized LiDAR and MBES Patch Test, was implemented. The results demonstrate that precise determination of boresight angles — specifically a Roll correction of −0.3° for the LiDAR sensor—is critical to eliminating systematic offsets and \"ghosting\" effects in the fused model. Furthermore, the study accounts for environmental factors such as sound velocity variability (1486.5–1487.6 m/s) and beam refraction at the air-water interface. The resulting integrated point cloud, with resolutions of 1 cm (LiDAR) and 2 cm (MBES), served as the foundation for structural 3D modeling using Building Information Modeling (BIM) and Constructive Solid Geometry (CSG) approaches. The findings confirm that the proposed diagnostic and correction workflow significantly enhances the reliability of digital twins for bridge health monitoring and hydro-morphological analysis in complex engineering environments.",
+      "authors": [
+        "Paulina Jaczewska",
+        "Klaudia Pasternak",
+        "Anna Fryśkowska"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-167-2026",
+      "url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-167-2026",
+      "pdf_url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-167-2026",
+      "venue": "The international archives of the photogrammetry, remote sensing and spatial information sciences/International archives of the photogrammetry, remote sensing and spatial information sciences",
+      "score": 17,
+      "matched_terms": [
+        "BIM",
+        "building information modeling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "针对桥梁等水工基础设施，提出融合多源点云的工作流程，利用集成Norbit iLidar与Winghead i77h多波束测深系统采集水上和水下几何数据，通过严格校准消除系统偏移和重影效应，为基于BIM和CSG的结构三维建模提供厘米级精度点云，提升数字孪生可靠性。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:30.627185+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170071162",
+      "title": "Aligning Digitalization and Circular Economy Policies Towards a Zero-Waste Construction Sector: A Comparative Analysis of the EU, UK, and China",
+      "abstract": "The construction sector accounts for over 30% of global material extraction and up to 40% of solid waste, making Construction and Demolition Waste (CDW) a major sustainability challenge. This study applies the Digital Circularity Alignment Model (DCAM), supported by evidence from the RECONMATIC project, to compare policy and technological transition pathways toward circular construction in the European Union, the United Kingdom, and China. The analysis examines interactions between regulatory instruments and digital infrastructures, including Building Information Modelling (BIM) and Digital Product Passports. Results reveal a global shift toward mandatory lifecycle transparency, where digital tools function as compliance infrastructures. Crucially, the comparative review identifies distinct governance drivers: EU supranational regulation, UK procurement-driven frameworks, and Chinese state-led macroeconomic planning. Despite these differences in governance approaches, progress remains constrained by fragmented data ecosystems, limited interoperability, and uneven institutional capacity. The findings show that the principal barrier to scaling circularity is not technological availability but the misalignment between policy frameworks, data standards, and implementation mechanisms. Achieving a zero-waste construction sector by 2050 therefore requires interoperable data ecosystems and stronger policy–technology alignment.",
+      "authors": [
+        "M Luis",
+        "Elena López Gunn",
+        "Aikaterina Karanafti",
+        "I. Ortiz"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.3390/su18147473",
+      "url": "https://doi.org/10.3390/su18147473",
+      "pdf_url": "https://doi.org/10.3390/su18147473",
+      "venue": "Sustainability",
+      "score": 17,
+      "matched_terms": [
+        "BIM",
+        "building information modelling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "本研究运用数字循环对齐模型（DCAM），基于RECONMATIC项目证据，比较欧盟、英国和中国在循环建筑领域的政策与技术转型路径，分析建筑信息模型（BIM）和数字产品护照等监管工具与数字基础设施的互动。结果发现，全球正转向强制性生命周期透明度，数字工具成为合规基础设施，但碎片化数据生态、有限互操作性和不均衡机构能力仍是主要障碍。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:33.129715+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170065947",
+      "title": "Integrating timber stability analysis for building life cycle management and HBIM framework support",
+      "abstract": "Abstract. The digital documentation of heritage architecture, particularly historic wooden roof structures, has gained significant importance in recent years. Heritage Building Information Modelling (HBIM) has emerged as a crucial field that focuses on the digital representation and management of historic buildings. However, modelling heritage structures in accordance with BIM standards poses challenges due to the complex geometries and specialized information inherent with heritage timber structure. This article presents a workflow that illustrates the integration of an automated, AI-supported analysis of wood knottiness to assess unknown strength values of aged heritage timbers within building life cycle management and supporting the BIM framework. For this purpose, an algorithm for automatic wood knottiness estimation has been developed and implemented as a smartphone-based app-prototype, which facilitates efficient data collection, automatic analysis, and seamless integration into the BIM modelling process, while minimizing potential data loss during exchange.",
+      "authors": [
+        "Maria Chizhova",
+        "Junquan Pan",
+        "Gerold Kempter",
+        "Thomas Lühmann",
+        "Thomas Eißing",
+        "Mona Hess"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-559-2026",
+      "url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-559-2026",
+      "pdf_url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-559-2026",
+      "venue": "The international archives of the photogrammetry, remote sensing and spatial information sciences/International archives of the photogrammetry, remote sensing and spatial information sciences",
+      "score": 17,
+      "matched_terms": [
+        "BIM",
+        "building information modelling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "提出一种整合自动木材节疤分析的工作流程，通过智能手机应用原型实现历史木结构强度评估，并将结果无缝集成到建筑生命周期管理与HBIM框架中，以支持遗产建筑的数字化建模与信息交换。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:35.387441+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170072316",
+      "title": "Implementation of circular economy in managing construction and demolition waste through the resolve framework: a study on Sri Lankan real estate sector",
+      "abstract": "Purpose The rapid growth of the real estate sector through continuous developments, refurbishments, renovations and demolitions has intensified construction and demolition (C&amp;D) waste, worsening environmental impacts in major cities. Therefore, this research aims to investigate the implementation of circular economy (CE) principles through the ReSOLVE framework for effective C&amp;D waste management within Sri Lanka's real estate sector. Design/methodology/approach After a comprehensive literature review identifying C&amp;D waste management practices, a mixed-methods research approach was utilised. Data were collected through 10 expert interviews and a focused questionnaire survey, which received 30 responses. The data analysis was done through manual content analysis with the use of Excel to identify the C&amp;D waste management practices in Sri Lanka, and the relative importance index (RII) was calculated to assess their importance level and the current implementation levels. Findings Findings revealed best practices for implementing the CE concept for C&amp;D waste management through the ReSOLVE framework in Sri Lanka. Using prefabricated items designed for deconstruction, manufacturing and assembly to reduce onsite waste generation has not been widely practised in the Sri Lankan property sector. Moreover, blockchain technologies, GIS and building information modelling have not been sufficiently used due to the lack of understanding of the potential of digital technologies, and further research is suggested to increase their uptake. Further, this study provides actionable insights such as implementing proper store management and adequate labour supervision under ReSOLVE framework. Originality/value This study provides pioneering insights into the use of digital technologies and strategies to achieve circularity in managing C&amp;D waste.",
+      "authors": [
+        "Saumya Perera",
+        "Udayangani Kulatunga",
+        "Maheshi Tennakoon",
+        "Panchali Weerakoon"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.1108/pm-02-2025-0021",
+      "url": "https://doi.org/10.1108/pm-02-2025-0021",
+      "pdf_url": null,
+      "venue": "Property Management",
+      "score": 12,
+      "matched_terms": [
+        "building information modelling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "本研究以斯里兰卡房地产行业为对象，采用混合研究方法，通过专家访谈和问卷调查，基于ReSOLVE框架探讨循环经济在建筑垃圾管理中的实施。研究发现，预制构件、区块链、GIS和建筑信息模型等数字技术因认知不足而应用有限，并提出了具体改进建议。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:37.735822+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170053703",
+      "title": "Evaluation of TLS and PMLS Sensors for Cultural Heritage Documentation and HBIM Modelling: The Case Study of San Giacomo Church in Como, Italy",
+      "abstract": "Abstract. Static Terrestrial Laser Scanning (TLS) and SLAM-based Portable Mobile Laser Scanning (PMLS) are increasingly adopted in Cultural Heritage (CH) documentation, but their suitability for Historic/Heritage Building Information Modelling (HBIM) depends on both data quality and acquisition conditions. This paper compares a 2022 TLS survey and a 2025 handheld PMLS survey of San Giacomo Church (Como, Italy) to assess whether the latter can reliably support HBIM-oriented documentation. The methodology combines dataset-level comparison and ROI-based analysis on four stable architectural elements: apsis, pillar, timber roof truss, and central dome. Three complementary metrics were used: a local density proxy, a scale-dependent coverage ratio, and M3C2 distance statistics for geometric agreement. Results show that PMLS is consistently less dense than TLS but remains effective for 1:100 scale documentation and, in several cases, also for 1:50. Statistics on M3C2 distance remain generally within centimetric ranges, indicating good local agreement where surfaces are effectively observed. The study demonstrates that sensor suitability not only depends on the geometric complexity but also on sensor-to-surface distance, visibility, and acquisition geometry, supporting hybrid TLS–PMLS workflows for CH HBIM.",
+      "authors": [
+        "M. Garramone",
+        "Luigi Barazzetti",
+        "Marco Scaioni"
+      ],
+      "published": "2026-07-22",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-151-2026",
+      "url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-151-2026",
+      "pdf_url": "https://doi.org/10.5194/isprs-archives-xlix-b1-2026-151-2026",
+      "venue": "The international archives of the photogrammetry, remote sensing and spatial information sciences/International archives of the photogrammetry, remote sensing and spatial information sciences",
+      "score": 12,
+      "matched_terms": [
+        "building information modelling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "通过对比2022年静态地面激光扫描与2025年手持移动激光扫描在意大利圣贾科莫教堂的测绘数据，采用密度代理、覆盖率和M3C2距离等指标评估两种传感器对历史建筑信息建模的适用性。结果表明移动扫描虽密度较低，但在1:100比例尺下有效，且与静态扫描的厘米级几何一致性良好，支持混合扫描工作流用于文化遗产文档。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:40.448926+00:00"
+    },
     {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7169875131",
@@ -13,10 +300,10 @@
         "Yunxin Ji"
       ],
       "published": "2026-07-21",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.54254/2755-2721/2026.ch35596",
       "url": "https://doi.org/10.54254/2755-2721/2026.ch35596",
-      "pdf_url": null,
+      "pdf_url": "https://ace.ewapub.com/article/view/35596.pdf",
       "venue": "Applied and Computational Engineering",
       "score": 34,
       "matched_terms": [
@@ -26,10 +313,90 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种BIM与物联网集成的框架，将BIM模型与现场物联网设备结合，实现施工环境监测与能耗管理的统一窗口及数据协同。该框架引入阈值触发降尘、动态能源调度等优化策略，并融合GIS、边缘计算与数字孪生技术，以提升数据共享效率与智能施工管理决策能力。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-23T03:51:36.905023+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7169829694",
+      "title": "Research on the Integration of Steel Structure Design and Fabrication Based on MBSE",
+      "abstract": "Existing BIM-based workflows for complex spatial steel bridges often support 3D visualization and documentation, but they still lack a formal requirement-to-function traceability mechanism and a reliable automated link from special-shaped surface modeling to fabrication-oriented data. To address this gap, this study develops and validates a Model-Based Systems Engineering (MBSE)-oriented design–fabrication integration workflow for special-shaped steel bridges. The workflow combines requirement decomposition, functional architecture modeling, ENOVIA-based collaborative data management, skeleton-driven parametric modeling, User-Defined Feature (UDF) templates, Engineering Knowledge Language (EKL) batch instantiation, an IFC-based manufacturing information extension, ProNest nesting, and model-driven NC-code generation. The method was implemented for the Q7 North Pedestrian Bridge, a spatially twisted special-shaped steel landscape bridge. In the case study, the proposed workflow reduced typical repetitive component modeling time by 70.8%, shortened drawing generation time by 80.0%, increased nesting material utilization from 84.6% to 91.8%, and controlled the maximum coordinate-transformation deviation of formwork points within 1.42 mm. Field validation showed a mean fabrication deviation of 1.6 mm and a maximum site assembly closure deviation of 4.5 mm. The results indicate that the proposed MBSE-oriented digital thread improves design consistency, reduces manual data re-entry, and strengthens traceability from requirements to manufacturing and assembly. The study provides a reproducible case-study framework for model-driven steel bridge design–fabrication integration and identifies the limitations of UDF-library construction cost, software-specific learning requirements, and single-project validation.",
+      "authors": [
+        "Xiang Guo",
+        "Yi Yang",
+        "Wei Liu",
+        "Dexing Huang",
+        "Tianhao Lin",
+        "Huang Feng"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.3390/met16070812",
+      "url": "https://doi.org/10.3390/met16070812",
+      "pdf_url": "https://www.mdpi.com/2075-4701/16/7/812/pdf?version=1784606787",
+      "venue": "Metals",
+      "score": 25,
+      "matched_terms": [
+        "ifc-based",
+        "bim-based",
+        "BIM",
+        "IFC"
+      ],
+      "ai_summary_zh": "针对现有BIM工作流在复杂空间钢桥中缺乏需求-功能追溯机制及异形曲面建模到制造数据自动链接的问题，提出基于MBSE的设计-制造集成工作流，结合需求分解、骨架驱动参数化建模、IFC制造信息扩展及模型驱动数控代码生成等方法。案例验证表明，该方法使重复构件建模时间减少70.8%，图纸生成时间缩短80.0%，套料材料利用率从84.6%提升至91.8%，现场装配最大偏差控制在4.5毫米内。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:43.053089+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170115335",
+      "title": "Estudi per a la millora del traçat de la carretera que uneix Albarracín amb els Paisatges Protegits del Rodeno (T.M. d&apos;Albarracín), a la província de Terol mitjançant l&apos;ús del Building Information Modelling (BIM)",
+      "abstract": "[ES] Identificación del problema: la actual pista forestal VF-TE-05, pese a ser un camino que queda fuera de los ámbitos de la Instrucción 3.1-IC, presenta un tráfico en cierta medida relevante. Esto implica problemas especialmente en el momento en el que se cruzan dos vehículos (que pueden ser de dimensiones importantes). La parte más problemática que se ha detectado es la sección transversal, si bien también otros aspectos como el diseño en planta o en alzado también imponen restricciones. Formulación del problema: se realizará un estudio detallado del diseño viario, visibilidades y secciones transversales, con el objetivo de determinar el grado de problema de la situación actual y en qué puntos es necesaria la actuación (y qué actuaciones). Algunos ejemplos de posibles medidas son el aumento de la plataforma, despejes, aumentos de radios, señalización, etc. Resolución del problema: el proyecto será llevado a cabo mediante herramientas BIM y se verificarán los mismos parámetros que en el diagnóstico, analizando el grado de cumplimiento. En función de las medidas aplicadas, se priorizarán qué actuaciones deben realizarse, o bien se realizará un estudio multicriterio de las alternativas.",
+      "authors": [
+        "Martín Cristóbal Marconell Pérez"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": null,
+      "url": "https://openalex.org/W7170115335",
+      "pdf_url": null,
+      "venue": "RiuNet (Universitat Politècnica de València)",
+      "score": 22,
+      "matched_terms": [
+        "BIM",
+        "building information modelling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "该研究运用BIM技术，对西班牙特鲁埃尔省连接阿尔瓦拉辛与罗代诺保护景观的VF-TE-05森林道路进行线形优化设计。通过详细分析当前道路的横断面、平面及纵断面设计问题，提出加宽路基、改善视距、增大转弯半径等改造方案，并利用BIM工具验证改进效果。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:45.756029+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170101621",
+      "title": "A Model for BIM Adoption in the Government Sector of Bulgaria",
+      "abstract": "Building Information Modelling (BIM) is a key component of the digital transformation of the construction industry. The government of Bulgaria has accepted a National Strategy for The Digital Transformation of the Construction Industry which defines a set of goals and measures to achieve these goals. In this paper, we examine the goals and measures of the strategy related to adoption of BIM in the government sector and purpose a model for the adoption, emphasizing the use of existing standards and open-source solutions.",
+      "authors": [
+        "Alexander Petkov"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.3390/engproc2026150041",
+      "url": "https://doi.org/10.3390/engproc2026150041",
+      "pdf_url": "https://doi.org/10.3390/engproc2026150041",
+      "venue": "",
+      "score": 20,
+      "matched_terms": [
+        "BIM",
+        "building information modelling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "针对保加利亚政府部门的BIM采纳问题，基于国家战略目标与措施，提出一个强调利用现有标准和开源解决方案的采纳模型。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:47.583380+00:00"
     },
     {
       "source": "OpenAlex",
@@ -43,10 +410,10 @@
         "A. Daneshvaran"
       ],
       "published": "2026-07-21",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.5829/ije.2027.40.02b.18",
       "url": "https://doi.org/10.5829/ije.2027.40.02b.18",
-      "pdf_url": "https://doi.org/10.5829/ije.2027.40.02b.18",
+      "pdf_url": "https://www.ije.ir/article_243841_24b56d211c11c5c67ace2eb96eb4022d.pdf",
       "venue": "International Journal of Engineering",
       "score": 19,
       "matched_terms": [
@@ -54,10 +421,68 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对油气行业项目，提出一种结合建筑信息模型（BIM）与集成项目交付（IPD）的协同框架，并采用多准则决策方法（TOPSIS）评估关键绩效指标。通过伊朗两个案例验证，该集成方法可缩短工期、降低成本并提升投资回报率，为复杂工业项目优化决策提供参考。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-23T03:51:39.252444+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170043075",
+      "title": "Implementasi Building Information Modeling Terintegrasi Dalam Pencapaian Efisiensi dan Keberlanjutan Proyek Konstruksi",
+      "abstract": "Sektor konstruksi menghadapi tantangan ganda dalam mencapai efisiensi material sekaligus mencapai efisiensi material sekaligus meminimalkan dampak lingkungan. Metode estimasi volume pekerjaan (Quantity Take-Off/QTO) konvensional berbasis gambar 2D masih banyak digunakan di Indonesia dan rentan terhadap human error, yang berpotensi memicu pembengkakan biaya sekaligus peningkatan jejak karbon akibat kelebihan material. Penelitian ini bertujuan mengimplementasikan Building Information Modeling (BIM) secara terintegrasi hingga dimensi ke-enam (BIM 6D) untuk mengektraksi volume pekerjaan secara otomatis dan menganalisis emisi karbon pada proyek konstruksi yang menjadi studi kasus seluas 3.060 m2. Metode yang digunakan adalah pendekatan kuantitatif deskriptif dengan permodelan 3D menggunakan Autodesk Revit, ekstraksi QTO melalui fitur Schedule/Quantities, dan analisis embodied carbon fase A1-A3 menggunakan add-in bim.com. Hasil QTO menunjukkan total pekerjaan beton menghasilkan 543,95 m3 dan pekerjaan baja sebesar 67.744,25 kg. Analisis karbon menghasilkan total emisi sebesar 357,84 kg /m2 GFA atau setara 1.095 ton , dengan penyumbang terbesar adalah elemen dinding (115 kg /m2) dan atap (100 kg /m2). Nilai ini berada jauh dibawah batas sustainbility budget non-domestik sebesar 1.400 kg /m2. Penelitian ini membuktikan bahwa impelementasi BIM 6D secara terintegrasi mampu menghasilkan perencanaan yang efisien secara material sekaligus ramah lingkungan",
+      "authors": [
+        "Moch Ridho Kautsar",
+        "Lila Winanda",
+        "Hadi Surya Wibawanto Sunarwadi"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.56071/deteksi.v11i2.1924",
+      "url": "https://doi.org/10.56071/deteksi.v11i2.1924",
+      "pdf_url": "https://doi.org/10.56071/deteksi.v11i2.1924",
+      "venue": "Jurnal Teknik Sipil",
+      "score": 19,
+      "matched_terms": [
+        "BIM",
+        "building information modeling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "通过集成BIM 6D技术，在3060平方米的印尼建筑项目中自动提取工程量并分析隐含碳排放，结果显示混凝土与钢材用量分别为543.95立方米和67,744.25千克，总碳排放量为357.84千克/平方米，远低于非住宅可持续预算上限，验证了该方法在提升材料效率与降低环境影响的可行性。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:50.204859+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7169829954",
+      "title": "BIM-Constrained Elastic Fusion Navigation Framework for UAV Bridge Inspection Under Intermittent GNSS Outage",
+      "abstract": "UAV bridge inspection requires centimeter-level global positioning in the engineering coordinate frame to associate detected defects with BIM component IDs and mileage stakes. Intermittent GNSS outages beneath beams, inside box girders, and in pier-dense regions cause conventional navigation methods to accumulate drift or produce discontinuous pose estimates. This paper presents BCEF-Nav, a BIM-constrained elastic fusion navigation framework for UAV bridge inspection. The framework adaptively adjusts GNSS constraints according to signal availability and replaces degraded GNSS references with semantic–geometric constraints from a high-precision as-built BIM model within a sliding-window optimizer. Semantic-guided feature matching suppresses false correspondences in repetitive bridge structures. BCEF-Nav uses only low-cost commercial sensors and is compatible with mainstream inspection UAVs. Digital twin simulations and field experiments achieved an ATE RMSE of 5.7 cm after 120 s of complete GNSS occlusion and a 100% positioning success rate with positioning errors below 10 cm, outperforming seven recent state-of-the-art baselines.",
+      "authors": [
+        "Zeyu Li",
+        "H T Li",
+        "Chenhong Xiangli",
+        "Yuanyuan Shen",
+        "Yi Yu",
+        "Feng Li"
+      ],
+      "published": "2026-07-21",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.3390/drones10070552",
+      "url": "https://doi.org/10.3390/drones10070552",
+      "pdf_url": "https://www.mdpi.com/2504-446X/10/7/552/pdf?version=1784624699",
+      "venue": "Drones",
+      "score": 18,
+      "matched_terms": [
+        "BIM",
+        "bim model",
+        "digital twin"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "针对无人机桥梁检测中因GNSS信号中断导致的定位漂移问题，提出BCEF-Nav弹性融合导航框架，通过滑动窗口优化器自适应调整GNSS约束，并利用高精度竣工BIM模型中的语义-几何约束替代退化GNSS参考。实验表明，该方法在120秒完全GNSS遮挡下实现5.7厘米的ATE RMSE和100%定位成功率。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:52.699787+00:00"
     },
     {
       "source": "OpenAlex",
@@ -68,10 +493,10 @@
         "Xuan Wang"
       ],
       "published": "2026-07-21",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.54254/2755-2721/2026.ch35560",
       "url": "https://doi.org/10.54254/2755-2721/2026.ch35560",
-      "pdf_url": null,
+      "pdf_url": "https://ace.ewapub.com/article/view/35560.pdf",
       "venue": "Applied and Computational Engineering",
       "score": 17,
       "matched_terms": [
@@ -79,7 +504,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "以智慧工地为研究对象，系统构建了包含管理平台、BIM技术和六层物联网控制体系的三级安全管理模型，并通过山东省科技馆新馆项目验证其应用效果。该模型在缩短工期、降低材料成本和减少质量返工方面取得成效，同时分析了设备不稳定、数据标准不统一等推广制约因素并提出改进建议。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-23T03:51:41.368506+00:00"
@@ -94,7 +519,7 @@
         "Li Chen"
       ],
       "published": "2026-07-21",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-22T06:00:27.337203",
       "doi": "https://doi.org/10.5281/zenodo.21470329",
       "url": "https://doi.org/10.5281/zenodo.21470329",
       "pdf_url": "https://doi.org/10.5281/zenodo.21470329",
@@ -104,7 +529,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出compas_lca框架，将IFC建筑模型与EPD环境数据统一为标准化模式，实现建筑构件与EPD的确定性匹配，并支持可复现的生命周期评估报告自动生成。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-23T03:51:43.038162+00:00"
@@ -135,10 +560,38 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-21T03:52:59.196199+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出AGORA-BIM框架，通过检索增强本体注入、智能体自修正SPARQL生成和空间推理三个模块，解决BIM知识图谱自然语言查询中因提示词限制、复杂查询错误及隐式空间概念缺失导致的推理不准确问题。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:00.792430+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170045315",
+      "title": "BIM-BASED STEEL QUANTITY TAKE-OFF EVALUATION FOR STEEL FRAME BRIDGES: A COMPARISON BETWEEN AUTODESK REVIT AND CONVENTIONAL CALCULATIONS",
+      "abstract": "Building Information Modeling (BIM) has become an effective approach for improving the efficiency and accuracy of quantity take-off (QTO) in construction projects, including steel truss bridges. This study evaluates the accuracy of steel weight quantity take-off generated using Autodesk Revit 2025 by comparing it with conventional calculations based on the Detail Engineering Design (DED). The comparison was conducted on 34 steel profile groups consisting of 210 structural members. Steel weight obtained from Autodesk Revit was compared with conventional calculations using percentage difference and statistical indicators, including Mean Error (ME), Mean Absolute Error (MAE), Mean Absolute Percentage Error (MAPE), and the Coefficient of Determination (R²). The results show that Autodesk Revit produced a total steel weight of 27,526.57 kg, while the conventional calculation yielded 27,478.92 kg, resulting in a percentage difference of only 0.17%. The statistical evaluation produced an ME of 1.40 kg, an MAE of 9.31 kg, a MAPE of 1.89%, and an R² value of 0.9996, indicating excellent agreement between the two methods. Unlike previous studies that mainly compared total quantities, this study evaluates steel weight quantity take-off at the individual profile level, providing a more detailed assessment of Autodesk Revit accuracy for steel truss bridge structures. The findings demonstrate that Autodesk Revit 2025 is a reliable and effective tool for BIM-based steel quantity take-off.",
+      "authors": [
+        "Mutiara Ramadhani",
+        "Gunawan",
+        "Roma Dearni"
+      ],
+      "published": "2026-07-20",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.5281/zenodo.21485753",
+      "url": "https://doi.org/10.5281/zenodo.21485753",
+      "pdf_url": "https://doi.org/10.5281/zenodo.21485753",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "score": 29,
+      "matched_terms": [
+        "BIM",
+        "bim-based",
+        "building information modeling"
+      ],
+      "first_seen": "2026-07-24T03:51:16.844272+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
+      "ai_summary_zh": "通过对比Autodesk Revit 2025与传统基于详细工程设计计算在34个钢型材组、210个构件上的钢材重量，发现两者总量差异仅0.17%，统计指标（ME=1.40 kg, MAE=9.31 kg, MAPE=1.89%, R²=0.9996）表明Revit在单个构件层面具有高精度，验证了其作为钢桁架桥BIM工程量计算工具的可靠性。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:55.368229+00:00"
     },
     {
       "source": "OpenAlex",
@@ -150,7 +603,7 @@
         "Aniss Moumen"
       ],
       "published": "2026-07-20",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16142890",
       "url": "https://doi.org/10.3390/buildings16142890",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/14/2890/pdf?version=1784561206",
@@ -162,7 +615,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-22T03:53:35.532382+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过对摩洛哥建筑领域工程师、设计师及专家进行半结构化访谈与主题分析，发现该国BIM实施仍停留在第1级，经济、制度、法律及能力障碍是造成感知有用性与实际采纳差距的主因，而AI被视为增强专业决策的辅助技术。研究建议建立国家BIM授权与能力中心，完善法规框架，并推动适应本地条件的研发以加速数字化转型。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:37.501100+00:00"
@@ -176,7 +629,7 @@
         "Hao Wang"
       ],
       "published": "2026-07-20",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-22T05:54:00.624950",
       "doi": "https://doi.org/10.63313/hmt.9029",
       "url": "https://doi.org/10.63313/hmt.9029",
       "pdf_url": "https://doi.org/10.63313/hmt.9029",
@@ -188,7 +641,7 @@
         "bim-based"
       ],
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "基于全生命周期管理理论和数字协同理论，采用文献综述、实地调研和案例分析等方法，构建了涵盖组织架构、分阶段BIM实施流程和数字协同平台的三维BIM全生命周期工程管理体系，并提出了设计阶段医疗流程前置建模、施工阶段4D/5D控制、竣工数字化交付及运维阶段BIM模型与医疗系统数据联动的实施路径。该体系能减少医疗专项工程设计变更、缩短工期并降低长期运维成本。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-23T03:51:45.416103+00:00"
@@ -208,7 +661,7 @@
         "Phatsaphan Charnwasununth"
       ],
       "published": "2026-07-20",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1007/s43621-026-04070-3",
       "url": "https://doi.org/10.1007/s43621-026-04070-3",
       "pdf_url": "https://doi.org/10.1007/s43621-026-04070-3",
@@ -219,7 +672,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-22T03:53:35.532382+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对泰国高层建筑隐含碳排放评估中通用数据库不准确的问题，提出一种本地化的BIM集成生命周期评估工作流，通过将Autodesk Revit与Kit Carbon软件结合并利用泰国温室气体管理组织数据库，以清迈大学13层停车楼为案例验证，发现结构隐含碳总量为3659.89吨二氧化碳当量，其中上部结构和基础是主要碳热点。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:39.752582+00:00"
@@ -234,7 +687,7 @@
         "Faizanul Haque"
       ],
       "published": "2026-07-20",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-22T05:54:00.624950",
       "doi": "https://doi.org/10.1007/s44290-026-00563-2",
       "url": "https://doi.org/10.1007/s44290-026-00563-2",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44290-026-00563-2.pdf",
@@ -245,7 +698,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-22T03:53:35.532382+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "该研究采用JBI范围综述方法，分析了76篇文献，探讨建筑业职业安全健康挑战及新兴技术（如BIM、物联网、VR/AR）在风险预测与实时监控中的应用，并提出强化安全文化与管理实践的建议。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:41.675650+00:00"
@@ -260,7 +713,7 @@
         "Yahya Alshawabkeh"
       ],
       "published": "2026-07-20",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-21T05:56:28.042755",
       "doi": "https://doi.org/10.3390/heritage9070284",
       "url": "https://doi.org/10.3390/heritage9070284",
       "pdf_url": "https://doi.org/10.3390/heritage9070284",
@@ -270,7 +723,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-22T03:53:35.532382+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "本研究提出一种结构化扫描至HBIM工作流程，集成地面激光扫描、摄影测量与遗产建筑信息建模，用于约旦倭马亚沙漠建筑Qasr Harrana的数字建档。该流程结合实景捕捉技术与参数化建模，生成富含几何、建筑及病害信息的HBIM模型，并通过几何验证评估其准确性，为干旱环境遗产保护提供可复用的数字档案。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:43.854157+00:00"
@@ -284,7 +737,7 @@
         "Zhuo Fu"
       ],
       "published": "2026-07-20",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-22T05:54:00.624950",
       "doi": "https://doi.org/10.54097/1zb1rk42",
       "url": "https://doi.org/10.54097/1zb1rk42",
       "pdf_url": "https://drpress.org/ojs/index.php/mmaa/article/download/35420/34604",
@@ -295,7 +748,7 @@
         "bim-based"
       ],
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对全现浇混凝土结构住宅建筑，结合BIM、物联网和人工智能技术，通过武汉住宅项目案例，分析了BIM在碰撞检测与模板设计、物联网在混凝土养护与结构监测、以及AI在设备维护与能源优化中的应用，旨在推动智能建造技术的采纳。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-23T03:51:47.368745+00:00"
@@ -333,7 +786,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "BIMQuake是一个Python软件包，通过整合IFC建筑信息模型与地震危险性分析及结构评估，实现对砌体建筑的抗震韧性评估。该工具可提取IFC模型的结构数据、基于地理位置获取地震参数，并进行线性和非线性静力分析，以评估墙体安全系数和全局脆弱性指数。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:12:19.499536+00:00"
@@ -362,7 +815,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:02.840015+00:00",
       "first_seen": "2026-07-22T03:53:35.532382+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -385,7 +838,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-20T04:13:29.384577+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过系统文献综述，梳理了人工智能辅助被动式设计策略在尼日利亚气候适应性经济适用房中的应用，重点分析了机器学习、生成式设计及AI集成BIM等技术的优化潜力。研究提出了一个整合气候数据、AI设计分析与性能评估的被动式设计框架，为提升建筑能效与居住舒适度提供了系统性方法。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-20T04:13:31.238973+00:00"
@@ -416,7 +869,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-19T04:02:05.503987+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对印度尼西亚Singaraja第三国立职业中学建筑设计与信息建模专业师生缺乏BIM知识与操作技能的问题，通过现场调研、培训与实践操作，传授Autodesk Revit软件的使用方法，有效提升了师生在建筑信息建模、2D/3D绘图及项目调度与成本估算方面的技术能力。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:07.650552+00:00"
@@ -445,7 +898,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-19T04:02:05.503987+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种BIM辅助的360度视觉SLAM框架，通过将BIM注册参考点直接集成到光束法平差中，实现相机位姿在BIM坐标系下的自主估计与优化。该方法仅需360度视频数据和少量参考点即可同步完成三维相机位姿估计与BIM对齐，相比现有技术将平均均方根误差降低26.22%至39.54%，并将相机位姿对齐时间减少95.80%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:10.227152+00:00"
@@ -472,7 +925,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-19T04:02:05.503987+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过范围综述协议，系统评估建筑信息模型（BIM）在建筑、工程、施工与运营（AECO）领域增材制造（AM）研究中的整合程度与深度，并识别相关研究空白。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:12.296261+00:00"
@@ -506,7 +959,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-19T04:02:05.503987+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "利用BIM技术对巴西Governador Valadares地区一栋住宅进行三维建模与EnergyPlus热工模拟，比较了三种墙体系统（常规砌体、结构砌体、轻钢框架）的被动热性能。结果表明常规砌体因高热惰性年热负荷最低，而无保温轻钢框架夏季制冷需求增加32.3%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:14.836631+00:00"
@@ -536,7 +989,7 @@
         "industry foundation class"
       ],
       "first_seen": "2026-07-19T04:02:05.503987+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过扩展IFC模式，提出将结构健康监测数据的关键性能指标与桥梁信息模型集成的框架，并利用xBIM™工具包实现参数映射，案例验证了该方法在桥梁资产管理中的有效性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:17.029719+00:00"
@@ -556,7 +1009,7 @@
         "Priscila Cedillo"
       ],
       "published": "2026-07-17",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16142850",
       "url": "https://doi.org/10.3390/buildings16142850",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/14/2850/pdf?version=1784282586",
@@ -568,7 +1021,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-21T03:52:59.196199+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过三级文献综述方法，系统分析了2018至2025年间57篇关于BIM数字孪生用于可持续建筑管理的二级文献，揭示了该领域在方法论、框架、软件工具及互操作性等方面存在的碎片化问题，并绘制了未来研究优先方向。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:04.990348+00:00"
@@ -595,7 +1048,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-19T04:02:05.503987+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出结构强度重分布方法，通过能量电阻率参数量化损伤相关结构特性，结合基于建筑信息模型和有限元分析的数字孪生，利用桥梁加速度计数据与模态分析实现宏观损伤建模。该方法能识别桥梁预期损伤区段，并灵敏反映预应力管道应力状态。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:19.479520+00:00"
@@ -612,7 +1065,7 @@
         "Karen Castañeda"
       ],
       "published": "2026-07-17",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-21T05:56:28.042755",
       "doi": "https://doi.org/10.3390/app16147184",
       "url": "https://doi.org/10.3390/app16147184",
       "pdf_url": "https://doi.org/10.3390/app16147184",
@@ -623,7 +1076,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-22T03:53:35.532382+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "本研究提出一种结合建筑信息模型（BIM）与虚拟现实（VR）的工具及方法框架，用于支持住宅装修选材决策。通过设计科学研究方法开发原型，经53位潜在用户评估，该方法在成本控制、减少浪费及项目感知方面获得87.7/100的平均改进评分，有效提升了选材过程中的沟通效率与设计速度。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:45.964358+00:00"
@@ -638,7 +1091,7 @@
         "Mehmet Nurettin Uğural"
       ],
       "published": "2026-07-17",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16142855",
       "url": "https://doi.org/10.3390/buildings16142855",
       "pdf_url": "https://doi.org/10.3390/buildings16142855",
@@ -649,7 +1102,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-21T03:52:59.196199+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "本研究采用解释性序贯混合方法，以土耳其建筑行业为对象，检验了BIM赋能的数字治理能力与组织任期对组织双元性的预测作用。研究发现，在持续波动的市场环境下，数字治理能力与组织任期是比整合型领导更稳定的结构预测因子，为建筑工程项目管理提供了新的理论解释。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:07.257704+00:00"
@@ -680,7 +1133,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-18T03:39:47.260574+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于规则驱动的建模方法，利用历史建筑信息模型和工业基础类框架，对中国木梁架结构进行数字化表达，为传统建筑遗产的信息化管理提供技术支撑。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-18T03:39:48.988400+00:00"
@@ -763,7 +1216,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-18T03:39:47.260574+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过文献综述、案例研究和行业访谈的混合方法，回顾了模块化施工、城市采矿和可拆解设计等循环经济策略，并倡导利用建筑信息模型、数字孪生和材料护照等工具，为建筑业向资源高效和再生型环境转型提供框架。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-18T03:39:55.360216+00:00"
@@ -793,14 +1246,14 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-18T03:39:47.260574+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出BIMStruct3D混合学习-几何管线，用于自动化扫描到BIM重建，通过拓扑细化提升结构模型精度。该方法结合深度学习与几何处理，实现从点云到IFC兼容模型的端到端重建。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-18T03:39:57.594472+00:00"
     },
     {
       "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7168816597",
+      "source_id": "https://openalex.org/W7169161786",
       "title": "<b>Adapting Pueblo-Style Design for Sustainable Residential Development in Bahrain</b>",
       "abstract": "The project explores the possibility of creating a sustainable hybrid housing system based on Pueblo architecture but adapted to the hot-humid climate of Bahrain. The paper discusses the excessive use of mechanical cooling in the region, with residential buildings using a large share of energy because of the high temperature and high humidity. The proposed system is a combination of stabilized adobe, engineered timber and bamboo, which combine with traditional passive design approach and modern construction technologies to form a thermally efficient and structurally feasible model of a residence.The study creates a fully coordinated Building Information Model (BIM) with the help of Revit and structural validation with the help of Robot Structural Analysis and energy simulations with the help of EnergyPlus. Findings indicate that adobe envelope has a great thermal performance, which lowers the thermal conductivity, thermal time lag, and heat transfer across the wall. This results in enhanced indoor comfort and peak cooling demand is reduced, which is important during the long cooling season in Bahrain. The energy analysis also shows that traditional building leads to high cooling loads (more than 60 percent of the total energy consumption) which adds weight to the necessity of better envelope design. The roof system, which is highly-performance insulated and reflective, was also superior in thermal resistance which was important in reducing solar heat gain.ANSYS finite element simulations were presented to help in the analysis of heat transfer at the material level to favor detailed thermal understanding. A model prototype wall was examined to investigate temperature gradients and confirm thermal properties to scale to full-building analysis. This measure ratifies the significance of temporary thermal conduct and contact interaction of materials in a hybrid.",
       "authors": [
@@ -810,9 +1263,9 @@
       ],
       "published": "2026-07-16",
       "updated": "2026-07-17T05:58:32.477365",
-      "doi": "https://doi.org/10.58014/aubh.33002528",
-      "url": "https://doi.org/10.58014/aubh.33002528",
-      "pdf_url": "https://doi.org/10.58014/aubh.33002528",
+      "doi": "https://doi.org/10.58014/aubh.33002528.v1",
+      "url": "https://doi.org/10.58014/aubh.33002528.v1",
+      "pdf_url": "https://doi.org/10.58014/aubh.33002528.v1",
       "venue": "American University of Bahrain",
       "score": 15,
       "matched_terms": [
@@ -820,10 +1273,35 @@
         "building information model"
       ],
       "first_seen": "2026-07-18T03:39:47.260574+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "本研究基于巴林湿热气候，探索融合普韦布洛建筑风格的可持续混合住宅系统，通过Revit建立建筑信息模型（BIM），并利用Robot Structural Analysis和EnergyPlus进行结构验证与能耗模拟。结果表明，土坯围护结构显著降低热导率和峰值冷却需求，屋顶系统通过高性能隔热与反射设计有效减少太阳得热，为湿热地区可持续住宅设计提供了可行方案。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-18T03:40:00.356439+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7168871111",
+      "title": "Fully automated method for parametric modelling of industrial facility elements",
+      "abstract": "Downstream applications of infrastructure models are highly reliant on accurate recovery of geometrical parameters of elements, especially in industrial facilities. However, current segmentation methods produce either point clusters, meshes or library templates as outputs, ignoring underlying geometry. This paper introduces an automated method for extracting geometrical parameters from output point clusters of instance segmentation methods. The paper proposes a two-stage pipeline consisting of regression of geometric parameters from point clusters, followed by iterative optimisation. This paper demonstrates that a robust objective function for measuring deviation between input and reconstructed models is critical for optimising geometries. The proposed solution is robust to noise and occlusions, and outperforms existing methods on primitive geometries, achieving around 30% reduction in chamfer and parameter errors in occluded scans compared to RANSAC. Crucially, it generalises to arbitrary parametric shapes, enabling modelling of non-primitive geometries. The method directly supports scan-to-BIM workflows by enabling reliable, parameter-consistent geometric modelling.",
+      "authors": [
+        "Haritha Jayasinghe",
+        "Mudan Wang",
+        "Ioannis Brilakis"
+      ],
+      "published": "2026-07-16",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.1016/j.autcon.2026.107142",
+      "url": "https://doi.org/10.1016/j.autcon.2026.107142",
+      "pdf_url": "https://doi.org/10.1016/j.autcon.2026.107142",
+      "venue": "Automation in Construction",
+      "score": 13,
+      "matched_terms": [
+        "scan-to-bim",
+        "BIM"
+      ],
+      "ai_summary_zh": "提出一种从实例分割点云中自动提取工业设施构件几何参数的两阶段方法，包括参数回归与迭代优化。该方法对噪声和遮挡具有鲁棒性，在原始几何体上相比RANSAC减少约30%的倒角与参数误差，并能泛化至任意参数化形状，直接支持扫描到BIM工作流。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:57.938804+00:00"
     },
     {
       "source": "OpenAlex",
@@ -925,7 +1403,7 @@
         "Maria Eduarda Montezzo Coelho"
       ],
       "published": "2026-07-15",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1016/j.nucengdes.2026.115100",
       "url": "https://doi.org/10.1016/j.nucengdes.2026.115100",
       "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0029549326003523/pdf",
@@ -939,7 +1417,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-18T03:39:47.260574+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出Alchemy框架，通过集成网络界面、设备布局优化、自动管道布线与原生IFC 4.0几何生成四个模块于统一数据模型，实现从二维核系统定义到IFC兼容三维建筑信息模型的端到端自主生成，避免专有软件转换与数据丢失。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-18T03:40:05.634715+00:00"
@@ -996,7 +1474,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-20T04:13:29.384577+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "这篇概念性综述基于复杂适应系统、权变理论和精益建造思想，探讨了自适应项目管理框架在复杂土木工程环境中的应用，并提出了一个描述自适应要素间相互作用以加速交付的概念模型，同时识别了包括BIM和数字孪生在内的技术推动因素与合同僵化等障碍。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-20T04:13:35.286362+00:00"
@@ -1132,7 +1610,7 @@
         "Sigrid Brell-Cockan"
       ],
       "published": "2026-07-15",
-      "updated": "2026-07-17T05:52:16.776730",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1007/s41693-026-00207-y",
       "url": "https://doi.org/10.1007/s41693-026-00207-y",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s41693-026-00207-y.pdf",
@@ -1146,7 +1624,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-18T03:40:10.942742+00:00",
       "first_seen": "2026-07-19T04:02:05.503987+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1175,7 +1653,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-16T03:45:17.341272+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对西班牙北部传统谷仓“hórreos”的保护需求，探索了历史/遗产建筑信息模型（HBIM）方法的应用潜力。通过集成激光扫描、摄影测量与历史档案研究，构建了包含几何信息、历史数据、材料及病害记录的HBIM模型，为这类分散且易损的乡土遗产提供了文档记录、修复决策与预防性维护的数字化工具。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-16T03:45:19.556167+00:00"
@@ -1326,7 +1804,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-16T03:45:17.341272+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过分析2024至2026年间发表的文献，发现BIM的主要变革并非创造新维度，而是将3D至7D维度与数字孪生、人工智能和物联网等新兴技术整合，从而增强项目全生命周期的监控、预测与决策能力。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-16T03:45:30.833837+00:00"
@@ -1534,7 +2012,7 @@
         "Taewook Kang"
       ],
       "published": "2026-07-13",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16142786",
       "url": "https://doi.org/10.3390/buildings16142786",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/14/2786/pdf?version=1783956332",
@@ -1550,7 +2028,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-15T03:42:27.864490+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于大语言模型和检索增强生成（RAG）的AI智能体框架，通过动态生成可执行代码实现IFC BIM数据的自然语言查询。该框架从向量数据库中检索相关代码示例而非事实数据，避免IFC到数据库的转换，能灵活处理复杂查询，为建筑专业人员提供高效的推理式人机交互方法。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-15T03:42:29.663286+00:00"
@@ -1599,7 +2077,7 @@
         "Haidar Hosamo"
       ],
       "published": "2026-07-13",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1016/j.rineng.2026.111921",
       "url": "https://doi.org/10.1016/j.rineng.2026.111921",
       "pdf_url": "https://doi.org/10.1016/j.rineng.2026.111921",
@@ -1613,7 +2091,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-15T03:42:27.864490+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过融合地面激光扫描、点云处理与档案图纸，构建基于Revit的分析模型，并经由IFC格式传递至One Click LCA，本研究提出一种可审计的扫描到BIM到生命周期评估/成本工作流，用于既有步行桥的早期碳成本筛选。以挪威奥斯陆一座63米长钢木步行桥为例，对比三种改造方案后发现，低碳钢方案在100年参考期内总全球变暖潜能值较基准降低38.9%，且成本增幅微小。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-15T03:42:46.167249+00:00"
@@ -1644,7 +2122,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-14T03:42:14.852583+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种大语言模型驱动的多智能体框架，用于自动完成栈桥建模。该框架通过推理层解析自然语言指令并生成结构化布局方案，再由执行层调用Revit API实现从设计意图到三维BIM模型的端到端流程，实验表明该方法能提升建模鲁棒性并减少人工干预。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-14T03:42:16.636811+00:00"
@@ -1809,7 +2287,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-15T03:42:27.864490+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "COMPAS IFC是一个开源Python工具包，通过构建精简的前端数据模型，将IFC几何表示与可执行几何内核耦合，将空间层级显式化为集成定位的树结构，并将非层级关系暴露为独立交互图，同时利用Pydantic模式验证自定义元素元数据。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-15T03:42:39.554819+00:00"
@@ -1855,7 +2333,7 @@
         "Xiuqi Li"
       ],
       "published": "2026-07-13",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1016/j.cacaie.2026.100146",
       "url": "https://doi.org/10.1016/j.cacaie.2026.100146",
       "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1093968726031324/pdf",
@@ -1870,7 +2348,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-16T03:45:55.839713+00:00",
       "first_seen": "2026-07-17T03:45:06.180278+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1895,7 +2373,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-16T03:45:17.341272+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种集成BIM的生态数字框架，通过结合状态评估、马尔可夫退化预测与可持续性指标，在教育建筑中实现预测性维护与可持续性评估，并推动其向数字孪生就绪过渡。该框架在真实案例中验证了基于层次化资产结构与相对权重系统的维护优先级优化，无需实时物联网数据即可支持主动维护规划。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-16T03:45:48.857689+00:00"
@@ -1952,7 +2430,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-14T03:42:14.852583+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一个基于扩展现实（XR）的平台设计方案，通过整合建筑信息模型（BIM）、物联网传感器和数字产品护照等异构数据源，优化动态建筑围护结构的运维管理。该平台采用云架构和用户故事方法，结合人工智能实现实时故障检测与远程协助，初步验证显示能提升建筑智能化和运维效率。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-14T03:42:18.828780+00:00"
@@ -1968,7 +2446,7 @@
         "Pablo Ariel Escudero"
       ],
       "published": "2026-07-12",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16142762",
       "url": "https://doi.org/10.3390/buildings16142762",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/14/2762/pdf?version=1783843166",
@@ -1980,7 +2458,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-15T03:42:27.864490+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过文献计量分析，系统比较了2019至2025年间历史建筑信息模型（HBIM）与历史数字孪生（HDT）领域的科学演进、合作模式与技术趋势。研究发现HBIM领域更为成熟，出版增长稳定且国际合作紧密，尤其在欧洲，并揭示HBIM当前作为HDT系统发展的基础框架。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-15T03:42:41.619171+00:00"
@@ -2008,7 +2486,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-15T03:42:27.864490+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于openBIM的结构化、流程导向方法，用于在公共部门许可流程中开发和验证自动化规范合规检查系统，并通过维也纳BRISE-Vienna项目中的24个实际建设项目进行验证。该方法引入法规信息矩阵，确保从法律解释到可执行检查逻辑的透明性和可追溯性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-15T03:42:43.641828+00:00"
@@ -2092,7 +2570,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-13T04:07:16.881749+00:00",
       "first_seen": "2026-07-14T03:42:14.852583+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2151,7 +2629,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-12T04:05:04.478331+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出将IFC数据模型通过ifcSQL扩展为关系数据库，并存储地理参考显式几何，实现与QGIS的集成，从而使用户能通过开源GIS技术对BIM模型进行二维/三维可视化和属性查询，并以意大利东北部水务公司的实际案例验证了该方法的有效性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:06.523568+00:00"
@@ -2186,7 +2664,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-12T04:05:04.478331+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于开源工具与开放标准的两阶段方法，通过IFC格式将数字勘测数据与BIM模型集成，并开发网络查看器实现两者的混合可视化。该方法利用Blender的Bonsai插件进行BIM编辑，结合That Open Engine库实现交互式查询，同时通过3DTilesRendererJS叠加倾斜摄影网格，在统一网络环境中融合精确几何与结构化元数据。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:09.280817+00:00"
@@ -2215,7 +2693,7 @@
         "ifc schema"
       ],
       "first_seen": "2026-07-12T04:05:04.478331+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出Query2Property语义检索系统，通过将IFC属性描述与用户自然语言查询嵌入共享向量空间，为大型语言模型动态构建简洁提示。在55个BIM查询上评估，该系统实现87.3%的top-1准确率和100%的top-3准确率，有效简化了复杂建筑信息的语义搜索。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:11.416699+00:00"
@@ -2442,7 +2920,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-12T04:05:04.478331+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种将工业基础类（IFC）STEP格式文件转换为遵循W3C关联建筑数据社区组所设计小本体的资源描述框架（RDF）三元组的转换器IFCtoLBD，并展示了该转换器的持续开发成果。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:26.665563+00:00"
@@ -2591,7 +3069,7 @@
         "industry foundation class"
       ],
       "first_seen": "2026-07-11T03:49:31.869304+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "基于标题、来源和关键词，该研究提出将工业基础类扩展与超图集成于建筑信息模型中，以支持铁路站场设施的管理。其贡献在于通过IFC扩展和超图方法，增强BIM对铁路站场设施数据的表达与关联能力。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-11T03:49:35.691551+00:00"
@@ -2759,7 +3237,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-12T04:05:04.478331+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过PRISMA 2020框架的系统文献综述，结合波罗的海区域背景，识别了建筑全生命周期碳评估实施中的三大障碍：BIM与LCA工具互操作性不足等数字障碍、EPBD等政策解读不一致的政策障碍，以及技能差距和成本驱动决策等社会文化障碍。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:39.922957+00:00"
@@ -2788,7 +3266,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:42.142530+00:00",
       "first_seen": "2026-07-13T04:07:10.208375+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2800,7 +3278,7 @@
         "Lina Šeduikytė"
       ],
       "published": "2026-07-08",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16142714",
       "url": "https://doi.org/10.3390/buildings16142714",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/14/2714/pdf?version=1783515103",
@@ -2816,7 +3294,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-10T04:30:21.450310+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出了一种多层级IFC交换就绪度评估框架，用于建筑全生命周期碳清单编制和循环性可观测性。该框架通过L1至L4b渐进式检查层级，评估IFC模型中元素识别、几何数量、材料属性等信息的完备性，并基于RICS标准实现异质子类别的公平比较，原型验证揭示了属性定义缺失等关键信息缺口。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-10T04:30:24.001804+00:00"
@@ -2982,7 +3460,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-17T03:45:19.653404+00:00",
       "first_seen": "2026-07-18T03:39:47.260574+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3038,7 +3516,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-10T04:30:21.450310+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于ISO 21597标准的多模型容器框架，通过自然语言接口与本体引导处理，实现IFC模型语义查询与异构数据自动链接，无需修改原始模型即可增强建筑信息模型数据的可访问性与互操作性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-10T04:30:37.113030+00:00"
@@ -3065,7 +3543,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-12T04:05:04.478331+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "基于系统分析方法，探讨了将建筑信息模型（BIM）整合到泰国公共建设政策中的路径，指出泰国BIM应用仍停留在项目或组织层面的自愿使用阶段，缺乏系统性政策整合。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:37.762705+00:00"
@@ -3150,7 +3628,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-09T04:26:52.361213+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对BIM与空间管理系统的互操作性问题，提出3DSMS框架，通过分析现状并设计集成化门户方案，实现高效空间管理所需数据的可视化与查询功能。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-09T04:26:56.709187+00:00"
@@ -3170,7 +3648,7 @@
         "Construction Robotics GmbH"
       ],
       "published": "2026-07-07",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.5281/zenodo.21239627",
       "url": "https://doi.org/10.5281/zenodo.21239627",
       "pdf_url": "https://doi.org/10.5281/zenodo.21239627",
@@ -3183,7 +3661,7 @@
         "ifc model"
       ],
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "该数据集提供了亚琛工业大学参考工地上Restage演示器的完整IFC模型，包含混凝土、木材和钢结构组件的详细建筑元素、装配体及施工进度信息，命名规则遵循组件组、楼层、元素类型和编号的约定。该模型适用于基于BIM的施工规划、装配排序和建筑数据数字化研究。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-23T03:51:49.877353+00:00"
@@ -3245,7 +3723,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对BIM模型中建筑元素跨阶段身份碎片化与变更追踪缺失问题，基于DOLCE基础本体构建BIM-Phase本体，通过区分持续实体与发生实体并采用OWL 2 DL表达阶段属性，实现跨阶段变更记录与查询。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:15:41.230160+00:00"
@@ -3261,7 +3739,7 @@
         "Carlo Zanchetta"
       ],
       "published": "2026-07-06",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16132677",
       "url": "https://doi.org/10.3390/buildings16132677",
       "pdf_url": "https://doi.org/10.3390/buildings16132677",
@@ -3276,7 +3754,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "该研究通过归纳式案例设计，将威尼托大区的价格清单与IFC标准进行属性映射，选取六类代表性构件（楼板、隔墙、石膏板、抹灰、门、窗）分析其可映射参数。该方法通过IFC属性集对成本项特征进行形式化与标准化，减少了主观性，为半自动化模型到成本估算奠定了基础。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:00:47.601178+00:00"
@@ -3395,7 +3873,7 @@
         "building information model"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "pdf_url": "https://arxiv.org/pdf/2606.14237v1",
       "ai_summary_zh": "提出一种集成BIM的激光雷达室内定位方法BIM-Loc，采用多命中射线投射和位姿图优化实现与BIM坐标系对齐的轨迹估计，并通过分层贝叶斯推理在线检测环境差异。实验证明其定位精度和鲁棒性优于现有地图方法。",
       "ai_summary_model": "deepseek-v4-flash",
@@ -3476,7 +3954,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "评估了从Autodesk Revit到Robot Structural Analysis的单向数据互操作性，通过多层钢筋混凝土建筑案例测试几何、材料、荷载等参数，发现原生API方法虽实现100%参数准确率，但需大量手动调整，并提出了标准化预处理步骤以减少结构分析前的误读错误。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:00:59.190044+00:00"
@@ -3579,7 +4057,7 @@
         "Hao Peng"
       ],
       "published": "2026-07-03",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16132653",
       "url": "https://doi.org/10.3390/buildings16132653",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/13/2653/pdf?version=1783074671",
@@ -3595,7 +4073,7 @@
         "ifc-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于BIM与生命周期评估的不确定性感知低碳设计方法，集成IFC模型自动算量、蒙特卡洛模拟概率碳评估及可解释机器学习优化。以重庆某中层住宅为案例，该方法将隐含碳排放不确定性降低约20%，并通过优化实现38.13%的碳减排。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:01:28.665367+00:00"
@@ -3816,7 +4294,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过PRISMA系统综述方法，分析了60篇同行评审文献和32份行业技术资料，揭示了澳大利亚预制木结构建筑中BIM、CAD/CAM与CNC工作流整合面临的软件碎片化、数据交换不一致及制造商参与不足等挑战，并提出了一个强调早期协作、共享参数逻辑和制造商就绪数据的概念性数字集成框架。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:01:44.875936+00:00"
@@ -3877,7 +4355,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种面向能源数字孪生的统一多表示建筑模型，通过映射层协同维护水密实体与拓扑保持的边界表示，并集成扫描到BIM重建、拓扑建模与语义增强流程，实现点云到多层级数字孪生实例的自动生成，验证了端到端方法在互操作性能源分析与监测中的有效性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:01:49.400129+00:00"
@@ -3957,7 +4435,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "比较五种深度学习模型在扫描到BIM流程中开口检测的性能，通过统一评估框架分析语义分割精度对几何重建的影响。实验表明Swin3D门检测率最高达96.9%，但高分割精度不总能保证精确几何重建。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:15:46.903107+00:00"
@@ -4012,7 +4490,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "对465篇Web of Science收录的博物馆建筑遗产文献进行文献计量分析，发现数字孪生与虚拟现实研究存在文档与体验两大分离领域；提出基于IFC互操作性的三支柱框架，将结构文档、沉浸体验与可持续管理整合于石质博物馆案例中。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:01:55.484987+00:00"
@@ -4053,7 +4531,7 @@
         "Christian Clemen"
       ],
       "published": "2026-07-02",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/ijgi15070301",
       "url": "https://doi.org/10.3390/ijgi15070301",
       "pdf_url": "https://www.mdpi.com/2220-9964/15/7/301/pdf?version=1782993326",
@@ -4065,7 +4543,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "研究BIM数据字典在GIS中对矢量地理空间要素的语义分类与属性标注的应用，通过比较标准元模型并开发三种分类方法，在QGIS中验证了buildingSMART数据字典（bSDD）可有效增强地理数据的语义互操作性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:01:59.603590+00:00"
@@ -4094,7 +4572,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "该研究通过PRISMA方法系统综述297篇文献，构建涵盖空间移动性、物流能力、社会接受度和操作协调性的统一分析框架，揭示室内配送需满足微尺度导航精度、几何安全包络、人机交互及隐私敏感性等约束，并提出包含BIM的建筑管理导向指标框架。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:15:48.157417+00:00"
@@ -4122,7 +4600,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过文献综述和澳大利亚行业从业者访谈，识别出施工资源管理从早期AI方法到数字化与机器学习等五个发展阶段，以及沟通协调不畅、资源估算不准等关键挑战；研究指出BIM和AI等数字技术是应对这些挑战的核心工具，并强调需结合技术、组织实践与政策支持的系统级方法。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:02:04.101745+00:00"
@@ -4149,7 +4627,7 @@
         "scan to bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过点云数据转换、自定义Revit族创建及Navisworks碰撞检测，为美国印第安纳州一栋6层医疗设施构建了无冲突的3D MEPF BIM模型，实现了LOD 350+的多专业协调与零未解决碰撞交付。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:02:06.039747+00:00"
@@ -4213,7 +4691,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对既有建筑二维图纸严重过时的问题，采用混合研究方法，以英国诺森比亚大学为案例，提出了一种经济高效的逆向BIM方法，重点优化照明系统，为提升设施管理效率奠定基础。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:02:09.832625+00:00"
@@ -4244,7 +4722,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于动态图卷积神经网络的预处理框架，从IFC几何模型中推断结构网格和子结构，通过柱位置点集输入DGCNN进行分组与分类，结合后处理生成FEM模型。在合成和真实IFC模型上验证，能稳定恢复柱主导布局的结构网格，减少手动预处理工作量。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:15:49.539180+00:00"
@@ -4289,7 +4767,7 @@
         "Amirhossein Karamoozian"
       ],
       "published": "2026-07-01",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16132623",
       "url": "https://doi.org/10.3390/buildings16132623",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/13/2623/pdf?version=1782869745",
@@ -4302,7 +4780,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "遵循PRISMA 2020方法，综合2019至2026年间21项实证研究，评估了人工智能在BIM冲突管理各阶段的应用。发现研究集中于冲突过滤，解决与预防阶段探索不足，且因缺乏共享基准数据集，系统部署准备度受限。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:15:51.024861+00:00"
@@ -4433,7 +4911,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "基于PRISMA框架，系统综述了BIM在可持续城市建设中的12项主要功能，包括三维建模、数据管理、多方协作等，并提出了整合这些功能的概念框架，以支持中国建筑业的信息集成与全生命周期协调。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:02:25.164976+00:00"
@@ -4504,7 +4982,7 @@
         "Zi Wang"
       ],
       "published": "2026-07-01",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1016/j.rineng.2026.111953",
       "url": "https://doi.org/10.1016/j.rineng.2026.111953",
       "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2590123026029750/pdf",
@@ -4516,7 +4994,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-16T03:45:17.341272+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "基于科学计量方法，对2020至2024年间BIM在房地产开发领域的300篇文献进行分析，揭示了该领域从技术引入向系统整合过渡的阶段性演化特征，并提出了“1+3+N”协同创新框架。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-16T03:45:53.438739+00:00"
@@ -4621,7 +5099,7 @@
         "Hugo Rodrigues"
       ],
       "published": "2026-07-01",
-      "updated": "2026-07-10T05:49:55.623906",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1007/s41024-026-00871-1",
       "url": "https://doi.org/10.1007/s41024-026-00871-1",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s41024-026-00871-1.pdf",
@@ -4635,7 +5113,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-11T03:49:44.323290+00:00",
       "first_seen": "2026-07-12T04:05:04.478331+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4699,7 +5177,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于学习的移动激光扫描点云不确定性评估框架，通过集成最优邻域估计与几何特征提取，在无需完整地面真值的情况下预测点级不确定性。实验表明，XGBoost模型在精度上与随机森林相当，但效率提升约3倍，验证了几何特征可用于预测C2C距离量化的不确定性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:02:40.779973+00:00"
@@ -4730,7 +5208,7 @@
         "bim model"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于UNI/TS 11820:2024标准的自动化数字工具，通过Excel编码和Dynamo实现建筑产品循环性水平（LC）的自动计算及BIM集成。以ITER项目案例评估掺入副产物的地基灰泥，得到LC值43.77%，揭示了材料效率优势与可再生能源及末端管理的局限。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:15:56.946689+00:00"
@@ -4760,6 +5238,34 @@
     },
     {
       "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170096347",
+      "title": "Automated environmental assessment of construction sites using multimodal large language model (MLLM)-based point cloud segmentation and instance-level scan-vs-BIM",
+      "abstract": "",
+      "authors": [
+        "Xingbo Gong",
+        "Boyu Wang",
+        "Yuqing Xu",
+        "Xingyu Tao",
+        "Weiwei Chen",
+        "Ioannis Brilakis",
+        "Jack CP Cheng"
+      ],
+      "published": "2026-07-01",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.17863/cam.132436",
+      "url": "https://doi.org/10.17863/cam.132436",
+      "pdf_url": "https://doi.org/10.17863/cam.132436",
+      "venue": "Apollo",
+      "score": 8,
+      "matched_terms": [
+        "BIM"
+      ],
+      "ai_summary_zh": "基于多模态大语言模型（MLLM）的点云分割与实例级扫描-建筑信息模型（BIM）对比方法，实现了施工现场环境自动化评估，通过融合点云与BIM数据提升分割精度与评估效率。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:51:59.963060+00:00"
+    },
+    {
+      "source": "OpenAlex",
       "source_id": "https://openalex.org/W7166705370",
       "title": "Development and Integration of LADM and BIM for 3D Cadastre in Iran",
       "abstract": "The rapid urbanization and development of vertical construction and subsurface spaces in Iran, along with national policy emphasis on transparency in land administration, have highlighted the need to transition from a two-dimensional (2D) to a three-dimensional (3D) cadastre. Iran’s current cadastral system, based on 2D parcel maps, fails to adequately capture complex ownership relationships in multi-story buildings and underground spaces. This study proposes an integrated model combining the Land Administration Domain Model (LADM) country profile with the Industry Foundation Classes (IFC) standard for 3D cadastre implementation. The LADM country profile of Iran was extended to support 3D spatial units. A 3D building model was developed in Autodesk Revit by integrating as-built cadastral maps with architectural drawings and exported in IFC format. Legal attributes were added to Building Information Modeling (BIM) elements in Simplebim via custom Property Sets, allowing physical and legal information to be stored in one IFC file. Functional and interoperability testing in IFC-compatible software showed that the file could be read and used for legal-spatial queries, although the results may depend on each software’s IFC support. For national use, database-level implementation may provide a more reliable option. These results demonstrate that integrating LADM and BIM for a 3D cadastre is technically feasible in Iran at the building scale, as shown by the successful mapping between LADM classes and IFC entities, implementation of custom Property Sets, and interoperability testing across IFC-compatible software platforms.",
@@ -4770,7 +5276,7 @@
         "Jalil Jafari"
       ],
       "published": "2026-06-30",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/land15071179",
       "url": "https://doi.org/10.3390/land15071179",
       "pdf_url": "https://doi.org/10.3390/land15071179",
@@ -4786,7 +5292,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对伊朗城市化与土地管理需求，将LADM国家扩展与IFC标准集成，通过Revit建模并导出IFC文件，在Simplebim中添加法律属性，实现物理与法律信息统一存储。测试表明该方法在建筑尺度上可行，数据库级实施更适用于国家应用。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:15:58.322747+00:00"
@@ -4815,7 +5321,7 @@
         "industry foundation class"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于Grasshopper 3D的优化插件，整合场地特定荷载生成、欧洲规范有限元分析和遗传算法拓扑搜索，用于木屋顶桁架结构设计。该插件支持导出工业基础类格式，实现与建筑信息模型协调工具的互操作性，并在挪威六地点和四种库存场景中验证了满足欧洲规范极限状态的最小质量屋顶配置。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:15:59.659077+00:00"
@@ -4850,7 +5356,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过系统文献综述、国际标准分析与案例研究，探讨了建筑信息模型（BIM）与GeoBIM环境如何支持复杂岩土与施工项目中请求信息（RFI）的结构化管理；提出了基于BIM的RFI管理概念框架，引入CUBO-RFI参数化三维对象以增强可追溯性与可视化协调。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:02:51.479502+00:00"
@@ -4878,7 +5384,7 @@
         "ifc files"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出SemanVIEW模块化平台，集成语义解析、丰富与交互式3D可视化，解决传统BIM几何表达局限。利用语义词典实现IFC-本体集成，支持实时查询与合规验证，测试显示语义映射准确、IFC处理高效（<5秒），为语义BIM与数字孪生提供可复现方案。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:16:00.982092+00:00"
@@ -4905,7 +5411,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于Dynamo的仿真驱动数字孪生框架，通过参数化建模工作流生成北方官式与南方园林两种翼角形式，并以太和殿与殿春簃为案例验证，实现了亚厘米级几何精度，为历史木构建筑的HBIM数字重建提供了可复用的技术路径。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:02:55.842044+00:00"
@@ -4932,7 +5438,7 @@
         "ifc-based"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过构建制度设计、操作实践和技术实施三层框架，比较了新加坡、挪威等七国的BIM电子审查案例，识别出从强制性IFC提交与规则自动化合规检查到早期试点项目的四种实施类型，并提出了可追溯的提交管理、自动数据质量验证及明确自动化范围与责任等制度设计基础条件。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:02:57.932564+00:00"
@@ -4959,7 +5465,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "该论文综述了基于3D点云快速记录受损和历史建筑状态的现代方法，重点分析了结合地面激光扫描、摄影测量和无人机数据的Scan-to-BIM流程，并探讨了保留实际变形特征以支持修复规划的自动化工具与未来方向。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:02:59.738157+00:00"
@@ -5031,7 +5537,7 @@
         "Jiexing Li"
       ],
       "published": "2026-06-30",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1016/j.istruc.2026.112512",
       "url": "https://doi.org/10.1016/j.istruc.2026.112512",
       "pdf_url": "https://doi.org/10.1016/j.istruc.2026.112512",
@@ -5042,7 +5548,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "该综述系统梳理了微波雷达技术在桥梁等土木结构健康监测中的研究进展与工程应用，重点分析了FMCW、SAR等雷达系统在动态响应识别、模态参数提取及损伤诊断中的性能与挑战，并探讨了其与BIM、数字孪生结合的未来发展方向。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:05.194626+00:00"
@@ -5096,7 +5602,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-09T04:27:03.518287+00:00",
       "first_seen": "2026-07-10T04:30:21.450310+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -5126,7 +5632,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "本研究针对爱沙尼亚建筑许可流程中法规碎片化与主观解读问题，提出基于BIM的数字化审批方法。通过采用IFC格式的BIM模型与自动化规则检查引擎，系统可验证47项合规标准（含消防与无障碍要求），并整合至国家数字孪生平台，实现审批效率提升与人为错误减少。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:09.056620+00:00"
@@ -5155,10 +5661,37 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "研究采用建筑智慧国际开放标准信息交付规范（IDS），作为连接法规要求与BIM自动化合规检查的桥梁，通过维也纳和尼泊尔的案例验证了其在标准化信息需求定义和逻辑检查中的有效性，但指出其在处理例外、复杂依赖和空间检查方面存在局限。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:11.003682+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7166572724",
+      "title": "Analyzing Barriers to BIM and AI Integration in Construction Management: A Mixed-Methods Approach",
+      "abstract": "Building information modeling (BIM) and artificial intelligence (AI), through their deep integration, are ushering in a new era for the construction industry. However, due to insufficient practical experience and exploration, construction companies still face significant challenges when adopting integrated BIM and AI technologies. This study aims to explore the integration of BIM and AI in depth by identifying and analyzing key barriers. Through systematic literature review and expert consultation, 16 major obstacles were identified. On this basis, a radial basis function neural network-enhanced weighted-influence non-linear gauge system (RBF-WINGS) model was constructed to calculate the weights of each barrier and deconstruct its non-linear interaction structure. The results indicate that data-related factors constitute the core category of barriers, while organizational culture and technological factors are the key secondary barriers. This study provides a theoretical basis for the development of China’s construction industry and serves as a decision-making reference for government departments.",
+      "authors": [
+        "L Wang",
+        "Yuhang Jia",
+        "Yongshun Xu",
+        "Mengyuan Cheng",
+        "Cen-Ying Lee"
+      ],
+      "published": "2026-06-29",
+      "updated": "2026-07-23T08:03:31.855105",
+      "doi": "https://doi.org/10.3390/buildings16132607",
+      "url": "https://doi.org/10.3390/buildings16132607",
+      "pdf_url": "https://doi.org/10.3390/buildings16132607",
+      "venue": "Buildings",
+      "score": 20,
+      "matched_terms": [
+        "building information modeling",
+        "BIM"
+      ],
+      "ai_summary_zh": "通过系统文献综述和专家咨询识别出16项关键障碍，并构建径向基函数神经网络增强的加权影响非线性测量系统（RBF-WINGS）模型，计算各障碍权重并解构其非线性交互结构。研究发现数据相关因素构成核心障碍类别，组织文化与技术因素是关键的次级障碍，为建筑信息模型与人工智能集成应用提供了理论依据和决策参考。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-07-24T03:52:02.149075+00:00"
     },
     {
       "source": "OpenAlex",
@@ -5184,7 +5717,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "以公寓建筑为例，将源数据系统化为五个功能组，通过属性子组、载体、更新频率和责任人细化；对比扫描到BIM与COBie交换策略，提出数据采集验证流程和属性完整性系数。研究发现管理效率取决于数据结构化与传递连续性，据此提出差异化采集方法与定量完整性评估工具。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:16:02.410888+00:00"
@@ -5209,7 +5742,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "本研究探讨了增强现实（AR）、虚拟现实（VR）和扩展现实（XR）在基于openBIM的建筑审批流程中的应用。通过三维可视化技术提升空间理解与审批透明度，这些技术有助于改善专家与非专家间的沟通，减少公众异议并缩短审批周期，同时为施工监管提供新可能。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:15.333877+00:00"
@@ -5292,7 +5825,7 @@
         "digital twin"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种集成智能体AI与大语言模型的框架，从碎片化BIM数据实现概率成本估算。通过四个协作智能体、共享记忆模块及GPT-4 Turbo等工具，在三个真实测试中，处理时间降至4.2分钟，手动干预减至0.8次，实体解析准确率提升至86.5%，并生成校准良好的概率预测。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:16:04.031223+00:00"
@@ -5308,7 +5841,7 @@
         "Mingliang Li"
       ],
       "published": "2026-06-27",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16132577",
       "url": "https://doi.org/10.3390/buildings16132577",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/13/2577/pdf?version=1782569262",
@@ -5320,7 +5853,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "采用比较法学方法，将生成式AI价值链映射至建筑全生命周期，构建定性比例责任评估框架，以应对BIM与数字孪生中的数据完整性风险。该框架通过评估开发者、部署者及专业用户的技术控制、可预见性等要素，为侵权法在分布式AI施工流程中的应用提供透明决策支持。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:16:05.264019+00:00"
@@ -5336,7 +5869,7 @@
         "Xiaowei Wang"
       ],
       "published": "2026-06-27",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16132572",
       "url": "https://doi.org/10.3390/buildings16132572",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/13/2572/pdf?version=1782554175",
@@ -5348,7 +5881,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对初步设计工程量清单招标的EPC项目，提出一个设计驱动的全过程成本控制框架，该框架包含设计驱动决策、全过程成本控制和协同管理支持三个层次，并整合BIM与挣值管理动态监控。案例应用表明，该框架能有效识别和控制成本风险，使最终结算价低于合同上限0.93%及初始投资估算约6.6%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:25.830041+00:00"
@@ -5376,7 +5909,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过分析超过100篇文献并结合人工智能模型进行内容综合，揭示了BIM工作标准从当前实践到最佳实践的演进路径。研究指出，实施AI需先遵循ISO 19650标准进行数据数字化清洁，并强调OpenBIM标准将成为算法通信语言，而BIM经理将演变为知识架构师和转型领导者。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:27.926824+00:00"
@@ -5402,7 +5935,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-10T04:30:21.450310+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过全球基准与本地利益相关者洞察，识别并分析了越南建筑业采用BIM的主要障碍，并提出了适应其社会技术环境的策略，以弥合国家数字转型目标与日常实施限制之间的差距。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-10T04:30:39.594650+00:00"
@@ -5437,7 +5970,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对建筑防火安全（SCIE）的自动合规检查（ACC），提出一种将技术规范转化为机器可读逻辑规则的方法，通过决策路径和过程地图结构化法规文本，并映射至IFC格式的BIM对象与属性，实现设计初期阶段的自动合规验证。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:29.732364+00:00"
@@ -5469,7 +6002,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-19T04:02:05.503987+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于IFC和开源技术的数字孪生平台，通过结合关系数据库、缓存、分布式存储及动态时序数据库连接，实现BIM模型、多模态文档与外部时序数据的统一集成，并内置异常检测与数据流完整性监控模块，将静态BIM模型转化为动态、持续更新的数字孪生体。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:24.343595+00:00"
@@ -5534,7 +6067,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对哈萨克斯坦在ISO 19650国际标准背景下的BIM流程标准化挑战，通过法规分析、专家访谈和跨国成熟度比较，发现其BIM标准化成熟度指数仅为1.75（满分5.00），并识别出法规、组织和技术三类障碍，进而提出到2030年将成熟度提升至3.50的混合生态系统发展策略。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:33.468718+00:00"
@@ -5562,7 +6095,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对BIM平台间互操作性挑战，开发了一种基于Python的IFC文件自动验证应用程序，通过语义与语法双重验证及可定制规则，实现质量保障。初步测试表明，该工具可将分析时间减少99%，验证覆盖率提升100%，并降低互操作性故障。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:35.358973+00:00"
@@ -5595,7 +6128,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "在Klassiqua研究项目中，基于统计调查开发了1970、1998和2026年建成的德国办公建筑原型，利用Blender Bonsai软件在IFC 4x3模式下创建了BIM模型，详细记录了建筑与物理模型，为量化智能就绪指标措施包的年度能耗模拟提供基础。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:37.394127+00:00"
@@ -5630,7 +6163,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:26.873590+00:00",
       "first_seen": "2026-07-20T04:13:29.384577+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -5658,7 +6191,7 @@
         "ifc models"
       ],
       "first_seen": "2026-07-19T04:02:05.503987+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种将静态IFC模型转化为交互式增强虚拟现实数字孪生的开源方法，通过Unreal Engine 5.5整合BIM几何与实时传感器数据，并在四层大学建筑案例中验证了亚100毫秒响应与高帧率性能。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:29.096354+00:00"
@@ -5686,7 +6219,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "基于七组无人机数据集，比较评估Pix4Dmapper与Agisoft Metashape在建筑信息模型三维重建中的性能。Pix4Dmapper处理更快、自动化更高且重投影误差更低，而Agisoft Metashape生成更密集点云和更精细网格，两者均支持扫描到BIM应用。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:16:06.733768+00:00"
@@ -5718,7 +6251,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-17T03:45:06.180278+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "本研究探讨了建筑信息模型（BIM）与机器人制造（RF）工作流之间的互操作性，以生成式3D混凝土打印为案例，提出了一种从BIM环境参数化建模到机器人代码导出的框架。通过对比两种基于BIM的IFC导出策略，验证了该流程在管理几何与元数据一致性上的有效性，并指出BIM平台虽在处理复杂几何方面存在局限，但通过适当管理仍可与RF成功集成。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-17T03:45:22.329235+00:00"
@@ -5743,7 +6276,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对设计与施工阶段模型不连续导致openBIM整合困难的问题，提出在Design and Build公司中采用战略愿景，通过流程图结合专有软件灵活性与开放格式的严格信息交换，优化工作流并提升互操作性，同时分享了实施状态与经验教训。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:41.365338+00:00"
@@ -5773,7 +6306,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过Python脚本将表格化需求转换为符合IDS规范的XML文件，并利用Bonsai BIM模块自动验证IFC模型合规性，同时对比usBIM.IDSeditor和BIMCollab等工具，展示了IDS在openBIM生态中定义与核查信息需求的灵活性与实用性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:43.196126+00:00"
@@ -5808,7 +6341,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-16T03:45:58.075546+00:00",
       "first_seen": "2026-07-17T03:45:06.180278+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -5836,7 +6369,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-20T04:13:39.477078+00:00",
       "first_seen": "2026-07-21T03:52:59.196199+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -5867,7 +6400,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:47.849372+00:00",
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -5892,7 +6425,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于多传感器测量的开源扫描到BIM工作流，以Blender和Bonsai插件为核心平台，集成无人机摄影测量、热成像与iOS设备激光雷达数据。案例验证了该方法可实现毫米级精度，并有效整合多源数据，为小型实体提供低成本的高质量三维文档方案。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:45.334490+00:00"
@@ -5921,7 +6454,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对BIM扫描与施工进度评估中的对齐挑战，提出一种融合语义结构与几何推理的轻量化方法，通过优化语义引导的对齐流程而非孤立处理分割与配准，在降低计算需求的同时提升鲁棒性和可解释性，适用于机器人、无人机等资源受限设备的近实时监测。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:47.405924+00:00"
@@ -5974,7 +6507,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "本研究探讨了BIM在建筑行业通用数据空间发展中的核心作用，分析了欧盟数据战略框架下BIM方法论与数据空间规则的融合需求。通过介绍葡萄牙buildingSMART主导的Digital Ter-X 2050灯塔项目，展示了当前数据空间与BIM协同工作的进展、成果及未来挑战。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:51.335489+00:00"
@@ -6002,7 +6535,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-12T04:05:04.478331+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种将欧洲铁路基础设施技术规范（ETI）转化为可验证BIM参数的工作方法，通过IDS格式将规范转换为数字规则，并应用于IFC模型，实现基于开源工具的自动合规性验证。该方法可加速验证流程、提升技术可靠性，并为其他领域的规范合规验证提供可复用的数字化路径。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:44.453869+00:00"
@@ -6030,7 +6563,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-20T04:13:29.384577+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "本研究开发并比较了三种基于不同空间配准方法的BIM与Web增强现实集成原型，包括地理定位、GNSS、平面检测与手动锚定以及自定义视觉标记。结果表明，地理定位精度有限，平面检测在稳定性和适用性间取得最佳平衡，而标记法适用于受控环境中的局部验证。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-20T04:13:41.529899+00:00"
@@ -6061,7 +6594,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-20T04:13:43.670732+00:00",
       "first_seen": "2026-07-21T03:52:59.196199+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -6090,7 +6623,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-20T04:13:45.840506+00:00",
       "first_seen": "2026-07-21T03:52:59.196199+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -6118,7 +6651,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "该研究提出了一种基于开源软件的HBIM工作流程，用于沿海防御工事的数字化与建模，通过激光扫描生成点云并依据建筑特征创建BIM对象，结合DB-HERITAGE系统集成历史数据，旨在提升文化遗产信息管理的可访问性与可复现性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:53.291587+00:00"
@@ -6148,7 +6681,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-17T03:45:06.180278+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出CAV Tools工具，通过C#语言在Autodesk Civil 3D中开发自动化例程，用于在采矿BIM项目中高效生成Cota-Área-Volume曲线；案例验证表明，该工具将体积计算误差从传统方法的14%降至1%以下，显著提升了数字工程模型的可靠性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-17T03:45:24.409880+00:00"
@@ -6178,7 +6711,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-21T03:52:59.196199+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于BIM的拆毁规划优化方法，通过从IFC模型中自动提取建筑构件的空间与拓扑依赖关系生成机器可读的优先矩阵，并利用NSGA-II多目标遗传算法优化拆毁工期与成本。该方法在真实钢筋混凝土建筑案例中验证了openBIM数据与系统化决策支持的有效衔接。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:53:09.658657+00:00"
@@ -6234,7 +6767,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "基于ISO 19650和openBIM原则，以Fiocruz实验室as-built模型为案例，采用IDS定义并验证IFC模型中的信息需求，通过Bonsai平台测试实现了自动化验证，提升了模型评估的一致性与客观性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:57.230958+00:00"
@@ -6267,7 +6800,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:46.780892+00:00",
       "first_seen": "2026-07-13T04:07:10.208375+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -6300,7 +6833,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-12T04:05:49.026796+00:00",
       "first_seen": "2026-07-13T04:07:10.208375+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -6324,7 +6857,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种整合优化实景建模、混合损伤感知、自动扫描到BIM及IFC对象语义增强的聚合方法，在葡萄牙运营铁路桥上验证，损伤检测mAP50达62.1%，建模偏差小于9毫米，实现从多传感器实景数据直接生成桥梁信息模型。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:03:58.899879+00:00"
@@ -6340,7 +6873,7 @@
         "José Dinis Silvestre"
       ],
       "published": "2026-06-25",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-21T05:50:15.549392",
       "doi": "https://doi.org/10.24840/978-972-752-358-0_110",
       "url": "https://doi.org/10.24840/978-972-752-358-0_110",
       "pdf_url": "https://books.fe.up.pt/index.php/feup/catalog/download/148/495/796",
@@ -6351,7 +6884,7 @@
         "building information modelling"
       ],
       "first_seen": "2026-07-22T03:53:35.532382+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对建筑行业碳排放评估需求，提出一种基于开放BIM格式的信息交付规范（IDS）框架，通过建立标准化的模型验证标准，确保BIM模型在全生命周期各阶段均能有效支持生命周期评估（LCA），并以案例验证了该方法在提升跨软件互操作性和促进绿色数字化转型方面的可行性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:50.259589+00:00"
@@ -6381,7 +6914,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:52.254233+00:00",
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -6408,7 +6941,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-19T04:02:31.126300+00:00",
       "first_seen": "2026-07-20T04:13:29.384577+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -6433,7 +6966,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对葡萄牙AECO行业缺乏统一工作分解结构（WBS）作为工程量清单（MQT）基础的问题，本研究通过buildingSMART Portugal组织行业专家开发了一套基于openBIM（IFC模式）的WBS分类结构，并进行了概念验证以展示其实际应用。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:04:10.604731+00:00"
@@ -6462,7 +6995,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对历史建筑信息模型（HBIM）中IFC模式对复杂砌体结构表征不足的问题，提出一种基于领域本体的语义增强策略，通过形式化砌体形态参数与力学性能的显式关联，并集成至OpenBIM到有限元分析（BIM-to-FEM）工作流中，实现材料属性的自动推理与可追溯评估。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:04:00.959728+00:00"
@@ -6480,7 +7013,7 @@
         "José Antonio Tenorio Ríos"
       ],
       "published": "2026-06-25",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.1007/s11367-026-02694-1",
       "url": "https://doi.org/10.1007/s11367-026-02694-1",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11367-026-02694-1.pdf",
@@ -6491,7 +7024,7 @@
         "bim models"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "分析ILCD+EPD格式在数字化环境产品声明中的局限性，通过50份西班牙EPD的标准化处理，评估其可追溯性、互操作性和机器可读性。提出改进建议以促进与BIM及数字产品护照的集成，强调明确模糊字段、引入唯一标识符和自动解读关键信息。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:16:08.120647+00:00"
@@ -6516,7 +7049,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "MQT_builder作为集成BIM信息管理环境的一部分，通过创建统一数据库整合项目各阶段数据，并基于Revit和IFC模型实现多平台互操作，解决了传统工程量与经济控制流程的碎片化问题。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:04:05.208622+00:00"
@@ -6566,7 +7099,7 @@
         "Diogo Ribeiro"
       ],
       "published": "2026-06-25",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-21T05:50:15.549392",
       "doi": "https://doi.org/10.24840/978-972-752-358-0_103",
       "url": "https://doi.org/10.24840/978-972-752-358-0_103",
       "pdf_url": "https://books.fe.up.pt/index.php/feup/catalog/download/148/488/789",
@@ -6580,7 +7113,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:54.253461+00:00",
       "first_seen": "2026-07-23T03:51:35.200013+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00"
+      "last_seen": "2026-07-24T03:51:16.844272+00:00"
     },
     {
       "source": "OpenAlex",
@@ -6601,7 +7134,7 @@
         "openbim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "以阿尔加维传统建筑为例，提出一套面向乡土知识的BIM模型，通过简化参数和流程在openBIM环境中精准表达当地构造逻辑，从而降低数字鸿沟、促进协作并支持传统建筑的全生命周期数字化管理。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:04:08.861192+00:00"
@@ -6632,7 +7165,7 @@
         "IFC"
       ],
       "first_seen": "2026-07-17T03:45:06.180278+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "ModuLIB平台通过集成Autodesk Revit插件与网络工具，实现卫生单元等建筑模块的参数化设计、自动合规检查及IFC格式导出，将模块化建筑从概念到制造的全流程与BIM方法结合，支持工业化定制生产。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-17T03:45:26.549741+00:00"
@@ -6658,7 +7191,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-20T04:13:29.384577+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "通过Dynamo与Revit集成开发自动化脚本，结合可视化编程与Python，实现了预制混凝土梁柱节点中短悬臂钢筋的BIM参数化详图设计。对114个构件的测试表明，该方法将单个构件的详图时间从20-30分钟降至1分钟以内，显著提升了效率与一致性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-20T04:13:47.948057+00:00"
@@ -6682,7 +7215,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-20T04:13:29.384577+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一种基于Autodesk Revit的BIM工作流，通过集成Python脚本、Dynamo例程和大型语言模型，自动完成建筑防火设计中的空间分类、荷载计算与符号表达，确保数据双向一致性与设计变更的鲁棒性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-20T04:13:49.930795+00:00"
@@ -6708,7 +7241,7 @@
         "BIM"
       ],
       "first_seen": "2026-07-22T03:53:35.532382+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "提出一个跨平台BIM项目设计知识核心管理框架，将多模态建筑知识（文本需求、参数定义、语义规则）转化为统一的对象导向数据模型。通过平面布局案例验证，该框架实现了从文件交换到对象级通信的转变，支持设计意图自动验证与知识数据集复用。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-22T03:53:56.352889+00:00"
@@ -6740,7 +7273,7 @@
         "industry foundation classes"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "针对梅尔斯-埃尔-凯比尔堡垒（阿尔及利亚）这一大型防御性遗产建筑群，采用扫描至HBIM工作流，结合多技术测量（地面激光扫描、探地雷达等）与语义建模，生成符合IFC 2x3架构的建筑信息模型，并实现空间级与实体级的病害评估与干预记录。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:04:12.620063+00:00"
@@ -6770,7 +7303,7 @@
         "building information modeling"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "基于PRISMA方法系统梳理了2016至2024年间BIM、物联网、机器人和流程自动化在建筑业的应用与整合，发现BIM作为核心数字基础设施支撑全生命周期数据集成，但面临成本高、互操作性差等障碍。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:04:14.402838+00:00"
@@ -6785,7 +7318,7 @@
         "Bayram Ali Temel"
       ],
       "published": "2026-06-24",
-      "updated": "2026-07-22T07:51:19.307946",
+      "updated": "2026-07-23T08:03:31.855105",
       "doi": "https://doi.org/10.3390/buildings16132512",
       "url": "https://doi.org/10.3390/buildings16132512",
       "pdf_url": "https://www.mdpi.com/2075-5309/16/13/2512/pdf?version=1782311024",
@@ -6797,7 +7330,7 @@
         "scan-to-bim"
       ],
       "first_seen": "2026-07-08T02:11:01.470653+00:00",
-      "last_seen": "2026-07-23T03:51:35.200013+00:00",
+      "last_seen": "2026-07-24T03:51:16.844272+00:00",
       "ai_summary_zh": "评估了结合无人机摄影测量与智能手机LiDAR的局部配准扫描到BIM工作流在既有建筑数字化中的可行性，通过32组现场测量对比，获得平均绝对误差29.56毫米、均方根误差31.21毫米的厘米级精度，表明该流程可支持小型既有建筑的初步几何记录与现状BIM建模。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-08T09:16:09.337128+00:00"

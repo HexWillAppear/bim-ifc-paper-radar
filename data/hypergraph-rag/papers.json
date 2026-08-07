@@ -1,8 +1,10 @@
 {
-  "generated_at": "2026-08-06T03:48:00.115851+00:00",
+  "generated_at": "2026-08-07T03:29:33.553744+00:00",
   "query_window_days": 30,
   "count": 7,
-  "warnings": [],
+  "warnings": [
+    "arXiv: HTTP 429: Unknown Error"
+  ],
   "papers": [
     {
       "source": "OpenAlex",
@@ -29,7 +31,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-08-04T03:45:30.336962+00:00",
       "first_seen": "2026-08-05T03:42:58.363943+00:00",
-      "last_seen": "2026-08-06T03:48:00.115508+00:00"
+      "last_seen": "2026-08-07T03:29:33.553386+00:00"
     },
     {
       "source": "OpenAlex",
@@ -53,14 +55,14 @@
         "hypergraph retrieval-augmented generation"
       ],
       "first_seen": "2026-07-31T03:58:54.832184+00:00",
-      "last_seen": "2026-08-06T03:48:00.115508+00:00",
+      "last_seen": "2026-08-07T03:29:33.553386+00:00",
       "ai_summary_zh": "针对超图RAG检索增强生成，提出HHS-RAG框架，采用层次超图结构、双曲对比学习及子图级决策机制，以提升复杂关系数据的检索与生成性能。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-31T03:58:56.066294+00:00"
     },
     {
-      "source": "arXiv",
-      "source_id": "http://arxiv.org/abs/2607.19830v1",
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7170988854",
       "title": "VizRAG: Enhancing Retrieval-Augmented Generation with Hypergraph Visualization",
       "abstract": "Hypergraph-based RAG systems surpass traditional graph-based approaches by organizing complex n-ary atomic facts among entities, rather than relying solely on binary relationships. Despite the advancements in multimodal large language models (MLLMs) with enhanced visual capabilities, current hypergraph-based RAG frameworks predominantly restrict knowledge retrieval and reconstruction to a unimodal, text-centric paradigm. This limitation prevents them from fully leveraging the powerful visual perception capabilities of modern MLLMs. To address this gap, we systematically explore the integration of hypergraph awareness in RAG systems through visual cues. By incorporating visual representations of hypergraphs into the RAG pipeline, we introduce VizRAG, the first RAG system to support visual hypergraph structure awareness. Experimental results demonstrate that VizRAG significantly outperforms strong baselines, validating the promising potential of hypergraph visualization as a novel approach for RAG systems.",
       "authors": [
@@ -75,12 +77,12 @@
         "Yu Zhang",
         "James Kwok"
       ],
-      "published": "2026-07-22T07:09:46Z",
-      "updated": "2026-07-22T07:09:46Z",
+      "published": "2026-07-22",
+      "updated": "2026-08-05T07:39:15.569665",
       "doi": "https://doi.org/10.48550/arxiv.2607.19830",
-      "url": "https://arxiv.org/abs/2607.19830v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.19830v1",
-      "venue": "cs.CL",
+      "url": "https://openalex.org/W7170988854",
+      "pdf_url": "https://arxiv.org/pdf/2607.19830",
+      "venue": "arXiv (Cornell University)",
       "score": 21,
       "matched_terms": [
         "hypergraph + RAG",
@@ -90,7 +92,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-23T03:52:08.436488+00:00",
       "first_seen": "2026-07-24T03:52:17.567005+00:00",
-      "last_seen": "2026-08-06T03:48:00.115508+00:00"
+      "last_seen": "2026-08-07T03:29:33.553386+00:00"
     },
     {
       "source": "OpenAlex",
@@ -112,7 +114,7 @@
         "hypergraphrag"
       ],
       "first_seen": "2026-07-20T11:50:17.357838+00:00",
-      "last_seen": "2026-08-06T03:48:00.115508+00:00",
+      "last_seen": "2026-08-07T03:29:33.553386+00:00",
       "ai_summary_zh": "针对现有知识超图RAG方法在静态检索规划、非自适应执行及结构语义利用不足的问题，提出PRoH动态规划与推理框架，通过上下文感知规划、结构化问题分解为有向无环图及实体加权重叠引导的路径检索，在多项域中F1和生成评估得分分别超越先前最优模型19.73%和8.41%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:35.259639+00:00"
@@ -150,7 +152,7 @@
         "hypergraph + RAG"
       ],
       "first_seen": "2026-07-21T03:55:33.629573+00:00",
-      "last_seen": "2026-08-06T03:48:00.115508+00:00",
+      "last_seen": "2026-08-07T03:29:33.553386+00:00",
       "ai_summary_zh": "EvoGraph-R1提出一种自演化多模态知识超图框架，将检索过程建模为马尔可夫决策过程，通过智能体动态执行查询、扩展、编辑或终止动作，实现知识图谱的持续演化与错误修正。实验表明，该方法在多模态问答任务中显著提升了准确性、覆盖率和可追溯性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-07-21T03:55:37.236175+00:00"

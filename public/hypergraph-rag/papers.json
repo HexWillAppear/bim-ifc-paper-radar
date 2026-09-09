@@ -1,11 +1,31 @@
 {
-  "generated_at": "2026-09-08T04:59:24.791047+00:00",
+  "generated_at": "2026-09-09T04:56:14.924724+00:00",
   "query_window_days": 30,
-  "count": 8,
-  "warnings": [
-    "arXiv: The read operation timed out"
-  ],
+  "count": 9,
+  "warnings": [],
   "papers": [
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7211866423",
+      "title": "LLM-Extracted Temporal Hypergraphs for Modeling Disease Severity and Clinical Trajectories From Clinical Documents (Preprint)",
+      "abstract": "BACKGROUND Clinical trajectory modeling requires representations of how multiple clinical dimensions interact and evolve over time. Conventional knowledge graphs are limited to pairwise edges and therefore cannot natively represent the higher-order interactions that characterize clinical events, in which patient factors, findings, treatments, and severity co-occur. No integrated framework combines large language model (LLM)-driven structured extraction from unstructured clinical documents with temporal hypergraph construction for trajectory modeling. OBJECTIVE We aimed to develop and validate a four-dimensional (4D) temporal hypergraph framework (4D-HyperGraph) that unifies patient history, clinical evidence, treatment trajectory, and dynamic severity in a single representation for clinical trajectory modeling. METHODS Four-dimensional clinical information was extracted from eight types of unstructured Chinese clinical documents for a retrospective cohort of 251 patients with chronic obstructive pulmonary disease (COPD; stable, n=54; acute exacerbation, n=88; exacerbation with infection, n=109), using a two-stage deidentification pipeline and LLM-driven extraction with dimension-specific prompts. Hyperedges were typed by dimension and assembled into a temporal hypergraph with HyperGraphRAG. A hypergraph neural network (HyperGNN) with dimension-level and temporal attention was trained for three-way classification, exacerbation prediction, and severity regression against a clinical severity composite score (CSCS). Five baselines were compared under stratified 5-fold cross-validation across 3 seeds, with dimension-level ablation, a temporally disjoint hold-out split, and external validation at a second hospital. RESULTS For three-way classification, 4D-HyperGraph with an XGBoost readout (4D-XGB) reached a 3-seed mean macro-averaged F1 of 0.615 (SD 0.010; 95% CI 0.580–0.653) versus 0.427 (SD 0.008) for the structured-feature XGBoost baseline, and 0.550 (SD 0.012) versus 0.436 (SD 0.017) on the temporally disjoint split. Exacerbation prediction reached a 3-seed mean area under the receiver operating characteristic curve (AUC-ROC) of 0.711 (SD 0.013) internally but 0.695 (SD 0.015) on the temporal split, below the structured baseline (0.715, SD 0.009). Externally, a balanced cohort (n=87) yielded an AUC-ROC of 0.865 versus 0.822 for the baseline, whereas external three-way classification stayed below baseline (macro-F1 0.449 vs 0.484; 0.441 vs 0.467 in a label-quality sensitivity analysis). For severity regression, the end-to-end HyperGNN achieved R2=0.216 and Pearson r=0.575, the highest among the deep-learning architectures; removing the severity dimension produced the largest ablation effect (r declined by 20.7%). No comparison survived Bonferroni correction (5 baselines × 3 tasks; corrected α=.003); the differences are indicative rather than confirmatory. CONCLUSIONS 4D-HyperGraph provides a general approach—designed to be disease-agnostic—for constructing temporal hypergraphs from unstructured clinical documents. Its primary contribution is at the representation level: the 4D encoding captures multi-way clinical relationships that improved classification and supported severity prediction in this proof-of-concept study. Transfer to an independent hospital was most robust for exacerbation risk, whereas fine-grained three-way classification remained affected by cross-source distribution shift and infection-label boundary noise. Multicenter, multidisease validation is the necessary next step.",
+      "authors": [
+        "Guangliang Zhang"
+      ],
+      "published": "2026-09-06",
+      "updated": "2026-09-08T07:41:39.490200",
+      "doi": "https://doi.org/10.2196/preprints.111364",
+      "url": "https://doi.org/10.2196/preprints.111364",
+      "pdf_url": null,
+      "venue": "",
+      "score": 12,
+      "matched_terms": [
+        "hypergraphrag"
+      ],
+      "ai_summary_zh": "本研究提出4D-HyperGraph框架，利用大语言模型从中文临床文档中提取四维时序信息，构建时序超图以建模慢性阻塞性肺疾病严重程度与临床轨迹。通过超图神经网络实现三分类、急性加重预测及严重程度回归，在251例患者队列中验证了其优于传统知识图谱基线的性能。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-09-09T04:56:14.423756+00:00"
+    },
     {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7203662944",
@@ -35,7 +55,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-07T06:43:06.145142+00:00",
       "first_seen": "2026-09-08T04:59:24.790456+00:00",
-      "last_seen": "2026-09-08T04:59:24.790456+00:00"
+      "last_seen": "2026-09-09T04:56:13.127381+00:00"
     },
     {
       "source": "OpenAlex",

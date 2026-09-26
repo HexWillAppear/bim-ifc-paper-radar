@@ -1,11 +1,39 @@
 {
-  "generated_at": "2026-09-25T05:08:28.114927+00:00",
+  "generated_at": "2026-09-26T05:12:19.767532+00:00",
   "query_window_days": 30,
-  "count": 11,
+  "count": 12,
   "warnings": [
     "arXiv: HTTP 406: Not Acceptable"
   ],
   "papers": [
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7214218452",
+      "title": "Dual-Hypergraph Indexing: Bridging Knowledge Islands for Multi-Hop Reasoning in Retrieval-Augmented Generation",
+      "abstract": "While hypergraph-based Retrieval-Augmented Generation (RAG) effectively captures higher-order multi-entity correlations, existing paradigms treat extracted hyperedges as isolated factual assertions. This structural fragmentation engenders rigid \"knowledge islands\" that bottleneck multi-hop causal inference, temporal tracking, and narrative synthesis. To systematically address these challenges, we introduce Dual-Hypergraph Indexing (DHI), a hierarchical representation framework that elevates discrete facts into structured analytical insights. DHI couples a foundational entity-relation factual hypergraph ($H_K$) with an elevated deep-insight hypergraph ($H_D$) via a dual-pathway aggregation algorithm. Specifically, DHI employs: (1) importance-driven hub aggregation via 5-metric topological profiling and adaptive thresholding to capture spatial semantic clusters; and (2) temporal chunk-chain progressive aggregation via sliding-window greedy exploration to track chronological evolutions. Across five benchmarks, DHI achieves state-of-the-art performance, boosting logical coherence by +1.53 on the multidisciplinary Mix benchmark and scoring 85.78\\% on complex medical pathology reasoning tasks. DHI provides a robust architecture for next-generation multi-hop RAG.",
+      "authors": [
+        "Qi Sun",
+        "Xiaochen Hou",
+        "Caibo Li",
+        "Yijia Zhang",
+        "Qiang Li",
+        "Yu Guo"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-25T08:18:29.962427",
+      "doi": "https://doi.org/10.48550/arxiv.2609.28108",
+      "url": "https://doi.org/10.48550/arxiv.2609.28108",
+      "pdf_url": "https://doi.org/10.48550/arxiv.2609.28108",
+      "venue": "arXiv (Cornell University)",
+      "score": 19,
+      "matched_terms": [
+        "hypergraph + RAG",
+        "hypergraph-based retrieval"
+      ],
+      "ai_summary_zh": "提出双超图索引框架，将离散事实超边组织为基础实体关系超图与深层洞察超图，通过双路径聚合算法缓解知识孤岛问题，提升多跳推理中的逻辑连贯性与复杂医学病理推理表现。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-09-26T05:12:19.266101+00:00"
+    },
     {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7214048571",
@@ -18,7 +46,7 @@
         "Ky Luu"
       ],
       "published": "2026-09-20",
-      "updated": "2026-09-24T07:57:37.273135",
+      "updated": "2026-09-25T08:18:29.962427",
       "doi": "https://doi.org/10.48550/arxiv.2609.23769",
       "url": "https://doi.org/10.48550/arxiv.2609.23769",
       "pdf_url": "https://arxiv.org/pdf/2609.23769",
@@ -30,7 +58,7 @@
         "hypergraph retrieval-augmented generation"
       ],
       "first_seen": "2026-09-24T05:07:09.852754+00:00",
-      "last_seen": "2026-09-25T05:08:28.113857+00:00",
+      "last_seen": "2026-09-26T05:12:18.424385+00:00",
       "ai_summary_zh": "提出NicoPRISM多模态数据集（含16万余张图像、属性描述及跨13个美国司法辖区的立法知识库）与PRISM-RAG多模态超图检索增强生成框架，通过辖区感知的上下文组装机制，在索引阶段无需调用大语言模型，将政策合规查询中正确辖区的检索准确率提升至93.9%，较标准RAG高出48.6个百分点。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-24T05:07:11.075051+00:00"
@@ -45,7 +73,7 @@
         "Jia Cai"
       ],
       "published": "2026-09-16",
-      "updated": "2026-09-24T07:57:37.273135",
+      "updated": "2026-09-25T08:18:29.962427",
       "doi": "https://doi.org/10.1007/978-3-032-38410-2_9",
       "url": "https://doi.org/10.1007/978-3-032-38410-2_9",
       "pdf_url": null,
@@ -56,7 +84,7 @@
         "hypergraph-based retrieval"
       ],
       "first_seen": "2026-09-17T05:04:37.766760+00:00",
-      "last_seen": "2026-09-25T05:08:28.113857+00:00",
+      "last_seen": "2026-09-26T05:12:18.424385+00:00",
       "ai_summary_zh": "针对多模态超图检索增强生成，MHGraphRAG结合社区检测方法，探索以超图结构组织多模态知识并支撑检索，关键词显示其聚焦超图与RAG融合及基于超图的检索，来源为Lecture Notes in Computer Science。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-17T05:04:39.259865+00:00"
@@ -83,7 +111,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-09T04:56:14.423756+00:00",
       "first_seen": "2026-09-10T04:57:28.798573+00:00",
-      "last_seen": "2026-09-25T05:08:28.113857+00:00"
+      "last_seen": "2026-09-26T05:12:18.424385+00:00"
     },
     {
       "source": "OpenAlex",

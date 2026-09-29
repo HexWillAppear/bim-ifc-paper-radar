@@ -1,14 +1,12 @@
 {
-  "generated_at": "2026-09-28T05:38:14.289434+00:00",
+  "generated_at": "2026-09-29T05:56:09.629596+00:00",
   "query_window_days": 30,
   "count": 13,
-  "warnings": [
-    "arXiv: HTTP 406: Not Acceptable"
-  ],
+  "warnings": [],
   "papers": [
     {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7214320978",
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2609.29282v1",
       "title": "Asymmetric Dynamic Routing: Balancing Reasoning Depth and Computational Efficiency in Hypergraph RAG",
       "abstract": "While graph-based and hypergraph-based Retrieval-Augmented Generation (RAG) significantly mitigate hallucinations in Large Language Models (LLMs), existing structure-based RAG systems typically adopt static traversal strategies regardless of the query complexity. We identify this ``static retrieval fallacy'' as a primary source of computational redundancy for simple queries and cognitive context gaps for complex reasoning tasks. To balance reasoning quality and inference efficiency, we propose Asymmetric Dynamic Routing (ADR), an intent-conditioned retrieval framework operating over hierarchical knowledge graphs. ADR employs a lightweight structured classifier to dynamically dispatch queries among three asymmetric topological traversal operators: localized fact anchoring, bottom-up adjacency diffusion, and top-down insight grounding, which collectively enable bidirectional information flow across hierarchical knowledge layers. Extensive empirical evaluations across five domain-specific corpora demonstrate that ADR maintains strong reasoning performance while reducing prompt token consumption by up to 48.7\\% and end-to-end query latency by 45.3\\%, yielding a favorable quality--efficiency trade-off for query-adaptive Hypergraph RAG.",
       "authors": [
@@ -19,12 +17,12 @@
         "Qiang Li",
         "Yu Guo"
       ],
-      "published": "2026-09-24",
-      "updated": "2026-09-27T08:07:27.782135",
+      "published": "2026-09-24T09:17:40Z",
+      "updated": "2026-09-24T09:17:40Z",
       "doi": "https://doi.org/10.48550/arxiv.2609.29282",
-      "url": "https://doi.org/10.48550/arxiv.2609.29282",
-      "pdf_url": "https://arxiv.org/pdf/2609.29282",
-      "venue": "arXiv (Cornell University)",
+      "url": "https://arxiv.org/abs/2609.29282v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.29282v1",
+      "venue": "cs.IR",
       "score": 33,
       "matched_terms": [
         "hypergraph + RAG",
@@ -32,7 +30,7 @@
         "hypergraph-based retrieval"
       ],
       "first_seen": "2026-09-28T05:38:12.710869+00:00",
-      "last_seen": "2026-09-28T05:38:12.710869+00:00",
+      "last_seen": "2026-09-29T05:56:09.629181+00:00",
       "ai_summary_zh": "针对超图RAG中静态遍历策略忽视查询复杂度、导致简单查询算力冗余与复杂推理上下文缺失的问题，提出非对称动态路由框架ADR，利用轻量结构化分类器将查询动态分派至三种非对称拓扑遍历算子，在五个领域语料上保持推理性能的同时最多降低48.7%提示词消耗与45.3%端到端延迟。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-28T05:38:13.789165+00:00"
@@ -65,25 +63,25 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-26T05:12:19.266101+00:00",
       "first_seen": "2026-09-28T05:38:12.710869+00:00",
-      "last_seen": "2026-09-28T05:38:12.710869+00:00"
+      "last_seen": "2026-09-29T05:56:09.629181+00:00"
     },
     {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7214048571",
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2609.23769v1",
       "title": "PRISM-RAG: Multimodal Hypergraph Retrieval-Augmented Generation for Tobacco Product and Legislative Policy Reasoning",
       "abstract": "The disambiguation of semantically similar statutory text across jurisdictions is a retrieval problem that existing methods do not solve. This inter-context conflict can steer generative models toward confidently produced answers grounded in topically relevant but jurisdictionally incorrect sources. Tobacco and nicotine regulations vary by US jurisdiction, often sharing similar language, thus, robust reasoning requires identifying which jurisdiction's law governs a given product, not merely retrieving relevant text. Emerging products (e.g., pouches) exploit ambiguous definitions to evade regulation. State-of-the-art (SOTA) document retrieval-augmented generation (RAG) methods struggle to address this inter-context conflict, and thus struggle to connect image attributes (e.g., rich attribute captions) to the set of similar legislation texts. We introduce NicoPRISM (Nicotine Product and Regulation Image-and-Text Surveillance Multimodal), comprising 161,563 images, attribute captions, a knowledge base of product, health, and legislative documents spanning 13 US jurisdictions, and 1,495 validated question-answer pairs across two tasks: policy compliance QA and product knowledge QA. We also propose PRISM-RAG, a multimodal hypergraph RAG framework built over images, captions, and entities without any LLM calls at index time, grounding every query in a product image and routes retrieval through a jurisdiction-aware context assembly mechanism guaranteeing that statutory text from the queried jurisdiction reaches the language model by construction. PRISM-RAG retrieves passages from the correct jurisdiction in 93.9% of policy compliance queries, a 48.6 percentage point advantage over standard RAG (p<0.001), using zero LLM calls at index time and one at query time, and is competitive with or outperforms SOTA RAG frameworks across keyword, semantic, jurisdiction-, and compliance-accuracy metrics.",
       "authors": [
         "Manuel Serna-Aguilera",
         "Raegan Anderes",
         "Page Dobbs",
-        "Ky Luu"
+        "Khoa Luu"
       ],
-      "published": "2026-09-20",
-      "updated": "2026-09-25T08:18:29.962427",
+      "published": "2026-09-20T17:39:21Z",
+      "updated": "2026-09-20T17:39:21Z",
       "doi": "https://doi.org/10.48550/arxiv.2609.23769",
-      "url": "https://doi.org/10.48550/arxiv.2609.23769",
-      "pdf_url": "https://arxiv.org/pdf/2609.23769",
-      "venue": "arXiv (Cornell University)",
+      "url": "https://arxiv.org/abs/2609.23769v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.23769v1",
+      "venue": "cs.CV",
       "score": 36,
       "matched_terms": [
         "hypergraph + RAG",
@@ -91,7 +89,7 @@
         "hypergraph retrieval-augmented generation"
       ],
       "first_seen": "2026-09-24T05:07:09.852754+00:00",
-      "last_seen": "2026-09-28T05:38:12.710869+00:00",
+      "last_seen": "2026-09-29T05:56:09.629181+00:00",
       "ai_summary_zh": "提出NicoPRISM多模态数据集（含16万余张图像、属性描述及跨13个美国司法辖区的立法知识库）与PRISM-RAG多模态超图检索增强生成框架，通过辖区感知的上下文组装机制，在索引阶段无需调用大语言模型，将政策合规查询中正确辖区的检索准确率提升至93.9%，较标准RAG高出48.6个百分点。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-24T05:07:11.075051+00:00"
@@ -117,7 +115,7 @@
         "hypergraph-based retrieval"
       ],
       "first_seen": "2026-09-17T05:04:37.766760+00:00",
-      "last_seen": "2026-09-28T05:38:12.710869+00:00",
+      "last_seen": "2026-09-29T05:56:09.629181+00:00",
       "ai_summary_zh": "针对多模态超图检索增强生成，MHGraphRAG结合社区检测方法，探索以超图结构组织多模态知识并支撑检索，关键词显示其聚焦超图与RAG融合及基于超图的检索，来源为Lecture Notes in Computer Science。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-17T05:04:39.259865+00:00"
@@ -144,7 +142,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-09T04:56:14.423756+00:00",
       "first_seen": "2026-09-10T04:57:28.798573+00:00",
-      "last_seen": "2026-09-28T05:38:12.710869+00:00"
+      "last_seen": "2026-09-29T05:56:09.629181+00:00"
     },
     {
       "source": "OpenAlex",

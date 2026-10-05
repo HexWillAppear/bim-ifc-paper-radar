@@ -1,9 +1,66 @@
 {
-  "generated_at": "2026-10-04T06:06:08.134391+00:00",
+  "generated_at": "2026-10-05T05:58:49.481867+00:00",
   "query_window_days": 30,
-  "count": 13,
+  "count": 15,
   "warnings": [],
   "papers": [
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7214786216",
+      "title": "STITCH-RAG: Spatio-Temporal Influence Tracing over Topic Hypergraphs for Multi-Hop Retrieval-Augmented Generation",
+      "abstract": "Multi-hop retrieval-augmented generation requires a retriever to connect evidence distributed across documents while preserving a concise, faithful generation context. Existing indexes leave two complementary gaps: chunk-based RAG can break cross-passage evidence chains, whereas an unlabeled pairwise projection without generating-topic provenance cannot jointly preserve topic-level co-participation and per-occurrence entity descriptions. We propose STITCH-RAG, a hypergraph-based framework with three coupled components. First, a semi-merged topic hypergraph encodes multi-entity co-participation as topic-summary hyperedges while retaining per-chunk entity states linked by canonical-name equivalence. Second, spatio-temporal influence bridging propagation (STIBP) combines topic-space propagation with deterministic chunk-index linkage across name-equivalent states under frequency-adaptive decay. Third, continuous STIBP scores replace binary entity-match seeds in localized Personalized PageRank (PPR). We characterize the condition under which this prior assigns more PPR mass to ground-truth evidence than a binary prior. Under the reported protocol, STITCH-RAG attains the highest reported Contain-Acc and LLM-Acc point estimates among the compared methods on HotpotQA and 2WikiMultiHopQA, and higher Recall@8 than the methods included in the standardized retrieval comparison. Results on the mixed-domain benchmark remain auxiliary preference-based evidence because only LLM-judged accuracy is available.",
+      "authors": [
+        "Haodong Yang",
+        "Mengzhu Chen",
+        "Jia Cai"
+      ],
+      "published": "2026-09-28",
+      "updated": "2026-10-04T09:36:47.201465",
+      "doi": "https://doi.org/10.48550/arxiv.2609.34127",
+      "url": "https://doi.org/10.48550/arxiv.2609.34127",
+      "pdf_url": "https://arxiv.org/pdf/2609.34127",
+      "venue": "arXiv (Cornell University)",
+      "score": 8,
+      "matched_terms": [
+        "hypergraph + RAG"
+      ],
+      "first_seen": "2026-10-05T05:58:46.359438+00:00",
+      "last_seen": "2026-10-05T05:58:46.359438+00:00",
+      "ai_summary_zh": "提出STITCH-RAG超图框架，用半合并主题超图编码多实体共现并保留分块实体状态，结合时空影响桥接传播与连续先验改进个性化PageRank，提升多跳检索增强生成的证据召回与答案准确率。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-05T05:58:47.359964+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7214776755",
+      "title": "HyperReCo: Retrieving and Connecting Evidence with Hypergraph Neural Networks for LLM Multi-hop Reasoning",
+      "abstract": "Large language models (LLMs) have shown strong capabilities, with retrieval-augmented generation (RAG) supporting complex multi-hop reasoning by retrieving evidence distributed across documents. Graph-based approaches exploit connections among evidence, and hypergraph-based retrieval further preserves higher-order entity associations within documents and connects documents through shared entities. However, existing hypergraph retrievers often rely on predefined structural expansion or diffusion, which may miss query-dependent interactions needed to identify relevant evidence. They also leave connections among retrieved evidence implicit, requiring LLMs to reconstruct these connections before reasoning. Therefore, we propose HyperReCo, a framework for retrieving and connecting evidence with a hypergraph neural network (HyperGNN). We represent each document as a hyperedge over its extracted entities, with shared entities connecting the hyperedges. Through hypergraph message passing with joint supervision over documents and entities, the HyperGNN learns query-dependent interactions to retrieve complementary evidence. We further introduce Gradient-Guided Hyper-Path Decoding (GGHD), which uses gradient attribution to interpret the learned interactions and translate them into explicit hyper-paths that help LLMs combine complementary facts for multi-hop reasoning. Experiments on six benchmarks show that HyperReCo achieves the best retrieval performance among the compared methods on all three multi-hop QA datasets, together with strong downstream QA performance. Case studies and further analyses demonstrate the utility of decoded hyper-paths for connecting retrieved evidence.",
+      "authors": [
+        "Zicheng Zhao",
+        "Linhao Luo",
+        "Junnan Dong",
+        "Haoran Luo",
+        "Xiaoli Li",
+        "Shirui Pan",
+        "Chen Gong"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-10-04T09:36:47.201465",
+      "doi": "https://doi.org/10.48550/arxiv.2609.32327",
+      "url": "https://doi.org/10.48550/arxiv.2609.32327",
+      "pdf_url": "https://arxiv.org/pdf/2609.32327",
+      "venue": "arXiv (Cornell University)",
+      "score": 19,
+      "matched_terms": [
+        "hypergraph + RAG",
+        "hypergraph-based retrieval"
+      ],
+      "first_seen": "2026-10-05T05:58:46.359438+00:00",
+      "last_seen": "2026-10-05T05:58:46.359438+00:00",
+      "ai_summary_zh": "提出HyperReCo框架，将每篇文档建模为实体超边并借助超图神经网络的消息传递与文档—实体联合监督学习查询相关的交互，从而检索互补证据；同时设计梯度引导超路径解码，把学到的交互转化为显式超路径以帮助大模型连接事实完成多跳推理，在多个多跳问答基准上取得最佳检索与下游问答表现。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-05T05:58:48.980583+00:00"
+    },
     {
       "source": "arXiv",
       "source_id": "http://arxiv.org/abs/2609.29282v1",
@@ -30,7 +87,7 @@
         "hypergraph-based retrieval"
       ],
       "first_seen": "2026-09-28T05:38:12.710869+00:00",
-      "last_seen": "2026-10-04T06:06:08.133130+00:00",
+      "last_seen": "2026-10-05T05:58:46.359438+00:00",
       "ai_summary_zh": "针对超图RAG中静态遍历策略忽视查询复杂度、导致简单查询算力冗余与复杂推理上下文缺失的问题，提出非对称动态路由框架ADR，利用轻量结构化分类器将查询动态分派至三种非对称拓扑遍历算子，在五个领域语料上保持推理性能的同时最多降低48.7%提示词消耗与45.3%端到端延迟。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-28T05:38:13.789165+00:00"
@@ -63,7 +120,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-26T05:12:19.266101+00:00",
       "first_seen": "2026-09-28T05:38:12.710869+00:00",
-      "last_seen": "2026-10-04T06:06:08.133130+00:00"
+      "last_seen": "2026-10-05T05:58:46.359438+00:00"
     },
     {
       "source": "arXiv",
@@ -89,7 +146,7 @@
         "hypergraph retrieval-augmented generation"
       ],
       "first_seen": "2026-09-24T05:07:09.852754+00:00",
-      "last_seen": "2026-10-04T06:06:08.133130+00:00",
+      "last_seen": "2026-10-05T05:58:46.359438+00:00",
       "ai_summary_zh": "提出NicoPRISM多模态数据集（含16万余张图像、属性描述及跨13个美国司法辖区的立法知识库）与PRISM-RAG多模态超图检索增强生成框架，通过辖区感知的上下文组装机制，在索引阶段无需调用大语言模型，将政策合规查询中正确辖区的检索准确率提升至93.9%，较标准RAG高出48.6个百分点。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-24T05:07:11.075051+00:00"
@@ -115,7 +172,7 @@
         "hypergraph-based retrieval"
       ],
       "first_seen": "2026-09-17T05:04:37.766760+00:00",
-      "last_seen": "2026-10-04T06:06:08.133130+00:00",
+      "last_seen": "2026-10-05T05:58:46.359438+00:00",
       "ai_summary_zh": "针对多模态超图检索增强生成，MHGraphRAG结合社区检测方法，探索以超图结构组织多模态知识并支撑检索，关键词显示其聚焦超图与RAG融合及基于超图的检索，来源为Lecture Notes in Computer Science。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-17T05:04:39.259865+00:00"
@@ -142,7 +199,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-09T04:56:14.423756+00:00",
       "first_seen": "2026-09-10T04:57:28.798573+00:00",
-      "last_seen": "2026-10-04T06:06:08.133130+00:00"
+      "last_seen": "2026-10-05T05:58:46.359438+00:00"
     },
     {
       "source": "OpenAlex",

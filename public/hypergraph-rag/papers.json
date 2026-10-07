@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T06:36:25.862106+00:00",
+  "generated_at": "2026-10-07T06:13:51.234662+00:00",
   "query_window_days": 30,
   "count": 15,
   "warnings": [],
@@ -25,7 +25,7 @@
         "hypergraph + RAG"
       ],
       "first_seen": "2026-10-05T05:58:46.359438+00:00",
-      "last_seen": "2026-10-06T06:36:25.860717+00:00",
+      "last_seen": "2026-10-07T06:13:51.233529+00:00",
       "ai_summary_zh": "提出STITCH-RAG超图框架，用半合并主题超图编码多实体共现并保留分块实体状态，结合时空影响桥接传播与连续先验改进个性化PageRank，提升多跳检索增强生成的证据召回与答案准确率。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-05T05:58:47.359964+00:00"
@@ -56,7 +56,7 @@
         "hypergraph-based retrieval"
       ],
       "first_seen": "2026-10-05T05:58:46.359438+00:00",
-      "last_seen": "2026-10-06T06:36:25.860717+00:00",
+      "last_seen": "2026-10-07T06:13:51.233529+00:00",
       "ai_summary_zh": "提出HyperReCo框架，将每篇文档建模为实体超边并借助超图神经网络的消息传递与文档—实体联合监督学习查询相关的交互，从而检索互补证据；同时设计梯度引导超路径解码，把学到的交互转化为显式超路径以帮助大模型连接事实完成多跳推理，在多个多跳问答基准上取得最佳检索与下游问答表现。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-05T05:58:48.980583+00:00"
@@ -86,7 +86,7 @@
         "hypergraph-based retrieval"
       ],
       "first_seen": "2026-09-28T05:38:12.710869+00:00",
-      "last_seen": "2026-10-06T06:36:25.860717+00:00",
+      "last_seen": "2026-10-07T06:13:51.233529+00:00",
       "ai_summary_zh": "针对超图RAG中静态遍历策略忽视查询复杂度、导致简单查询算力冗余与复杂推理上下文缺失的问题，提出非对称动态路由框架ADR，利用轻量结构化分类器将查询动态分派至三种非对称拓扑遍历算子，在五个领域语料上保持推理性能的同时最多降低48.7%提示词消耗与45.3%端到端延迟。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-28T05:38:13.789165+00:00"
@@ -119,7 +119,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-26T05:12:19.266101+00:00",
       "first_seen": "2026-09-28T05:38:12.710869+00:00",
-      "last_seen": "2026-10-06T06:36:25.860717+00:00"
+      "last_seen": "2026-10-07T06:13:51.233529+00:00"
     },
     {
       "source": "arXiv",
@@ -145,7 +145,7 @@
         "hypergraph retrieval-augmented generation"
       ],
       "first_seen": "2026-09-24T05:07:09.852754+00:00",
-      "last_seen": "2026-10-06T06:36:25.860717+00:00",
+      "last_seen": "2026-10-07T06:13:51.233529+00:00",
       "ai_summary_zh": "提出NicoPRISM多模态数据集（含16万余张图像、属性描述及跨13个美国司法辖区的立法知识库）与PRISM-RAG多模态超图检索增强生成框架，通过辖区感知的上下文组装机制，在索引阶段无需调用大语言模型，将政策合规查询中正确辖区的检索准确率提升至93.9%，较标准RAG高出48.6个百分点。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-24T05:07:11.075051+00:00"
@@ -171,7 +171,7 @@
         "hypergraph-based retrieval"
       ],
       "first_seen": "2026-09-17T05:04:37.766760+00:00",
-      "last_seen": "2026-10-06T06:36:25.860717+00:00",
+      "last_seen": "2026-10-07T06:13:51.233529+00:00",
       "ai_summary_zh": "针对多模态超图检索增强生成，MHGraphRAG结合社区检测方法，探索以超图结构组织多模态知识并支撑检索，关键词显示其聚焦超图与RAG融合及基于超图的检索，来源为Lecture Notes in Computer Science。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-17T05:04:39.259865+00:00"

@@ -1,9 +1,177 @@
 {
-  "generated_at": "2026-10-14T05:07:10.541580+00:00",
+  "generated_at": "2026-10-15T04:55:46.558897+00:00",
   "query_window_days": 30,
-  "count": 363,
+  "count": 379,
   "warnings": [],
   "papers": [
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2610.20312v1",
+      "title": "Reflect After Failure: Brain-Inspired Self-Evolving Agents for Embodied Spatial Intelligence",
+      "abstract": "Vision-Language Models (VLMs) have made substantial progress in spatial reasoning, and self-evolving agents further extend these capabilities to embodied environments by learning from interactions. However, current self-evolution remains particularly challenging in embodied spatial tasks, complex and multi-step decisions from partial visual evidence making it difficult to determine why an execution fails. The failure may stem from misperception, insufficient exploration, or incorrect planning, yet execution feedback alone rarely reveals which component is responsible. As a result, simply accumulating interaction experience can reinforce ineffective strategies. To address this, we propose HiMeco, a brain-inspired self-evolving agent for embodied spatial intelligence, inspired by metacognitive monitoring and hippocampal memory consolidation. Through Hippocampal-Metacognitive Reflection, HiMeco diagnoses failures in perception-exploration-planning (PEP), then compares execution attempts to derive reusable strategies and guidance for avoiding recurring errors. It also abstracts interaction programs into parameterized skills, using evidence contracts and execution-based validation to determine their retention and reuse. These strategies and skills guide subsequent interactions, with memory updated only between rounds and model parameters kept frozen. HiMeco achieves state-of-the-art performance on ESI-Bench, and it also improves accuracy on EmbSpatial-Bench by 3.94 percentage points without evolution.",
+      "authors": [
+        "Xin Li",
+        "Xiaohuan Gu",
+        "Yifan Wang",
+        "Shaobin Ling",
+        "Tianli Shi",
+        "Jingao Xu",
+        "Zhimeng Yin",
+        "Dapeng Wu",
+        "Yun Wang"
+      ],
+      "published": "2026-10-14T14:59:04Z",
+      "updated": "2026-10-14T14:59:04Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.20312v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20312v1",
+      "venue": "cs.AI",
+      "score": 36,
+      "matched_terms": [
+        "self-evolving agents",
+        "self-evolving agent",
+        "self-evolution + agent"
+      ],
+      "ai_summary_zh": "提出受元认知监控与海马记忆巩固启发的自进化智能体HiMeco，通过海马-元认知反思诊断感知、探索与规划环节的失败原因，并抽象出参数化技能，在冻结模型参数下实现具身空间任务中的策略复用与性能提升。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:21.718368+00:00"
+    },
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2610.19830v1",
+      "title": "DarKnight: Retrieval-Guided Agentic Framework for Breaking Dark Web CAPTCHA Gates",
+      "abstract": "Cyber Threat Intelligence (CTI) investigators who monitor dark web marketplaces for leaked credentials and breach listings must pass the diverse CAPTCHAs that operators deploy to block automated collection. Existing solvers either need unscalable per-site fine-tuning or rely on commercial Vision-Language Model (VLM) APIs, which surrender operational sovereignty: provider policies, Tor-exit blocking, government regulation, or model updates outside the investigator's control can halt or alter the solver overnight, and per-call costs recur with every session and retry. We present DarKnight, a self-improving agentic framework designed to run on a single workstation GPU inside an investigator's Tor crawler and solve CAPTCHAs with small, locally hosted open-weight VLMs that no provider decision can withdraw, without per-market training or third-party services. For each CAPTCHA, DarKnight retrieves successful and failed past attempts on similar images (dual-signal RAG), composes an image-specific preprocessing pipeline, and learns from the site's pass/fail verdict. In a case study on four real-world dark web marketplaces, agentic tool selection outperformed parameter scaling. A deployable open-weight VLM with DarKnight reached 83.2\\% on the most heavily defended market, 37.2 percentage points above its base model, outperforming even the frontier Claude Opus~5 (44%). DarKnight recovered 48.2% of baseline failures at a 7.6% degeneration cost, indicating that selective tool use can avoid much of the degradation caused by uniform preprocessing.",
+      "authors": [
+        "Binghui Wu",
+        "Yeo Zi Yi",
+        "Darren Tan",
+        "Manit Baser",
+        "Levente Csikor",
+        "Dinil Mon Divakaran"
+      ],
+      "published": "2026-10-14T09:04:50Z",
+      "updated": "2026-10-14T09:04:50Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.19830v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19830v1",
+      "venue": "cs.CR",
+      "score": 8,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "ai_summary_zh": "针对暗网市场验证码阻碍威胁情报采集的问题，DarKnight构建了可在单机GPU本地运行的自进化智能体框架，利用小型开源视觉语言模型，通过双信号检索增强生成复用历史成败经验，为每张验证码动态组合预处理流程，并依据站点判定反馈持续学习。在四个真实暗网市场测试中，其智能体工具选择优于参数扩展，最强防御站点通过率达83.2%，较基座模型提升37.2个百分点，并挽回48.2%的基线失败。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:23.500206+00:00"
+    },
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2610.19725v1",
+      "title": "TIMERSI: Towards Self-Improved Agentic Deployment for Time-Series Foundation Models",
+      "abstract": "Time-series foundation models provide strong zero-shot forecast, but deployment for real- world applications still requires task-specific designs for model inputs and outputs. Direct inference can leave domain knowledge and re- curring forecast errors unaddressed, while tai- lored pipelines require substantial human ex- pertise and effort. We introduce TIMERSI, a self-improving agentic deployment system around frozen forecasting models. A cod- ing agent translates task descriptions into ex- ecutable pipeline changes. It tests each re- vision on historical forecasting windows and uses observed errors to guide subsequent re- visions. During deployment, an adaptive se- lector chooses among the resulting pipelines using completed forecasts under similar con- ditions. Across 198 tasks on TIME and FEV- bench, TIMERSI outperforms all submissions on six point and probabilistic forecasting met- rics. Controlled comparisons support the value of feedback-guided revision over non-iterative pipeline search. Further experiments verify the generalization with different coding agents and forecasting models.",
+      "authors": [
+        "Haoxin Liu",
+        "Deqing Fu",
+        "Lucheng Fu",
+        "Yiqiao Jin",
+        "Rushi Qiang",
+        "Harshavardhan Kamarthi",
+        "B. Aditya Prakash"
+      ],
+      "published": "2026-10-14T07:48:38Z",
+      "updated": "2026-10-14T07:48:38Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.19725v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19725v1",
+      "venue": "cs.LG",
+      "score": 8,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "ai_summary_zh": "TIMERSI面向冻结的时间序列基础模型，构建自改进的智能体部署系统，由编码智能体将任务描述转化为可执行流程修改，并依据历史预测窗口的误差反馈迭代优化，部署时再自适应选择合适流程。在TIME与FEVbench的198项任务上，其在六项点预测与概率预测指标上均优于所有提交方案。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:25.732382+00:00"
+    },
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2610.19591v1",
+      "title": "L3M: A Verifiable Harness and Runtime for Self-Extending and Self-Improving Agents",
+      "abstract": "The lasting gains in AI have come from methods that absorb more computation, and language models already scale computation within a call. Useful work, though, happens across calls: over hours or days, through tools and external systems, among many agents and the humans they work for, and increasingly through code the agents write themselves. Whether that work compounds is enabled by the harness around it, and the harness faces a constraint the model does not: of the three participants in such a computation, the human, the model and code, only the human's attention does not scale, so the computation can grow only if the human is not in every loop. L3M is a runtime built on that premise, written in Lean 4 so that one language implements the harness, states its invariants, and is the language agents extend it in. One computation spans humans, agents, models and code, and all of its state lives in Git: a rich state trajectory -- rather than a chat conversation -- is an object the runtime can resume, rewind, fork, compare and merge. Waiting, communication, delegation and undo are primitives, not patterns the model reasons through each time. When an agent works out a procedure, it can write it once as a sealed Lean program whose type is its permission request, and the harness offers it back as a tool -- machinery for the model to use. To take the human out of the loop, L3M uses reversibility to decide where that is safe: a tool's review tier follows from how far its effects can be undone, so agents act freely where the runtime can recover. Because the machinery can change, the properties that make this safe are stated as kernel-checked theorems about the code that runs. On Terminal-Bench, an untuned L3M reaches about two thirds of its (unsafe) shell-equipped pass rate using only safe (not needing human review) tools.",
+      "authors": [
+        "Carson Eisenach",
+        "Robert Joseph George",
+        "Vincent Quenneville-Belair",
+        "Kate Gwimm",
+        "Dean Foster"
+      ],
+      "published": "2026-10-14T05:03:06Z",
+      "updated": "2026-10-14T05:03:06Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.19591v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19591v1",
+      "venue": "cs.AI",
+      "score": 23,
+      "matched_terms": [
+        "self-improving agents",
+        "self-evolution + agent"
+      ],
+      "ai_summary_zh": "L3M 是一套用 Lean 4 编写的可验证运行时，让智能体在 Git 中保存可恢复、分叉与合并的完整状态轨迹，并把等待、通信、委托与撤销作为原语。它允许智能体将摸索出的流程固化为带类型权限的密封 Lean 程序并回供为工具，再依据效果可逆性决定人工审查层级，从而在可恢复处让智能体自主行动，并以内核检验的定理保证安全。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:27.456517+00:00"
+    },
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2610.19396v1",
+      "title": "EpiGuard: An Autonomous Infectious-Disease Early Warning Agent Platform",
+      "abstract": "Infectious disease outbreaks often spread rapidly before signs of widespread transmission become apparent, leaving a big challenge for rapid response and effective intervention. However, current infectious-disease early-warning systems face three major challenges: fragmented epidemiological evidence across diverse surveillance sources, highly uneven data availability across diseases and geographic regions, and delayed warning procedure caused by manual data collection, analysis, and reporting. To address these challenges, we present EpiGuard, an autonomous, continually self-improving agentic platform for timely and reliable early warning of more than 50 infectious diseases across different regions. EpiGuard proactively monitors and captures newly released official surveillance records, using the latest available evidence for risk assessments. It dynamically adjusts its analytical strategy across three evidence availability regimes, enabling reliable risk assessment under diverse data conditions, ranging from the absence of historical observations to sparse and abundant evidence. Moreover, EpiGuard learns from the successful execution process by preserving effective data-acquisition and analytical procedures as reusable standard operating procedures, enabling it to progressively generalize to previously unseen diseases and regions. We use officially released infectious-disease surveillance data from the China CDC and the United States CDC to evaluate EpiGuard's effectiveness. Experimental results demonstrate that EpiGuard outperforms state-of-the-art forecasting systems, improving forecasting performance by 9.68% and 14.04% on the China CDC and U.S. CDC datasets, respectively.",
+      "authors": [
+        "Tonglong Wei",
+        "Zheng Yuan",
+        "Lingshuai Lin",
+        "Yuhui Yao",
+        "Xing Xie",
+        "Na Zou"
+      ],
+      "published": "2026-10-14T01:46:04Z",
+      "updated": "2026-10-14T01:46:04Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.19396v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19396v1",
+      "venue": "cs.AI",
+      "score": 8,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "ai_summary_zh": "EpiGuard是一个面向50余种传染病、可持续自我改进的自主预警智能体平台，能主动抓取官方监测数据并依据证据多寡动态调整分析策略，还将有效流程固化为可复用标准操作流程以泛化至新疾病与地区，在中国和美国CDC数据上预测性能分别提升9.68%和14.04%。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:29.101487+00:00"
+    },
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2610.19386v1",
+      "title": "STRATA: Self-Maintaining Structured Experience Graphs for Self-Evolving Language Agents",
+      "abstract": "Large language model (LLM) agents can self-evolve at test time by accumulating experience: retrieving relevant memories before acting and writing new lessons back afterwards. Yet most are single-level: trajectories, distilled workflows and reasoning items all land in one undifferentiated pool indexed by embedding similarity, with no typed abstraction hierarchy. They never forget or deduplicate, and are prone to negative transfer, where a superficially similar but directionally opposite experience is recalled and its concrete steps are copied verbatim, actively harming the agent. We introduce STRATA, a structured, outcome-grounded, self-maintaining memory that organizes experience into a three-layer graph of atomic skills and code snippets, task workflows and generalized meta-frameworks, connected by typed edges. STRATA maintains itself through five mechanisms sharing one similarity geometry: a multi-dimensional similarity that scores retrieval by operation and target; a typed reflector crystallizing procedures from successes and pitfalls from failures; community detection that induces meta-frameworks; pressure-triggered garbage collection with articulation-point protection; and contrast edges that flag confusable, direction-opposite experiences. Across four interactive benchmarks (AppWorld, WebArena, ALFWorld, ScienceWorld), two frozen backbones and seven baselines, STRATA attains the best average score while simultaneously using the lowest latency and fewest environment steps of any memory-augmented method, and 44% fewer lines of injected memory than the most context-hungry baseline. We isolate two failure modes of prior memories: single-level memory degrades sharply as the task set grows, and single-level concrete memories suffer catastrophic negative transfer, which contrast edges repair, lifting ScienceWorld from 78.7 to 96.7 within the same system.",
+      "authors": [
+        "Guanhua Zhu",
+        "Hanwen Li",
+        "Zhi Wei",
+        "Mengnan Du",
+        "Chenxi Yuan"
+      ],
+      "published": "2026-10-14T01:31:59Z",
+      "updated": "2026-10-14T01:31:59Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.19386v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.19386v1",
+      "venue": "cs.AI",
+      "score": 22,
+      "matched_terms": [
+        "evolving language agents",
+        "self-evolution + agent"
+      ],
+      "ai_summary_zh": "STRATA面向可自演化的语言智能体，提出一种结构化、以结果为依据且可自我维护的记忆机制，将经验组织为原子技能与代码片段、任务工作流、泛化元框架三层图，并通过类型化边连接。其多维相似度检索、类型化反思、社区检测、压力触发垃圾回收与对比边等机制，能减少负迁移并提升多类交互任务表现。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:30.736530+00:00"
+    },
     {
       "source": "arXiv",
       "source_id": "http://arxiv.org/abs/2610.18813v1",
@@ -27,12 +195,14 @@
       "venue": "cs.AI",
       "score": 24,
       "matched_terms": [
-        "self-evolving agent",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-evolving agent"
       ],
       "ai_summary_zh": "该研究聚焦自进化Agent的“框架自进化”，在模型权重固定前提下，让提示、记忆、工作流与可执行组件等软件脚手架通过反馈驱动被持续修订并跨运行保留。其贡献在于形式化更新目标与提案、准入机制，并给出泛化、保留与准入的理论界限及可靠性分析。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:06:40.103732+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:06:40.103732+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -61,7 +231,58 @@
       ],
       "ai_summary_zh": "SEAR是一个面向机器人自进化智能体的框架与基准，让智能体以代码即策略、实时控制或自动研究三种模式运行，并通过对照实验区分经验积累与重复尝试。其在七种前沿语言模型、330个仿真任务和五项真实任务上评估学习效果与跨任务、跨模拟器及真机迁移能力。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:06:42.255442+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:06:42.255442+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221683220",
+      "title": "The Dual Bottleneck:A Composition Law for Judge_Reliability and Generator Capability in Self-Evolving_Agents",
+      "abstract": "Self-evolving agents—systems that iteratively generate tasks, solve them, and distill experience—have shown promise in code generation and mathematical reasoning. Existing work predominantly focuses on the judge (the evaluator providing feedback), assuming that reliable judges suffice. Through 2,400 controlled experiments on Z3 constraint-solving tasks, we uncover a second, equally critical bottleneck: the generator (the LLM authoring new tasks). We formalize the Dual Bottleneck as a composition law on error budgets: 1−∆ global t = (1−∆ gen t )(1−∆valid t ), verified to machine precision (1.11e-16) on 2,400 real-API rounds. The law implies that the generator and judge bottlenecks share one budget: a condition with large ∆ gen t needs a more reliable judge for the same overall tolerance. If ∆ gen t alone exceeds the budget, no judge reliability can compensate. We empirically measure τc ≈ 0.55 on Level 1 tasks using the real DeepSeek V4 Flash API, and derive the parameter-free formula τc = √︁ 1− 2∆max t . We identify a pseudo difficulty trap: when the difficulty controller upgrades to Level 2/3, the LLM’stask-generation validity collapses from ∼89% to <10%, causing the system to spin without progress. We propose a four-layer constraint generation framework that restores validity to 100% at L1, 73.8% at L2, and 83.8% at L3 on real API.",
+      "authors": [
+        "HAO LI"
+      ],
+      "published": "2026-10-13",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.5281/zenodo.23336971",
+      "url": "https://doi.org/10.5281/zenodo.23336971",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23336971",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "score": 24,
+      "matched_terms": [
+        "self-evolution + agent",
+        "self-evolving agents"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "该研究通过2400次Z3约束求解实验，揭示自进化Agent除评判器外还存在生成器瓶颈，并提出误差预算组合律，表明生成器与评判器共享同一容错预算，若生成器误差单独超限则评判器可靠性无法补偿，同时发现难度升级会导致任务生成有效性骤降的伪难度陷阱。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:32.271009+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221614095",
+      "title": "The Orchestrator: A Lifecycle Architecture for Self-Developing, Self-Operating, and Self-Improving Agentic Systems",
+      "abstract": "Agentic systems that perform delegated work also need a controlled way to change the concepts and capabilities on which that work depends. This paper proposes a reference architecture organized around DEVELOP, OPERATE, and IMPROVE, coordinated by a durable orchestration layer. Its central unit of deployment is an immutable operating bundle binding executable capabilities to a versioned semantic snapshot, authority policy, evaluation suite, and state compatibility contract. Operational observations challenge the approved model through discrepancy reports, candidate ontology branches, capability development, independent validation, and explicit promotion. The architecture specifies lifecycle transitions, typed handoff contracts, semantic impact obligations, and deployment fencing. A worked example shows how an ontology change can broaden an action's eligibility without changing policy text, while an independent action gate blocks the prohibited effect. Drawing on autonomic computing, runtime models, ontology evolution, and governed capability deployment, the paper connects semantic release identity to authority review and distributed action enforcement. A conditional invariant argument characterizes release integrity, action coherence, and proposal isolation under stated trust assumptions. The contribution is an architectural synthesis supported by illustrative schemas and a falsifiable evaluation design; operational effectiveness and the additional value of ontology-based controls remain unevaluated.",
+      "authors": [
+        "Timothy O'Brien"
+      ],
+      "published": "2026-10-12",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.5281/zenodo.23332589",
+      "url": "https://doi.org/10.5281/zenodo.23332589",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23332589",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "score": 10,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "论文提出一种围绕开发、运行与改进三阶段、由持久编排层协调的自进化智能体参考架构，以不可变运行包绑定可执行能力、版本化语义快照、权限策略、评估套件与状态兼容契约，并通过差异报告、候选本体分支和独立验证推动受控变更。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:33.664203+00:00"
     },
     {
       "source": "arXiv",
@@ -83,13 +304,15 @@
       "venue": "cs.AI",
       "score": 36,
       "matched_terms": [
-        "self-evolving agents",
+        "self-evolution + agent",
         "self-evolving agent",
-        "self-evolution + agent"
+        "self-evolving agents"
       ],
       "ai_summary_zh": "研究针对自进化智能体改写自身框架时缺乏可靠改进信号的问题，提出以测试反馈作为可执行信号，并用质量-多样性进化算法搜索既小又强的测试套件。在129个真实模块和三种骨干模型上，该方法生成的测试套件质量最高且规模最小，作为改进信号可拒绝59.9%改变行为的改写，远超仓库自带测试的25.3%，误报率仅4.0%，每次决策耗时3.5秒。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:06:44.826744+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:06:44.826744+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -120,7 +343,9 @@
       ],
       "ai_summary_zh": "提出RSIPO自进化智能体强化学习框架，让智能体技能与策略模型在训练中协同演化，由策略自身从已完成轨迹中提取技能并通过轨迹回放优化技能生成能力，同时用经验贝叶斯收缩动态校准学生对教师评分的信任；在具身交互与搜索类任务上，基于Qwen2.5-7B在ALFWorld取得98.6%平均成功率。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:06:46.904532+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:06:46.904532+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -150,7 +375,9 @@
       ],
       "ai_summary_zh": "该研究面向视频理解智能体，提出VideoEvoHarness框架，在冻结模型参数条件下，从无标注视频中联合演化提问器与求解器两套执行装置。提问器依据视频记忆记录生成问题与参考答案，并结合质量评估和求解轨迹修正出题策略；求解器则利用执行反馈演化技能、策略、超参数与工具，每轮在相同验证问题上比较候选装置并保留有效改进。实验表明，该框架在多个基准及专用问题集上整体准确率高于初始水平，且增益可跨主干模型迁移，并随轮次逐步提升。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:06:49.674865+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:06:49.674865+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -172,12 +399,14 @@
       "venue": "cs.LG",
       "score": 22,
       "matched_terms": [
-        "self-evolving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-evolving agents"
       ],
       "ai_summary_zh": "研究揭示自进化VLM智能体存在新型后门攻击面：恶意载荷在初始阶段休眠，随记忆演化逐步激活，需视觉触发器与足够演化的记忆状态共同作用。通过记忆感知后门训练实现该攻击，在三种VLM骨干与四种智能体流程中，演化前攻击成功率仅0.5%，100次交互内超过95%，且保持正常功能。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:06:51.931081+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:06:51.931081+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -199,12 +428,14 @@
       "venue": "cs.AI",
       "score": 20,
       "matched_terms": [
-        "self-evolving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-evolving agents"
       ],
       "ai_summary_zh": "提出Trace Evolution Bench评测协议，将冻结重打分与上下文或权重更新区分开，并配套三套冻结数据包，要求更新仅在验证不下降时被接受、留出标识符不得进入更新、文本更新不与权重更新混排。主榜为编码任务，由封闭工作区中的隐藏单元测试评分，结果显示DeepSeek v4 Pro在无进化条件下策略不变却跨三个随机种子波动7.5、5.0和12.5个百分点，九个文本更新单元中七个超出该种子自身波动带，而GLM与MiniMax未能复现此模式。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:06:54.237656+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:06:54.237656+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -230,13 +461,15 @@
       "venue": "cs.AI",
       "score": 26,
       "matched_terms": [
-        "self-improving agents",
+        "recursive self-improvement",
         "self-evolution + agent",
-        "recursive self-improvement"
+        "self-improving agents"
       ],
       "ai_summary_zh": "EvoCowork是一个面向真实办公场景的240任务基准，在固定模型权重下评估智能体框架层面的递归自我改进，覆盖演示文稿、文档、表格与跨办公工作流，并分别考察内容、原生结构、公式、跨文件一致性与视觉质量。其协议将反馈、修订选择与最终测试分离，揭示在提供反馈的单一模态上取得的提升未必能迁移到需要协同的跨办公任务。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:06:56.378285+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:06:56.378285+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -254,12 +487,14 @@
       "venue": "cs.SE",
       "score": 19,
       "matched_terms": [
-        "self-improving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-improving agents"
       ],
       "ai_summary_zh": "该研究考察自改进智能体能否依据失败反馈定向修复特定目标故障，通过对比随机目标失败与父代其他失败的修复效果，并分析公开达尔文哥德尔机日志及小模型指令修订实验。结果显示目标修复并无稳定优势，且目标修复未必带来留出集提升，建议分别报告目标修复、相关失败迁移与留出净变化。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:06:58.352802+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:06:58.352802+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -283,12 +518,14 @@
       "venue": "cs.AI",
       "score": 23,
       "matched_terms": [
-        "self-improving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-improving agents"
       ],
       "ai_summary_zh": "提出ClawLoop自进化框架，无需外部教师模型，通过任务合成、训练与诊断反馈三阶段构成自我维持循环，让基于工具环境的智能体迭代提升能力，并在多个基准上验证了任务数据可迁移至更小模型。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:07:00.708541+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:07:00.708541+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -319,7 +556,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:44.767363+00:00",
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -351,7 +588,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:46.761492+00:00",
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -384,7 +621,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:48.581887+00:00",
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -406,10 +643,41 @@
         "self-improving agent"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "该研究以基于记忆的自我改进型LLM智能体为对象，考察其依据单次运行结果自写的经验教训是否会把偶然性带入后续决策。研究在确认性模型调用前冻结协议、代码与材料，通过固定决策及其依据信息，比较智能体读取不同记忆内容后选择工具的表现，并公开注册文件、世界生成器、运行器与分析方案等材料，未包含确认性结果。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:16.633980+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221532284",
+      "title": "X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems",
+      "abstract": "Personal agents increasingly connect to services across the web and applications by using tools. As the effects of their actions accumulate and interact across services, unintended or harmful outcomes can arise when agents fulfill benign user requests. Proactively identifying these compositional failures requires systematically exploring diverse cross-service paths. Existing red-teaming methods often simply prompt LLMs to identify potentially harmful paths from task and environment descriptions or decompose harmful objectives specified by humans or LLMs into seemingly benign action combinations. However, generation is biased toward patterns learned during training, potentially favoring familiar tool combinations and leaving novel cross-service interactions underexplored. To address this, we propose X-AgentRed, a self-evolving red-teaming framework that discovers harmful tool call paths through a graph of tool dependencies and expands and refines them using execution feedback. By analyzing each tool's effects, potential harms, and preconditions for execution, the red-teaming agent constructs a directed graph that captures how one tool's effects can satisfy another's execution preconditions. Recipes sampled from this graph are instantiated as realistic scenarios in which agents can produce harmful outcomes. Execution feedback enables self-improvement by diversifying paths that produce harm through tool substitution and refining preconditions at blocked steps in unsuccessful paths to enable further execution. Across four frontier agentic models, X-AgentRed achieves $1.77\\times$ the harmful path rate of STAC and explores a more diverse set of tools, yielding $2.99\\times$ the tool coverage on average.",
+      "authors": [
+        "Yeonsung Jung",
+        "Zhiyuan Wang",
+        "Zifan Wang",
+        "Vítor Albiero",
+        "Benjamin Newman",
+        "Edoardo Debenedetti",
+        "Ivan Evtimov",
+        "Ninareh Mehrabi"
+      ],
+      "published": "2026-10-09",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.48550/arxiv.2610.13886",
+      "url": "https://doi.org/10.48550/arxiv.2610.13886",
+      "pdf_url": "https://arxiv.org/pdf/2610.13886",
+      "venue": "arXiv (Cornell University)",
+      "score": 8,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "X-AgentRed 是一个自进化红队测试框架，通过构建工具依赖有向图并利用执行反馈扩展和精炼有害工具调用路径，以发现个人智能体在多服务生态中执行良性请求时可能产生的组合性危害。在四个前沿智能体模型上，其有害路径生成率达到 STAC 的 1.77 倍，工具覆盖范围平均提升至 2.99 倍。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:35.188523+00:00"
     },
     {
       "source": "arXiv",
@@ -441,7 +709,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-09T06:23:40.618949+00:00",
       "first_seen": "2026-10-10T06:05:37.252257+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -463,7 +731,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "这篇系统综述围绕医疗场景中可能超越人类专家水平的自改进智能体，梳理其系统性风险、伦理困境与治理框架。研究采用PRISMA 2020结构化综合方法，分析117条文献记录及51项基准来源，发现临床获益证据多为回顾性、单中心研究，自动化偏见、去技能化、相关性失效等风险随能力非线性放大，现有伦理原则操作性弱，监管体系尚未覆盖自主行动问责与灾难性尾部风险。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:18.615046+00:00"
@@ -491,10 +759,104 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-12T06:13:43.045386+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "AgentEvolver 让智能体在基础模型固定的前提下，通过任务执行积累可复用能力：八类实体经统一版本化生命周期支持修订，共享运行时协调工作，持久规划与可恢复上下文保留任务方向。在 SWE-bench Pro Public 上报告 82.08% 解决率，并在六个应用案例中观察到能力留存与迁移，同时记录了未完成目标与失败策略。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:50.278291+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221101424",
+      "title": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
+      "abstract": "Self-evolving LLM agents promise to improve autonomously through continual interaction and learning, reducing their dependence on manually curated supervision. Realizing this promise requires not only updating the agent, but also evolving its training experience as its capabilities change. However, most existing pipelines rely on static datasets or separately updated synthesis models, causing previously useful tasks to become trivial while overly difficult tasks remain uninformative. This growing mismatch between agent capability and training experience limits sustained self-improvement. To address this problem, we propose SynCo, an agentic data synthesis co-training framework for self-evolving LLMs based on multi-agent reinforcement learning. SynCo jointly optimizes two independently parameterized agents: a Synthesizer that constructs training tasks from the Reasoner's evolving capability state, and a Reasoner that learns from the resulting experience. Each synthesized task induces multiple Reasoner rollouts whose outcomes provide complementary rewards to both agents. Correctness feedback improves the Reasoner, while task quality, answer reliability, and outcome-grounded teachability guide the Synthesizer. Their updates are fed back into subsequent synthesis rounds, allowing the task-solving policy and its training distribution to evolve together. Extensive experiments across eight mathematical reasoning benchmarks demonstrate that SynCo substantially outperforms a broad range of existing synthetic-data methods and controlled baselines, achieving the strongest overall performance while deriving most of its gains from previously unsolved problems.",
+      "authors": [
+        "Wei Yang",
+        "Shawn Li",
+        "Yuehan Qin",
+        "Yawei Wang",
+        "Mingxi Wang",
+        "Shixuan Li",
+        "Tiankai Yang",
+        "Jiate Li",
+        "Jesse Thomason",
+        "Xuezhe Ma",
+        "Yue Zhao"
+      ],
+      "published": "2026-10-08",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.48550/arxiv.2610.11345",
+      "url": "https://doi.org/10.48550/arxiv.2610.11345",
+      "pdf_url": "https://arxiv.org/pdf/2610.11345",
+      "venue": "arXiv (Cornell University)",
+      "score": 10,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "提出SynCo多智能体强化学习协同训练框架，让合成器与推理器两个独立参数化智能体联合优化，使任务生成分布随推理能力同步演化，在八个数学推理基准上显著超越现有合成数据方法。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:36.551877+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221150091",
+      "title": "Skill-V: Verifiable Self-Evolving Skill Library for Interactive Agents",
+      "abstract": "Interactive agents can turn experience into reusable skills, yet existing self-evolving skill libraries primarily improve by accumulating new knowledge. Failures may lead to new skills, while previously stored skills are less often revisited as new evidence arrives. However, growth alone does not ensure reliability, as a retrieved skill may be inapplicable under the current task conditions, and an existing skill may encode a mis-specified operational boundary. Reliable skill evolution therefore requires not only adding knowledge, but also testing and revising what is already stored. We introduce Skill-V, a verifiable self-evolving skill library. To make stored knowledge testable, we propose representing skills as versioned, falsifiable contracts that link semantic intent to observable behavioral criteria. We use environment outcomes to drive library evolution. Specifically, task failures motivate skill addition, while disagreements between contract evaluations and task outcomes guide revisions to existing skill boundaries. To validate these revisions, we require them to preserve protected semantic constraints and satisfy non-regression criteria for rubric-outcome metrics on historical replay evidence. Finally, we employ an applicability-aware filter to exclude candidates judged confidently inapplicable to the current task. Across ALFWorld and WebShop, Skill-V achieves success rates of 95.3% and 85.9%, respectively, while maintaining a more compact skill library than growth-oriented baselines. Applicability-aware filtering reduces incorrect skill invocations, and outcome-grounded revisions correct mis-specified skill boundaries without degrading performance on previously observed evidence. These results show that reliable skill evolution requires more than accumulating experience: the library must learn which knowledge to retain, when to revise it, and when it should be applied.",
+      "authors": [
+        "Jie Ma",
+        "Zhipeng Qian",
+        "Yufei Ma",
+        "Zihan Liang",
+        "Jiayi Ji",
+        "Qingpeng Cai",
+        "Ben Chen",
+        "Peng Jiang",
+        "Xiaoshuai Sun"
+      ],
+      "published": "2026-10-08",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.48550/arxiv.2610.11781",
+      "url": "https://doi.org/10.48550/arxiv.2610.11781",
+      "pdf_url": "https://arxiv.org/pdf/2610.11781",
+      "venue": "arXiv (Cornell University)",
+      "score": 10,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "Skill-V面向交互式智能体，将技能表示为带版本、可证伪的契约，把语义意图与可观测行为标准关联，并利用环境结果驱动技能库演化：任务失败促发新增技能，契约评估与任务结果不一致则触发边界修订，修订须保持受保护语义约束并通过历史回放的非退化检验，同时用适用性过滤排除不适用技能。在ALFWorld和WebShop上成功率分别达95.3%和85.9%，且技能库比增长导向基线更紧凑。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:38.226703+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221114610",
+      "title": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
+      "abstract": "LLM-based program evolution relies on evaluation feedback to guide the iterative search for high-performing programs. However, evaluation is often computationally expensive, making it essential to allocate limited resources to candidates that can most effectively advance the search. Existing LLM-based methods typically rely on fixed allocation strategies throughout the search, potentially wasting resources on low-value candidates while overlooking promising ones. We propose EvoAlloc, a self-evolving resource-allocation agent that learns from search experience to revise its strategy for allocating computational resources across candidates. EvoAlloc periodically consolidates prior search and allocation outcomes into reusable experience, which informs subsequent strategy revisions. It further uses a counterfactual exploration mechanism to occasionally evaluate candidates denied resources by the allocator, revealing their outcomes to enrich its experience for future strategy updates. Across coding and agent-harness optimization benchmarks, EvoAlloc requires 59-82% fewer full evaluations and 61-89% fewer total LLM tokens to reach baseline-level performance. Moreover, under the same full-evaluation budget, EvoAlloc achieves 8.7-12.0% higher final performance.",
+      "authors": [
+        "Yanning Dai",
+        "Yuhui Wang",
+        "Nanbo Li",
+        "Wenyi Wang",
+        "Jürgen Schmidhuber"
+      ],
+      "published": "2026-10-08",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.48550/arxiv.2610.12086",
+      "url": "https://doi.org/10.48550/arxiv.2610.12086",
+      "pdf_url": "https://arxiv.org/pdf/2610.12086",
+      "venue": "arXiv (Cornell University)",
+      "score": 10,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "EvoAlloc是一种面向LLM程序进化的自进化资源分配智能体，它从搜索经验中学习并定期修订分配策略，还借助反事实探索评估被拒候选以丰富经验。在编码与智能体优化基准上，它大幅减少完整评估次数与token消耗，并在同等预算下取得更高最终性能。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:39.602031+00:00"
     },
     {
       "source": "OpenAlex",
@@ -520,10 +882,99 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-14T05:06:38.726971+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "EvoSim是一种面向物理建模的自进化AI科学家，利用实验偏差驱动机制与方程修订，并以留出实验数据检验物理合理性，通过探索轨迹更新知识、技能与多智能体编排。在两项工业电池建模任务中，其荷电状态预测平均绝对误差为1.79%，动态电压预测均方根误差为7.62 mV，自进化使模型与物理误差较基线降低约36%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:07:02.850314+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221150379",
+      "title": "Agentic-TTT: Training test-time policy for test-time training",
+      "abstract": "Test-time training (TTT) adapts an LLM's parameters using signals derived from test inputs, and can make striking improvements in pre-specified settings such as IMO competitions or designated open problems. By turning deployment experience into parameter updates, TTT provides a direct mechanism for model-level self-improvement. Yet TTT is not universally beneficial: each TTT algorithm works in different settings, and applying an ill-suited method could waste test-time compute or even damage model performance. Therefore, such parameter-level self-improvement requires agency: the model must decide when TTT is warranted, which algorithm to invoke, and whether an existing skill can be reused. To fill this gap, we introduce Agentic-TTT, which learns a test-time policy to govern those decisions. Agentic-TTT turns TTT procedures into callable tools, treats accumulated skills as an evolving deployment environment, and trains its policy using the observed utility gains from its decisions. On our benchmark, Agentic-TTT nearly doubles the utility over the backbone model, learns to trade off utility against compute, and generalizes to domains unseen during training. Together, these results point toward autonomous self-improvement: models that can decide how to learn from their own deployment experience.",
+      "authors": [
+        "Jiahao Lu",
+        "Mohan Kankanhalli"
+      ],
+      "published": "2026-10-08",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.48550/arxiv.2610.12002",
+      "url": "https://doi.org/10.48550/arxiv.2610.12002",
+      "pdf_url": "https://arxiv.org/pdf/2610.12002",
+      "venue": "arXiv (Cornell University)",
+      "score": 8,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "提出Agentic-TTT，将各类测试时训练算法封装为可调用工具，把积累的技能视为动态部署环境，并依据决策带来的实际效用增益训练测试时策略，使模型自主判断何时启用测试时训练、选用哪种算法以及能否复用已有技能。在自建基准上，其效用接近主干模型的两倍，能权衡效用与算力，并可泛化到训练未见领域。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:41.124332+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221184959",
+      "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+      "abstract": "Improving a long-horizon LLM agent means evolving the harness around a frozen model or training its weights. We let a self-evolving harness make the system stronger first, then cross seed and evolved harnesses with base and trained weights to learn which gains the trained model keeps and which still need the runtime. We show that the right lever can be read off the agent's failure composition: labelling failed trajectories by the first signal that fires separates process failures (blocked calls, loops, exhausted step budgets) from content failures (a delivered plan that is poor). Harness evolution repairs the former, the behaviour it instils can be trained into the weights, and content failures are what weight training is for. On DeepPlanning, a self-evolving harness loop lifts the held-out score of Qwen3.5-4B from 0.16 to 0.30 and of Qwen3.5-9B from 0.32 to 0.44; for 4B, held-out delivery rises from 55% to 90% while content failures are left for the weights. LoRA adapters trained on evolved-harness trajectories internalise the gain: under the original harness they add +0.13 on held-out tasks for both sizes; on 4B they stack with the harness to more than double the held-out score, and on 9B the adapter alone matches the full evolution line, cutting content failures from a quarter of trajectories to one in twenty. A placebo adapter trained on answer-shuffled trajectories falls below the base model. The loop transfers to WebArena-Lite (+0.09 on 117 unseen tasks), where the gain lives in what the model sees and adapters do not add to it. The result is a diagnose-then-intervene rule applied twice: read the failure composition to choose between harness and weights, then read what the accepted edits changed to decide which gains to train in. Scores are four-rollout means against fresh anchors, same-night except where marked, across eight models from six families and two benchmarks.",
+      "authors": [
+        "Yuan Tian",
+        "Bing Hu",
+        "Hao Wang",
+        "Binghang Lu",
+        "Fang Wu"
+      ],
+      "published": "2026-10-08",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.48550/arxiv.2610.11655",
+      "url": "https://doi.org/10.48550/arxiv.2610.11655",
+      "pdf_url": "https://arxiv.org/pdf/2610.11655",
+      "venue": "arXiv (Cornell University)",
+      "score": 8,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "该研究以长程LLM智能体为对象，先让自进化执行框架提升系统表现，再将种子与进化后的框架同基础权重和训练权重交叉组合，通过按首个触发信号标注失败轨迹，区分流程失败与内容失败。在DeepPlanning上，自进化框架将Qwen3.5-4B和9B的留出分数分别从0.16、0.32提升至0.30、0.44，而基于进化轨迹训练的LoRA适配器可内化部分增益，4B上与原框架叠加使留出分数翻倍以上，9B上适配器单独即可匹配完整进化线，并将内容失败从四分之一降至二十分之一。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:42.941838+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221103259",
+      "title": "ReSI: Recursive Safety Improvement toward Resistant and Resilient AI",
+      "abstract": "Recursive self-improvement, the participation of AI systems in improving their own capabilities, is beginning to move from theoretical prospect to practice, posing both challenges and opportunities for safety alignment. Models evolve through frequent updates, and their safety alignment requires continual adaptation to each new checkpoint. Meanwhile, with evolving red-teaming methods exposing new vulnerabilities, safety improvement for each checkpoint needs to mitigate exposed vulnerabilities and generalize to risks not yet revealed. Following R$^2$AI, we term these goals resistance to known threats and resilience to unforeseen risks. Recursive self-improvement, in turn, inspires an approach to both goals: safety alignment could likewise advance through successive rounds of evaluation and update. We therefore introduce ReSI, a recursive safety improvement framework that implements this approach through automated research. In each round, ReSI applies diverse red-teaming methods to identify vulnerabilities in the current target model, develops training recipes, and promotes the update with the largest safety gain among those passing a Pareto gate on capability retention as the next target model. Across four dense and mixture-of-experts models, ReSI matches or exceeds evaluated frontier models on in-distribution and out-of-distribution safety benchmarks, and outperforms alignment baselines on nearly all safety evaluations while largely preserving general capabilities. In particular, ReSI reduces the mean X-Teaming attack success rate across the four models from 86.01% to 31.45%, well below GPT-5.6-Luna's leading frontier result of 56.69%, indicating stronger resilience to attacks unseen during training. These findings support recursive safety improvement as a practical path toward resistant and resilient AI.",
+      "authors": [
+        "Jingnan Zheng",
+        "Dongcheng Zhang",
+        "Yi Zhang",
+        "Ming Zhang",
+        "Qiaosheng Zhang",
+        "Youbang Sun",
+        "An Zhang",
+        "Xiangnan He",
+        "Tat-Seng Chua",
+        "Xia Hu",
+        "Zhou Bowen",
+        "Chaochao Lu",
+        "Xiang Wang"
+      ],
+      "published": "2026-10-08",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.48550/arxiv.2610.12233",
+      "url": "https://doi.org/10.48550/arxiv.2610.12233",
+      "pdf_url": "https://arxiv.org/pdf/2610.12233",
+      "venue": "arXiv (Cornell University)",
+      "score": 7,
+      "matched_terms": [
+        "recursive self-improvement"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "ReSI是一种面向自进化AI的递归安全改进框架，通过自动化研究循环，对当前目标模型施加多样化红队测试以发现漏洞，再筛选兼顾能力保持与安全增益最大的更新作为下一轮目标。在四类模型上，其分布内外安全表现均匹配或超越前沿模型，并将平均攻击成功率从86.01%降至31.45%。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:44.480080+00:00"
     },
     {
       "source": "arXiv",
@@ -552,7 +1003,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:06.602764+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -581,7 +1032,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:08.419723+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -625,7 +1076,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:10.096056+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -651,7 +1102,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:20.302569+00:00",
       "first_seen": "2026-10-12T06:13:43.045386+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -673,7 +1124,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-14T05:06:38.726971+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "该研究以带隐藏终端随机性的有界验证框架，比较智能体通过延长搜索、增加支持或修改提议与验证方式实现的性能提升，并区分不变接受与可随重构变化的核心—支持标签。其证明在共同可靠解释器与固定验证协议下，一致有界的自我修改仍属同一验证类，且独立多数放大保持语言不变，而随机纸带上的存在性接受可能引入错误输出。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:07:04.801721+00:00"
@@ -698,10 +1149,34 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-14T05:06:38.726971+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "研究将自改进大模型“择优保留”步骤视为带测量噪声的选择问题，建模单次决策中候选间的相关误差，并在复用评估集时考察胜者诅咒。实验显示多数后续提案有害，贪心循环的最终选择集分数可高出留出准确率13至20分，建议报告留出增益及其不确定性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:07:07.485798+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7221102691",
+      "title": "The Harness as the Only Mutable Surface: Compliance-Bounded Self-Evolution of LLM Agents in Credit Pipelines, with a Measured Admission Gate",
+      "abstract": "Self-improving LLM agents can adapt a credit pipeline to a changed rule, but an agent that rewrites itself destroys the artefact a supervisor reviews: a named change, a recorded test, an approval. We argue that self-evolution is reviewable only if it is confined to the runtime harness (instruction text, tool-call logic and primitive composition) while model weights stay fixed, so that every adaptation is a diff with a cause and a test attached. We give a dual-loop engine built on that bound, with one admission gate that writes a hash-chained record before deployment, and we measure the gate in simulation, with a simulated agent and a seeded-search proposer rather than language models. Across three families of supervisory re-interpretation at three severities, 10 seeds each, the gated loop admitted 144 of 7,449 candidate changes, none of which worsened error on held-out history, and restored the false-positive rate to the oracle level without raising missed flags in every low- and mid-severity cell. With the gate replaced by the check an unbounded system applies (fewer errors visible in recent traces), the same loops admitted 309 harmful changes and left missed flags above 10% in 49 of 90 runs: false positives fell because the screen was loosened. Evaluated on pre-shift labels, the gate rejected every candidate, so a re-interpretation must be encoded as a rule that relabels history. Parametric and scope shifts were repaired locally, a structural one only by primitive replacement; at the highest structural severity the gate's fixed tolerance blocked the correct replacement in half the seeds. We map the mechanisms to the EU AI Act's provisions for high-risk credit scoring and note that the April 2026 US model-risk guidance excludes agentic AI from its scope.",
+      "authors": [
+        "Ravil Akhtyamov"
+      ],
+      "published": "2026-10-07",
+      "updated": "2026-10-14T16:39:01.820549",
+      "doi": "https://doi.org/10.48550/arxiv.2610.10629",
+      "url": "https://doi.org/10.48550/arxiv.2610.10629",
+      "pdf_url": "https://arxiv.org/pdf/2610.10629",
+      "venue": "arXiv (Cornell University)",
+      "score": 10,
+      "matched_terms": [
+        "self-evolution + agent"
+      ],
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
+      "ai_summary_zh": "论文主张自进化LLM智能体应仅限运行时执行框架（指令文本、工具调用逻辑与基元组合）可变，模型权重保持固定，从而让每次适配都成为附带原因与测试的差异记录。其双环引擎在部署前经准入闸门写入哈希链记录，模拟中从7449个候选变更仅接纳144个，均未恶化留出历史误差，并在低中严重度下将误报率恢复至理想水平。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-15T04:55:46.047095+00:00"
     },
     {
       "source": "OpenAlex",
@@ -724,7 +1199,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出AnchorLoop方法，将上一轮执行器的冻结副本作为历史参照，同时用于执行器的交叉参照优势评估与课程智能体的任务选择，在13个推理基准上相较Agent0提升数学推理2.5%、通用推理2.8%，且无需外部任务或答案监督。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:22.217670+00:00"
@@ -755,7 +1230,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "VideoEvolve面向长视频理解，提出记忆与检索协同自进化框架：以低帧率概览为起点，用记忆进化器选择性扩充记忆、检索进化器自适应检索，并通过交替式智能体强化学习与瓶颈感知反馈协同优化二者，缓解记忆固定与检索动态之间的错配，提升长视频问答表现。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-13T06:55:44.111930+00:00"
@@ -794,7 +1269,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:12.111604+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -829,7 +1304,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:13.776925+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -860,7 +1335,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-07T06:13:34.380433+00:00",
       "first_seen": "2026-10-08T06:22:05.158733+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -889,7 +1364,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-07T06:13:36.173186+00:00",
       "first_seen": "2026-10-08T06:22:05.158733+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -912,7 +1387,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-08T06:22:05.158733+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "EVE-COVARA 2.0 提出可证明且可执行的研究框架，用于递归自我改进、持续适应与可审计自修改，核心是判定已验证的适应决策何时可安全复用、何时须重算或扩容。其数学贡献为乘法几何漂移下低秩储备值的非交换平方根传输界，使缓存决策可在受控模型变更中带明确有效区间传输。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:15.541885+00:00"
@@ -934,7 +1409,7 @@
         "Yangqiu Song"
       ],
       "published": "2026-10-06",
-      "updated": "2026-10-12T09:40:04.860316",
+      "updated": "2026-10-14T16:39:01.820549",
       "doi": "https://doi.org/10.13140/rg.2.2.14834.06082",
       "url": "https://doi.org/10.13140/rg.2.2.14834.06082",
       "pdf_url": "https://arxiv.org/pdf/2610.08630",
@@ -945,7 +1420,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "这篇综述考察在部署阶段为大型语言模型及智能体注入参数化记忆的方法，即把承载记忆的参数对象接入推理前向过程，并按参数插入位置（嵌入、注意力、前馈层或混合）与获取时机（部署前离线或部署中在线）两个正交维度梳理研究格局，比较各类方法边界，并讨论干扰、安全、与上下文学习协同设计及递归自我改进等开放方向。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-13T06:55:45.946680+00:00"
@@ -975,7 +1450,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "该研究提出Learn2Play Bench基准，用规则新颖或反直觉的文本游戏评估LLM智能体从交互经验中学习的能力，并考察基座模型、自进化方法与智能体框架的影响，发现保留完整动作与反馈记录比总结为规则更有效，且框架设计显著影响表现与推理成本。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:24.370003+00:00"
@@ -994,7 +1469,7 @@
         "Yong Jae Lee"
       ],
       "published": "2026-10-06",
-      "updated": "2026-10-13T10:08:12.033832",
+      "updated": "2026-10-14T16:39:01.820549",
       "doi": "https://doi.org/10.48550/arxiv.2610.08432",
       "url": "https://doi.org/10.48550/arxiv.2610.08432",
       "pdf_url": "https://arxiv.org/pdf/2610.08432",
@@ -1004,7 +1479,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出EMHO自进化框架，在具身模型冻结的前提下，通过分析执行轨迹与历史记录迭代优化智能体控制层，并引入EMHO-Merge以单一控制层支持多子任务；在EmbodiedBench导航与操作任务上，该方法持续提升Qwen 9B与27B模型的任务成功率。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:25.867162+00:00"
@@ -1035,7 +1510,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "针对自我改进型LLM智能体将成功经验蒸馏为可复用技能的学习流程，SkillPoison通过构造一组强化目标行为的成功经验，再移除限定该行为适用范围的上下文条件，从而塑造技能提取器的泛化方式，使原本有益的行为在误用时产生危害。在三个基准上，该框架取得95.71%的攻击成功率，且所有注入经验均保持任务正确并通过验证与词法检查。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-13T06:55:47.689423+00:00"
@@ -1065,7 +1540,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-07T06:13:38.331882+00:00",
       "first_seen": "2026-10-08T06:22:05.158733+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1096,7 +1571,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-12T06:13:43.045386+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出能力驱动的智能体记忆自进化方法，将搜索指导从整体性能扩展到单项能力维度，并设计PrisMem系统，通过依赖感知的能力选择、历史引导诊断与轨迹引导整合，把互补改进合并为统一记忆程序，在百万级长历史基准上显著优于现有基线。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:52.091069+00:00"
@@ -1114,11 +1589,11 @@
         "Qifan Wang",
         "Shaoqiang Lu",
         "Rumin Zhang",
-        "Chen Henry Wu",
+        "Wu, Chen",
         "Lei He"
       ],
       "published": "2026-10-05",
-      "updated": "2026-10-13T10:08:12.033832",
+      "updated": "2026-10-14T16:39:01.820549",
       "doi": "https://doi.org/10.48550/arxiv.2610.06212",
       "url": "https://doi.org/10.48550/arxiv.2610.06212",
       "pdf_url": "https://arxiv.org/pdf/2610.06212",
@@ -1128,7 +1603,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-12T06:13:43.045386+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "研究面向在线智能体系统中自进化任务与当前请求争抢GPU算力的调度难题，提出状态感知调度器LearnSched，将能力复用窗口与算力及时回收纳入统一投资模型，结合候选进度、检查点开销与恢复路径，通过单步反事实推演在推进、检查点与等待间抉择，并在A100实测与1920组配对场景中验证其净价值表现。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:54.116385+00:00"
@@ -1164,7 +1639,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-06T06:36:02.037135+00:00",
       "first_seen": "2026-10-07T06:13:33.286018+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1195,7 +1670,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "针对长时程任务中端侧小模型推理规划能力不足、云端大模型调用成本高的问题，Sibyl提出三阶段训练框架，通过无咨询自进化强化学习、决定性分歧状态挖掘冷启动咨询行为，以及咨询感知强化学习联合优化咨询决策与指导内化，使0.6B小模型智能体在ALFWorld和WebShop上以极少云端调用超越现有基线。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:27.927623+00:00"
@@ -1226,7 +1701,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-06T06:36:03.645140+00:00",
       "first_seen": "2026-10-07T06:13:33.286018+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1253,7 +1728,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-12T06:13:43.045386+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "研究考察AI智能体能否自主设计评估方案以支撑递归自我改进，提出EvalResearchBench基准，让智能体在固定时间与API预算下筛选或合成任务、实现评分器并试点修订，再与14个目标基准比较。结果显示最佳评估器仅约75%候选配对排序与目标一致，低于目标间91%上限，且无智能体在所有指标领先。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:56.124063+00:00"
@@ -1279,7 +1754,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "Trinity让同一个视觉语言模型扮演提问者、求解者和验证者三种角色，其中验证者是策略自身的指数移动平均，无需标签或外部评判。它先筛查生成问题是否基于图像且答案正确，再据此监督求解者并裁决分歧，从而仅用无标注图像实现自我进化，在数学视觉推理和生物科学基准上显著提升性能。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:29.990555+00:00"
@@ -1305,7 +1780,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-12T06:13:43.045386+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "研究自进化大语言模型系统何时应停止迭代及停止后输出何种产物，将其建模为在线序贯检验与变点估计问题，构造无需改动底层算法的即插即用重启检测器，在多个框架与基准上大幅降低计算成本并保持未见测试性能。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:58.134538+00:00"
@@ -1331,7 +1806,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-10T06:05:37.252257+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "针对高保真评估代价高昂、低成本代理奖励易产生假阳性并污染自进化搜索的问题，提出基于条件保形推断与逐迭代在线密度比估计的CISE方法，为候选构建统计校准的奖励区间，仅在全部属性区间落入可行域时返回候选，在材料科学三项任务中实现返回结果全部为真阳性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-10T06:05:38.780773+00:00"
@@ -1365,7 +1840,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-10T06:05:37.252257+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "这篇综述考察进化计算如何服务于可信人工智能，将相关研究归纳为进化攻击、进化防御与可信自进化AI系统三个方向，并以统一的进化视角把可信性、进化计算和自进化系统联系起来，探讨可信性如何约束自进化AI中更新内容的生成与保留，进而影响后续适应过程，同时梳理评估方法与基准资源并展望未来挑战。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-10T06:05:40.700078+00:00"
@@ -1391,7 +1866,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-10T06:05:37.252257+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "PAPER2LLM++提出一种让大语言模型从研究论文中持续自我进化的框架，将不断增长的文献视为模型改进的证据与监督来源。它针对每篇新论文提取有依据的发现，检验所述局限是否仍存在于当前模型，并通过尝试—评估—提交流程仅在目标行为改善且不显著遗忘或损害通用能力时整合更新，从而逐步吸收新发现并保留既有收益。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-10T06:05:42.298478+00:00"
@@ -1425,7 +1900,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-10T06:05:37.252257+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出RoboBridge框架，将仿真到现实的迁移视为可执行任务技能的持续自适应，把任务知识表示为连接意图、观测、工具操作与结果验证的过程，并利用交互反馈生成候选技能修订，经评估后决定保留或拒绝，从而在无需重训练底层策略的情况下实现跨环境的技能演化与迁移。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-10T06:05:43.875645+00:00"
@@ -1449,7 +1924,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "该研究把大语言模型智能体的自进化看作类流体动力学过程，聚焦其内部单个技能实例而非整体，针对基于DSH插件的智能体群体提出动理学理论，构建严格层、动理学层与实测层，给出命中时间证书、分辨率定律与分离定理，并推导可证伪的统计特征。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:31.647713+00:00"
@@ -1549,7 +2024,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "VERSE面向智能体执行框架的优化器自身进化问题，提出带执行验证的自进化优化器，让优化器在固定模型权重下改进诊断、编辑与测试流程，并同步更新执行框架及其提示、工具和技能。在SWE-rebench等任务上，其最佳框架准确率达42.3%和37.7%，优于最强基线。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:36.755000+00:00"
@@ -1578,7 +2053,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-11T06:03:15.272098+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出面向6G边缘感知的“智能体射频智能”双环架构，将毫秒级本地无线感知与秒级智能体推理编排解耦，并在单块Jetson Thor与USRP上实现端侧原型，验证物理层基础模型与本地大模型异步协作的可行性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-11T06:03:38.479745+00:00"
@@ -1603,7 +2078,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出自动诊断与技能发现框架，将数值求解器的性能诊断与可复用自我改进相衔接，先解释求解器表现不佳的成因，再据此发现合适数值方法并封装为可复用技能，在潮流方程、交流最优潮流控制、刚性常微分方程和异质扩散偏微分方程四类任务上提升精度、鲁棒性与效率。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-13T06:55:49.545132+00:00"
@@ -1642,7 +2117,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-02T05:55:50.182810+00:00",
       "first_seen": "2026-10-03T05:30:31.616377+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1671,7 +2146,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-06T06:36:00.606106+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "研究在状态化授权任务中考察递归自我改进代理的安全失效与恢复机制，发现历史评分会让不安全程序在48条框架历史中的22条持续留存，而刷新评分、完整验证与经验证回滚可恢复正确性并保留逾43%部署节省。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-06T06:36:05.552473+00:00"
@@ -1704,7 +2179,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-06T06:36:07.313853+00:00",
       "first_seen": "2026-10-07T06:13:33.286018+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1744,7 +2219,7 @@
         "Zhichao Cao"
       ],
       "published": "2026-10-01",
-      "updated": "2026-10-09T09:14:12.587421",
+      "updated": "2026-10-14T16:39:01.820549",
       "doi": "https://doi.org/10.48550/arxiv.2610.02038",
       "url": "https://doi.org/10.48550/arxiv.2610.02038",
       "pdf_url": "https://arxiv.org/pdf/2610.02038",
@@ -1754,7 +2229,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-10T06:05:37.252257+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "研究面向长周期物理控制场景，提出基于物理约束的LLM智能体Mimir，通过快速数值校验与慢速失败经验固化实现自进化，在灌溉任务中降低控制成本并节水约51%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-10T06:05:47.366383+00:00"
@@ -1791,7 +2266,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-01T06:12:48.995435+00:00",
       "first_seen": "2026-10-02T05:55:48.721042+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1871,7 +2346,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-07T06:13:33.286018+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "该研究检验自进化技能方法在训练任务上的提升能否迁移到新测试任务，用同一模型、智能体和训练/测试划分比较五种自进化方法与一次性技能在六个基准上的表现，发现多数技能仅部分或完全无法迁移，并提出只保留技能编写指南、为每个任务重写技能的通用技能优化方法，在六个基准上得分最高。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-07T06:13:40.139994+00:00"
@@ -1901,7 +2376,7 @@
         "Han Cai"
       ],
       "published": "2026-09-30",
-      "updated": "2026-10-06T10:28:23.643775",
+      "updated": "2026-10-14T16:39:01.820549",
       "doi": "https://doi.org/10.48550/arxiv.2609.40358",
       "url": "https://doi.org/10.48550/arxiv.2609.40358",
       "pdf_url": "https://arxiv.org/pdf/2609.40358",
@@ -1911,7 +2386,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-07T06:13:33.286018+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出Physis-Lang自进化框架，将物理语言作为数据整理、模型训练与视频生成的共享可优化表示，并借助智能体循环分析断言级错误、迭代优化物理描述，从而提升视频世界模型的物理合理性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-07T06:13:41.631806+00:00"
@@ -2009,7 +2484,7 @@
         "lifelong agent"
       ],
       "first_seen": "2026-10-07T06:13:33.286018+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出ScholarEvolve框架，将智能体执行框架的进化方向按功能模块组织，借助主题建模从最新研究文献中识别改进策略并实现组合评估，同时支持持续纳入新论文以实现主动式终身进化，在AppWorld与Tau2-Bench上验证了任务完成率的提升。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-07T06:13:46.942046+00:00"
@@ -2024,7 +2499,7 @@
         "Bang Liu"
       ],
       "published": "2026-09-30",
-      "updated": "2026-10-05T09:50:58.205359",
+      "updated": "2026-10-14T16:39:01.820549",
       "doi": "https://doi.org/10.48550/arxiv.2609.39765",
       "url": "https://doi.org/10.48550/arxiv.2609.39765",
       "pdf_url": "https://arxiv.org/pdf/2609.39765",
@@ -2034,7 +2509,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-06T06:36:00.606106+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "MemCodex是一种自进化分层记忆系统，将经验组织为可执行记忆程序，涵盖摘要、关系知识、可复用技能与潜在记忆，并通过开放式程序演化改写各层的构建、索引、检索与路由方式，从而同时适配层内实现与跨层组合。查询时按由粗到细遍历层级，证据充分即停止，必要时下探原始历史；配套MemArena统一运行时，较最强自适应记忆基线任务成功率提升10.1%，上下文令牌减少3.4倍，推理提速2.1倍。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-06T06:36:12.248462+00:00"
@@ -2075,7 +2550,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-01T06:12:51.005406+00:00",
       "first_seen": "2026-10-02T05:55:48.721042+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2102,7 +2577,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-30T05:45:55.209620+00:00",
       "first_seen": "2026-10-01T06:12:47.805153+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2132,7 +2607,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-30T05:45:57.085284+00:00",
       "first_seen": "2026-10-01T06:12:47.805153+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2161,7 +2636,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-30T05:45:58.818968+00:00",
       "first_seen": "2026-10-01T06:12:47.805153+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2187,7 +2662,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-30T05:46:00.766644+00:00",
       "first_seen": "2026-10-01T06:12:47.805153+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2199,7 +2674,7 @@
         "Mengling Feng"
       ],
       "published": "2026-09-29",
-      "updated": "2026-10-04T09:36:47.201465",
+      "updated": "2026-10-14T16:39:01.820549",
       "doi": "https://doi.org/10.48550/arxiv.2609.36549",
       "url": "https://doi.org/10.48550/arxiv.2609.36549",
       "pdf_url": "https://arxiv.org/pdf/2609.36549",
@@ -2210,7 +2685,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-05T05:58:04.423007+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出MedForge-RSI递归自改进框架，使已部署的医学深伪检测器在冻结模型权重下，通过分析验证错误、积累可复用经验并自主开发图像分析工具，在20轮迭代中持续适应，配合独立验收测试仅保留有效改进。在49种配置下，四个测试集平均准确率由75.0%升至84.4%，干净图像准确率由76.5%升至87.9%，传输失真下由59.0%升至70.5%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-05T05:58:05.733530+00:00"
@@ -2237,7 +2712,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-05T05:58:04.423007+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出Video-RSI框架，让视频理解智能体借助自身语言模型递归修订可执行harness，通过主动回访原始视频检验失败解释，并以兼顾准确率与视觉成本的代价感知演化筛选可复用修订，从而在减少处理帧数的同时提升准确率。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-05T05:58:07.199673+00:00"
@@ -2268,7 +2743,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-05T05:58:04.423007+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "哥德尔森林面向以数据为中心的递归自我改进，将多个智能体组织为共同演化的搜索树，各自依据模型反馈深化、分支或剪枝数据策略，并通过动态共享记忆提炼成败经验、连接整片森林。在六个领域的RSIBench-Data上，其平均超越单智能体基线10.70%，并验证了共享记忆相较独立并行搜索带来7.00%的提升。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-05T05:58:08.938559+00:00"
@@ -2358,7 +2833,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-06T06:36:00.606106+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出一种接近递归自我改进的框架，让同一冻结模型在同一版本harness上先作为求解器完成任务，再作为提议者读取完整运行记录并直接编辑harness；每批进化从五个不同领域基准抽取任务，并严格分离训练与留出任务，另在五个分布外基准上评估泛化能力。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-06T06:36:15.956036+00:00"
@@ -2416,7 +2891,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-04T06:05:42.255356+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "针对语言智能体在非平稳、异构任务流中反复修订共享技能时易覆盖旧能力的问题，提出语义范围投影演化方法，将梯度投影原理从参数空间迁移到行为空间，通过识别可能干扰的已有能力并利用增益与退化构建兼容修订，从而在多个基准上提升跨域能力并缓解遗忘。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-04T06:05:45.425096+00:00"
@@ -2507,7 +2982,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-04T06:05:51.161989+00:00",
       "first_seen": "2026-10-05T05:58:04.423007+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2540,7 +3015,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-04T06:05:53.115668+00:00",
       "first_seen": "2026-10-05T05:58:04.423007+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2686,7 +3161,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-05T05:58:04.423007+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "研究在模型权重固定条件下，让构建者从目标模型的执行反馈中学习“元技能”原则，用于为未见任务搭建更优执行环境。在Harness-Bench与NewtonBench上，完整元技能库使宏平均性能较无技能构建提升8.95个百分点，较直接交付技能库提升12.02个百分点。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-05T05:58:14.037452+00:00"
@@ -2746,7 +3221,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-30T05:46:02.340931+00:00",
       "first_seen": "2026-10-01T06:12:47.805153+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2779,7 +3254,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-30T05:46:03.956876+00:00",
       "first_seen": "2026-10-01T06:12:47.805153+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2810,7 +3285,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:27.701266+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2842,7 +3317,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:29.186452+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2873,7 +3348,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:30.780968+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2905,7 +3380,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:32.378817+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2936,7 +3411,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:34.244486+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -2962,7 +3437,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:35.725238+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3209,7 +3684,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-10-05T05:58:04.423007+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "针对长程任务中冗余或过时上下文淹没关键证据、使上下文管理成为瓶颈的问题，提出从长程轨迹中学习上下文策略的ContextEvo框架，在关键决策点重建模型可见上下文、识别相关失败并定向更新策略，在三个长程基准上媲美或超越Codex等主流框架。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-05T05:58:22.246636+00:00"
@@ -3325,7 +3800,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:37.487386+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -3356,7 +3831,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:39.340926+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -3385,7 +3860,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:41.638977+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3545,7 +4020,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:43.184376+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -3566,12 +4041,14 @@
       "venue": "cs.LG",
       "score": 24,
       "matched_terms": [
-        "self-evolving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-evolving agents"
       ],
       "ai_summary_zh": "提出可编辑的改进动态模型，在评估前预测修改的任务级结果并指导修订，评估后利用历史修改与结果迭代优化该模型，使预测知识跨代积累。在HyperAgents基础上，该方法在多语言编程、论文评审、机器人奖励设计和奥赛级数学评分四个领域均优于基线，平均性能提升最高达46%。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-14T05:07:10.031829+00:00"
+      "ai_summary_updated_at": "2026-10-14T05:07:10.031829+00:00",
+      "first_seen": "2026-10-15T04:55:20.697203+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -3606,7 +4083,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:44.767507+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -3634,7 +4111,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:46.389850+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -3660,7 +4137,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:48.233722+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3778,7 +4255,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:49.984314+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -3809,7 +4286,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:51.866770+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -3838,7 +4315,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:53.647781+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "arXiv",
@@ -3862,7 +4339,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:55.275342+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3975,7 +4452,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-29T05:55:57.017705+00:00",
       "first_seen": "2026-09-30T05:45:53.680997+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00"
+      "last_seen": "2026-10-15T04:55:20.697203+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4344,7 +4821,7 @@
         "self-evolving agents"
       ],
       "first_seen": "2026-09-24T05:07:00.904668+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "自进化智能体将交互反馈转化为记忆或技能等持久化产物，并据此指导后续决策，仅看最终性能难以刻画其能力演化过程。为此提出EvoPathBench基准，固定基础模型与工具，在连续检查点冻结演化产物，用公开交易数据评估未见任务泛化、无关学习后的保持及规则适应三类能力，发现分布偏移下增益常被削弱、保持损失集中于少数演化路径，且候选产物的筛选与评估是主要瓶颈。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-24T05:07:02.247015+00:00"
@@ -4477,7 +4954,7 @@
         "self-evolution + agent"
       ],
       "first_seen": "2026-09-26T05:12:06.547093+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "提出双轨在线自进化框架TTSE，将智能体演化知识拆分为经交互证据持续验证的环境事实FACT与任务条件下的实现流程TIP，并从决策论角度分解超额风险、界定环境条件策略优于条件无关策略的条件；在GDPevo、ALFWorld、ScienceWorld及SOPBench等基准上验证了双轨演化的优势与广泛兼容性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-26T05:12:11.230060+00:00"
@@ -4574,7 +5051,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-09-20T05:04:25.460632+00:00",
-      "last_seen": "2026-10-14T05:06:38.726971+00:00",
+      "last_seen": "2026-10-15T04:55:20.697203+00:00",
       "ai_summary_zh": "VideoResearcher面向长视频理解，提出免训练多智能体框架，通过求解与进化双循环自主设计、测试并优化高影响力视频工具，利用轨迹分析定位能力缺口并复用进化工具强化证据获取，在自改进智能体中达到领先水平。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-20T05:04:26.392588+00:00"

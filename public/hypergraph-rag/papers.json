@@ -1,9 +1,66 @@
 {
-  "generated_at": "2026-10-30T06:06:31.683831+00:00",
+  "generated_at": "2026-10-31T06:00:51.418563+00:00",
   "query_window_days": 30,
-  "count": 15,
+  "count": 17,
   "warnings": [],
   "papers": [
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7224334611",
+      "title": "TLD-HyperRAG: adaptive retrieval and faithful generation via theme-logic-detail hypergraphs",
+      "abstract": "Retrieval-Augmented Generation (RAG) has emerged as an effective paradigm for enhancing large language models in knowledge-intensive and domain-specific tasks. However, existing RAG methods often rely on fixed retrieval strategies and insufficiently coordinate knowledge indexing, query processing, and evidence-grounded answer generation. To address these limitations, this paper proposes Theme-Logic-Detail Hypergraph-based Retrieval-Augmented Generation (TLD-HyperRAG), a multi-layer hypergraph framework designed for query-adaptive and evidence-faithful RAG. The proposed framework constructs a Theme-Logic-Detail hypergraph index to organize domain knowledge across multiple semantic levels, including theme navigation, logical linkage, and detailed evidence. Based on query complexity classification, TLD-HyperRAG dynamically selects different retrieval strategies for simple, moderate, and complex queries, thereby balancing retrieval efficiency, evidence coverage, and reasoning depth. In addition, a faithfulness-checked conditional rewriting mechanism is introduced to assess the consistency between generated answers and retrieved evidence and to revise answers when the evidence support is insufficient. Extensive experiments on eight specialized domains, including UltraDomain, BioASQ, and FinanceBench, show that TLD-HyperRAG achieves the best performance in the large majority of evaluated domains and metrics in terms of answer accuracy, retrieval quality, generation quality, and evidential faithfulness. These results indicate that coordinating multi-level knowledge organization, query-adaptive retrieval, and faithfulness-controlled generation within a unified hypergraph framework is an effective step toward reliable retrieval-augmented generation in specialized domains.",
+      "authors": [
+        "li Qian",
+        "Tao Wang",
+        "Yurong Qian",
+        "Hao Huang",
+        "Kai Wang"
+      ],
+      "published": "2026-10-28",
+      "updated": "2026-10-30T12:39:25.321706",
+      "doi": "https://doi.org/10.1007/s44443-026-01366-2",
+      "url": "https://doi.org/10.1007/s44443-026-01366-2",
+      "pdf_url": "https://doi.org/10.1007/s44443-026-01366-2",
+      "venue": "Journal of King Saud University - Computer and Information Sciences",
+      "score": 17,
+      "matched_terms": [
+        "hypergraph-based retrieval",
+        "hypergraph + RAG"
+      ],
+      "ai_summary_zh": "提出主题—逻辑—细节多层超图框架TLD-HyperRAG，通过构建多语义层级超图索引并按查询复杂度动态选择检索策略，结合忠实性校验的条件重写机制，提升专业领域检索增强生成的准确性与证据忠实度。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-31T06:00:48.704352+00:00"
+    },
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7223831575",
+      "title": "Read the Route: Attention-Steered Hypergraph Retrieval for Multi-hop RAG",
+      "abstract": "Graph-based retrieval-augmented generation (GraphRAG) answers multi-hop questions by organizing a corpus into a graph and retrieving along its structure. Existing retrieval methods face two limitations. Diffusion- and similarity-based methods expand retrieval along fixed edge weights or by similarity to the question, without resolving its implicit entity references, allowing relevance errors to accumulate across hops. In contrast, exploration-based methods let an LLM reason about the next hop, but require a separate generation at each hop, leading to high inference costs. We observe that an LLM can resolve implicit entity references from retrieved passages and a multi-hop question before generating any tokens. Further analysis identifies a small set of attention heads, termed addressing heads, that capture this capability across multiple hops in a single forward pass. Building on this finding, we propose HyperAddress, which runs Personalized PageRank on a description-labelled hypergraph, using addressing heads to determine the restart distribution and transition weights, thereby guiding multi-hop retrieval without any generation at query time. On MuSiQue, 2WikiMultiHopQA, and HotpotQA, HyperAddress outperforms the strongest baseline by 3.5 points of Recall@5 and 7.4 points of All@5 on average, with gains that grow with the number of hops. It answers more than twice as fast and builds its index at half the cost.",
+      "authors": [
+        "Jiate Liu",
+        "Liuyi Chen",
+        "Xiaofei Yuan",
+        "Yifu Tang",
+        "Zihan Yang",
+        "Xu Zhou",
+        "Zhengyi Yang"
+      ],
+      "published": "2026-10-26",
+      "updated": "2026-10-30T12:39:25.321706",
+      "doi": "https://doi.org/10.48550/arxiv.2610.35412",
+      "url": "https://doi.org/10.48550/arxiv.2610.35412",
+      "pdf_url": "https://arxiv.org/pdf/2610.35412",
+      "venue": "arXiv (Cornell University)",
+      "score": 10,
+      "matched_terms": [
+        "hypergraph + RAG"
+      ],
+      "first_seen": "2026-10-31T06:00:47.599483+00:00",
+      "last_seen": "2026-10-31T06:00:47.599483+00:00",
+      "ai_summary_zh": "提出HyperAddress方法，在描述标签超图上运行个性化PageRank，利用注意力头确定重启分布与转移权重，从而在查询时无需生成即可引导多跳检索；在MuSiQue、2WikiMultiHopQA和HotpotQA上平均超越最强基线3.5个Recall@5点和7.4个All@5点，且跳数越多增益越大，回答速度提升一倍以上，索引构建成本减半。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-31T06:00:50.917180+00:00"
+    },
     {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7214786216",

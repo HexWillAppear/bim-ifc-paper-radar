@@ -1,9 +1,37 @@
 {
-  "generated_at": "2026-11-03T07:05:44.252099+00:00",
+  "generated_at": "2026-11-04T06:46:54.796314+00:00",
   "query_window_days": 30,
-  "count": 18,
+  "count": 19,
   "warnings": [],
   "papers": [
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7225089817",
+      "title": "Caching Hyperedges: KV-Cache Reuse for Hypergraph RAG",
+      "abstract": "",
+      "authors": [
+        "Mariano Barone",
+        "Francesco Di Serio",
+        "Vincenzo Moscato",
+        "Marco Postiglione",
+        "Gary E. Riccio",
+        "Antonio Romano"
+      ],
+      "published": "2026-11-03",
+      "updated": "2026-11-03T10:50:19.383937",
+      "doi": "https://doi.org/10.1145/3799682.3839896",
+      "url": "https://doi.org/10.1145/3799682.3839896",
+      "pdf_url": "https://doi.org/10.1145/3799682.3839896",
+      "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
+      "score": 24,
+      "matched_terms": [
+        "hypergraph rag",
+        "hypergraph + RAG"
+      ],
+      "ai_summary_zh": "针对超图检索增强生成中的超边处理，探讨利用KV缓存复用机制来缓存超边以提升计算效率，属于超图RAG与缓存复用相结合的研究方向。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-11-04T06:46:54.294987+00:00"
+    },
     {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7224334611",
@@ -31,7 +59,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-31T06:00:48.704352+00:00",
       "first_seen": "2026-11-01T06:29:29.562316+00:00",
-      "last_seen": "2026-11-03T07:05:44.250893+00:00"
+      "last_seen": "2026-11-04T06:46:53.189700+00:00"
     },
     {
       "source": "OpenAlex",
@@ -58,7 +86,7 @@
         "hypergraph + RAG"
       ],
       "first_seen": "2026-10-31T06:00:47.599483+00:00",
-      "last_seen": "2026-11-03T07:05:44.250893+00:00",
+      "last_seen": "2026-11-04T06:46:53.189700+00:00",
       "ai_summary_zh": "提出HyperAddress方法，在描述标签超图上运行个性化PageRank，利用注意力头确定重启分布与转移权重，从而在查询时无需生成即可引导多跳检索；在MuSiQue、2WikiMultiHopQA和HotpotQA上平均超越最强基线3.5个Recall@5点和7.4个All@5点，且跳数越多增益越大，回答速度提升一倍以上，索引构建成本减半。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-31T06:00:50.917180+00:00"
@@ -92,7 +120,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-01T06:29:30.820740+00:00",
       "first_seen": "2026-11-02T06:30:42.692174+00:00",
-      "last_seen": "2026-11-03T07:05:44.250893+00:00"
+      "last_seen": "2026-11-04T06:46:53.189700+00:00"
     },
     {
       "source": "OpenAlex",

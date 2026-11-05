@@ -1,8 +1,10 @@
 {
-  "generated_at": "2026-11-04T06:45:30.978313+00:00",
+  "generated_at": "2026-11-05T07:05:16.682084+00:00",
   "query_window_days": 30,
   "count": 1426,
-  "warnings": [],
+  "warnings": [
+    "OpenAlex: OpenAlex request failed for \"building information modeling\": HTTP 429: Too Many Requests"
+  ],
   "papers": [
     {
       "source": "OpenAlex",
@@ -2361,7 +2363,9 @@
       ],
       "ai_summary_zh": "研究提出Pano2BIM，一种几何约束的视觉语言模型智能体，利用已知房间尺寸的平面图和单张360度照片生成LOD 200的近似IFC4模型，通过确定性工具估计相机位姿、射线投射计算度量位置并校验空间约束。在单实验室初步评估中，其测量流程的家具轮廓平均IoU达0.53（基线0.44），七件固定家具中平均匹配4.0件（基线2.3件），测量阶段约3.8分钟、API成本1.63美元，表明快速低成本生成竣工BIM具有可行性。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:45:26.335486+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:45:26.335486+00:00",
+      "first_seen": "2026-11-05T07:05:16.593962+00:00",
+      "last_seen": "2026-11-05T07:05:16.593962+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2520,7 +2524,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-27T05:19:14.879411+00:00",
       "first_seen": "2026-10-28T05:58:21.394887+00:00",
-      "last_seen": "2026-11-04T06:44:55.576574+00:00"
+      "last_seen": "2026-11-05T07:05:16.593962+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3616,7 +3620,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-24T04:50:19.496043+00:00",
       "first_seen": "2026-10-25T04:59:06.527961+00:00",
-      "last_seen": "2026-11-04T06:44:55.576574+00:00"
+      "last_seen": "2026-11-05T07:05:16.593962+00:00"
     },
     {
       "source": "arXiv",
@@ -3647,7 +3651,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-22T05:05:20.767393+00:00",
       "first_seen": "2026-10-24T04:50:10.593433+00:00",
-      "last_seen": "2026-11-04T06:44:55.576574+00:00"
+      "last_seen": "2026-11-05T07:05:16.593962+00:00"
     },
     {
       "source": "OpenAlex",

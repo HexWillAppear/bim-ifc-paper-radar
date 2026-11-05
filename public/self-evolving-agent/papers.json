@@ -1,9 +1,44 @@
 {
-  "generated_at": "2026-11-04T06:46:49.062849+00:00",
+  "generated_at": "2026-11-05T07:09:33.175054+00:00",
   "query_window_days": 30,
-  "count": 518,
-  "warnings": [],
+  "count": 519,
+  "warnings": [
+    "OpenAlex: OpenAlex request failed for \"agent self evolution\": HTTP 429: Too Many Requests"
+  ],
   "papers": [
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2611.05636v1",
+      "title": "Route to Remember: Adaptive Memory Selection for LLM Agents",
+      "abstract": "The memory of production agents is increasingly becoming a bottleneck and is built almost exclusively from text: key points are extracted from out-of-limit context and retrieved into context at query time. Therefore, every new query incurs an additional cost that grows with the accumulated history. Weight memory is a complementary alternative that internalizes knowledge into model parameters and answers with no context at all, and has recently proven effective in self-evolving agents for internalizing skills and behaviors. However, its application in episodic and semantic memory, such as user-specific facts, remains comparatively unexplored, and a gap remains between earlier attempts at weight memory and text-based systems regarding recall performance. We study how to make weight memory competitive as a long-term factual store by applying on-policy self-distillation (OPSD). It trains a context-free student from a teacher, which is the same model conditioned on the user's memory, together with a verify-then-regenerate router that lets weight and text memory each cover the queries they handle best. On the HaluMem benchmark, OPSD matches or surpasses strong text-memory baselines, including full-context prompting and retrieval systems, while reading fewer tokens per query. We further conduct an extensive study that characterizes the behavior of weight memory and analyzes how different training recipes affect its performance. As agent harnesses move toward persistent, multi-session deployments, these results position weight memory as a practical, low-cost component of agent memory and provide insights into feasible training and evaluation protocols for combining it with retrieval.",
+      "authors": [
+        "Zeyu Fang",
+        "Jun Yin",
+        "Yongsheng Mei",
+        "Xu Han",
+        "Chaitali Joshi",
+        "Zhongkai Sun",
+        "Jie Hao",
+        "Bin Guo",
+        "Chengyuan Ma",
+        "Benjamin Z. Yao",
+        "Chenlei Guo"
+      ],
+      "published": "2026-11-03T21:21:14Z",
+      "updated": "2026-11-03T21:21:14Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.05636v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05636v1",
+      "venue": "cs.AI",
+      "score": 20,
+      "matched_terms": [
+        "self-evolving agents",
+        "self-evolution + agent"
+      ],
+      "ai_summary_zh": "研究面向LLM智能体的长期事实记忆，提出基于在线自蒸馏（OPSD）的权重记忆方案，将用户记忆内化到模型参数中，并配合“先验证再重生成”路由器在权重记忆与文本记忆间自适应选择。在HaluMem基准上，该方法匹配或超越强文本记忆基线，且每次查询读取的token更少。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-11-05T07:09:32.658221+00:00"
+    },
     {
       "source": "arXiv",
       "source_id": "http://arxiv.org/abs/2611.05313v1",
@@ -32,12 +67,14 @@
       "score": 36,
       "matched_terms": [
         "agent self-evolution",
-        "self-evolving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-evolving agents"
       ],
       "ai_summary_zh": "提出MDSKILL多视角蒸馏方法，将技能记忆按状态锚定、动作规划与执行控制三个功能视角组织，并借助动态指标筛选高质量技能构建分支，通过在线策略自蒸馏把互补经验整合进共享策略，从而在有限训练预算下实现高效的技能内化与智能体持续自进化，在ALFWorld和WebShop上分别较最优基线提升最多7.1%和8.1%。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:46:33.236032+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:46:33.236032+00:00",
+      "first_seen": "2026-11-05T07:09:30.866084+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -63,12 +100,14 @@
       "venue": "cs.AI",
       "score": 24,
       "matched_terms": [
-        "self-evolving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-evolving agents"
       ],
       "ai_summary_zh": "论文针对自进化Agent从交互经验生成产物并复用这一过程，指出仅凭产物累积、行为改变和指标上升等代理信号无法判断能力是否真正形成，进而将能力形成定义为五个顺序依赖属性并引入状态、博弈、谱系三尺度诊断。在五子棋受控环境中，Reflexion、Voyager和DGM虽均呈现三类信号，却分别暴露出合法化增益、组合覆盖失效和仅损失漂移等不同的能力形成断裂。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:46:35.494232+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:46:35.494232+00:00",
+      "first_seen": "2026-11-05T07:09:30.866084+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -126,12 +165,14 @@
       "venue": "cs.AI",
       "score": 23,
       "matched_terms": [
-        "self-improving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-improving agents"
       ],
       "ai_summary_zh": "提出SelfImprove-Bench评测框架，将任务按探索、规划、推理三类能力组织为引导模型进化的场景，并基于游戏实例化任务、配合模板与难度系数实现可扩展生成，还设置G0至G4泛化阶梯衡量能力增益向训练条件之外的迁移程度，实验发现现有递归自改进方法的进化增益在不同泛化层级上并不一致。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:46:39.338913+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:46:39.338913+00:00",
+      "first_seen": "2026-11-05T07:09:30.866084+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -158,7 +199,9 @@
       ],
       "ai_summary_zh": "提出统一的自进化智能体推荐框架EvoRec，通过需求推断、规划、执行与动态反思树协同，在用户反馈后定位失败并回放验证修复，将经验蒸馏为可复用策略，无需更新参数即可持续改进；在快手本地服务广告数据上Hit@50提升15.7%，七天在线A/B测试广告收入增4.6%。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:46:41.191777+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:46:41.191777+00:00",
+      "first_seen": "2026-11-05T07:09:30.866084+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -186,7 +229,9 @@
       ],
       "ai_summary_zh": "提出一种面向复杂任务的语义分解自进化智能体工作流框架，为每个子任务设定明确适用条件与可执行代码或调用模型的流程，并利用执行反馈迭代优化任务分解与过程更新，在GLEE竞赛的议价、谈判与说服场景中验证了有效性。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:46:43.243107+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:46:43.243107+00:00",
+      "first_seen": "2026-11-05T07:09:30.866084+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -221,7 +266,9 @@
       ],
       "ai_summary_zh": "提出以可复用“环境原子”（意图、规则、数据、服务器）组合并演化环境的新范式，构建LegoEnv，在223个应用上生成5465个经验证环境，一轮演化使可解环境占比从71.6%升至88.3%，并验证其用于监督微调与强化学习可提升Qwen模型表现。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:46:44.993352+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:46:44.993352+00:00",
+      "first_seen": "2026-11-05T07:09:30.866084+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -244,12 +291,14 @@
       "venue": "cs.LG",
       "score": 20,
       "matched_terms": [
-        "self-evolving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-evolving agents"
       ],
       "ai_summary_zh": "论文提出OMCE框架，让经验增强型LLM智能体在测试时自适应中通过轻量上下文赌博机元控制器，依据检索信号在DIRECT、EPISODE、GUIDE、DISTILL四种认知动作间路由，在线更新经验记忆与路由策略；在四个基准上首次尝试成功率最高提升20.5个百分点，并大幅降低token消耗。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:46:46.797027+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:46:46.797027+00:00",
+      "first_seen": "2026-11-05T07:09:30.866084+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -272,12 +321,14 @@
       "venue": "cs.CL",
       "score": 20,
       "matched_terms": [
-        "self-evolving agents",
-        "self-evolution + agent"
+        "self-evolution + agent",
+        "self-evolving agents"
       ],
       "ai_summary_zh": "该研究提出Latent Harness方法，将外部行为指令或智能体框架的行为契约蒸馏为秩为8的激活偏移，注入冻结主干每个解码器块输出端，仅占0.03%至0.05%参数，推理时无需携带框架文本或额外token，并在10项预注册设置中的8项复现原始框架收益，且支持零样本跨任务迁移与偏移空间组合。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:46:48.546367+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:46:48.546367+00:00",
+      "first_seen": "2026-11-05T07:09:30.866084+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -335,7 +386,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-02T06:30:34.237176+00:00",
       "first_seen": "2026-11-04T06:46:31.770365+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -365,7 +416,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-02T06:30:36.216906+00:00",
       "first_seen": "2026-11-04T06:46:31.770365+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -398,7 +449,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-30T06:06:07.681624+00:00",
       "first_seen": "2026-10-31T06:00:25.924175+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -428,7 +479,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-30T06:06:09.737771+00:00",
       "first_seen": "2026-10-31T06:00:25.924175+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -456,7 +507,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-30T06:06:12.439744+00:00",
       "first_seen": "2026-10-31T06:00:25.924175+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -539,7 +590,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-30T06:06:14.648177+00:00",
       "first_seen": "2026-10-31T06:00:25.924175+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -611,7 +662,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-30T06:06:17.004640+00:00",
       "first_seen": "2026-10-31T06:00:25.924175+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -646,7 +697,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-28T05:58:45.903285+00:00",
       "first_seen": "2026-10-29T06:04:57.413832+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -963,7 +1014,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-27T05:19:39.503611+00:00",
       "first_seen": "2026-10-28T05:58:44.620951+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -992,7 +1043,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-27T05:19:41.323301+00:00",
       "first_seen": "2026-10-28T05:58:44.620951+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1298,7 +1349,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-24T04:50:39.390345+00:00",
       "first_seen": "2026-10-25T05:00:04.211640+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1354,7 +1405,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-22T05:05:46.389757+00:00",
       "first_seen": "2026-10-24T04:50:38.250832+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -1384,7 +1435,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-22T05:05:48.221438+00:00",
       "first_seen": "2026-10-24T04:50:38.250832+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -1413,7 +1464,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-22T05:05:50.219676+00:00",
       "first_seen": "2026-10-24T04:50:38.250832+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -1732,7 +1783,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-22T05:05:51.960460+00:00",
       "first_seen": "2026-10-24T04:50:38.250832+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -1764,7 +1815,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-21T05:04:04.397137+00:00",
       "first_seen": "2026-10-22T05:05:45.347326+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -1796,7 +1847,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-21T05:04:06.538981+00:00",
       "first_seen": "2026-10-22T05:05:45.347326+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2034,7 +2085,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-22T05:05:53.736825+00:00",
       "first_seen": "2026-10-24T04:50:38.250832+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -2065,7 +2116,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-20T05:03:31.915818+00:00",
       "first_seen": "2026-10-21T05:04:03.110299+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2326,7 +2377,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-20T05:03:33.876566+00:00",
       "first_seen": "2026-10-21T05:04:03.110299+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -2369,7 +2420,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-20T05:03:35.677350+00:00",
       "first_seen": "2026-10-21T05:04:03.110299+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2542,7 +2593,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-20T05:03:39.707972+00:00",
       "first_seen": "2026-10-21T05:04:03.110299+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -2572,7 +2623,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-27T05:19:47.881878+00:00",
       "first_seen": "2026-10-28T05:58:44.620951+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2667,7 +2718,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-19T04:57:40.097766+00:00",
       "first_seen": "2026-10-20T05:03:30.795102+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -2698,7 +2749,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-19T04:57:41.694373+00:00",
       "first_seen": "2026-10-20T05:03:30.795102+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -2725,7 +2776,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-19T04:57:43.653133+00:00",
       "first_seen": "2026-10-20T05:03:30.795102+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -2759,7 +2810,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-19T04:57:45.457477+00:00",
       "first_seen": "2026-10-20T05:03:30.795102+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -2791,7 +2842,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-19T04:57:47.640569+00:00",
       "first_seen": "2026-10-20T05:03:30.795102+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2923,7 +2974,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-16T04:46:11.250045+00:00",
       "first_seen": "2026-10-18T04:49:27.162862+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3157,7 +3208,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-16T04:46:13.388654+00:00",
       "first_seen": "2026-10-18T04:49:27.162862+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -3190,7 +3241,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-16T04:46:15.787714+00:00",
       "first_seen": "2026-10-18T04:49:27.162862+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -3227,7 +3278,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-16T04:46:17.805295+00:00",
       "first_seen": "2026-10-18T04:49:27.162862+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -3261,7 +3312,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-15T04:55:21.718368+00:00",
       "first_seen": "2026-10-16T04:46:09.938316+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -3290,7 +3341,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-15T04:55:23.500206+00:00",
       "first_seen": "2026-10-16T04:46:09.938316+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -3320,7 +3371,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-15T04:55:25.732382+00:00",
       "first_seen": "2026-10-16T04:46:09.938316+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -3349,7 +3400,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-15T04:55:27.456517+00:00",
       "first_seen": "2026-10-16T04:46:09.938316+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -3378,7 +3429,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-15T04:55:29.101487+00:00",
       "first_seen": "2026-10-16T04:46:09.938316+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -3407,7 +3458,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-15T04:55:30.736530+00:00",
       "first_seen": "2026-10-16T04:46:09.938316+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3685,7 +3736,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:06:40.103732+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -3716,7 +3767,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:06:42.255442+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -3960,7 +4011,7 @@
         "self-improving agents"
       ],
       "first_seen": "2026-10-24T04:50:38.250832+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00",
       "ai_summary_zh": "研究在256个合成世界中考察自改进智能体从含噪声结果中撰写经验教训时，是否会把偶然性带入后续决策；结果显示，较优工具偶然失败后写下的教训会使下一次选择较差工具的比例升至11.6%，远高于无关项或成功教训情境下的0.4%。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-24T04:50:41.334959+00:00"
@@ -4154,7 +4205,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:06:44.826744+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -4187,7 +4238,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:06:46.904532+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -4219,7 +4270,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:06:49.674865+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -4248,7 +4299,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:06:51.931081+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4305,7 +4356,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:06:54.237656+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -4339,7 +4390,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:06:56.378285+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -4395,7 +4446,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-02T06:30:38.250845+00:00",
       "first_seen": "2026-11-04T06:46:31.770365+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -4420,7 +4471,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:06:58.352802+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4626,7 +4677,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:07:00.708541+00:00",
       "first_seen": "2026-10-15T04:55:20.697203+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -4657,7 +4708,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:44.767363+00:00",
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -4689,7 +4740,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:46.761492+00:00",
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -4722,7 +4773,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-12T06:13:48.581887+00:00",
       "first_seen": "2026-10-13T06:55:42.755258+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -4944,7 +4995,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-09T06:23:40.618949+00:00",
       "first_seen": "2026-10-10T06:05:37.252257+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -5270,7 +5321,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:06.602764+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -5299,7 +5350,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:08.419723+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -5322,7 +5373,7 @@
         "self-improving agent"
       ],
       "first_seen": "2026-10-14T05:06:38.726971+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00",
+      "last_seen": "2026-11-05T07:09:30.866084+00:00",
       "ai_summary_zh": "该研究以带隐藏终端随机性的有界验证框架，比较智能体通过延长搜索、增加支持或修改提议与验证方式实现的性能提升，并区分不变接受与可随重构变化的核心—支持标签。其证明在共同可靠解释器与固定验证协议下，一致有界的自我修改仍属同一验证类，且独立多数放大保持语言不变，而随机纸带上的存在性接受可能引入错误输出。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-14T05:07:04.801721+00:00"
@@ -5369,7 +5420,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:10.096056+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",
@@ -5537,7 +5588,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:12.111604+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -5572,7 +5623,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-08T06:22:13.776925+00:00",
       "first_seen": "2026-10-09T06:23:39.113690+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -5603,7 +5654,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-07T06:13:34.380433+00:00",
       "first_seen": "2026-10-08T06:22:05.158733+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "arXiv",
@@ -5632,7 +5683,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-07T06:13:36.173186+00:00",
       "first_seen": "2026-10-08T06:22:05.158733+00:00",
-      "last_seen": "2026-11-04T06:46:31.770365+00:00"
+      "last_seen": "2026-11-05T07:09:30.866084+00:00"
     },
     {
       "source": "OpenAlex",

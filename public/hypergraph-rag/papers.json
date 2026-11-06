@@ -1,16 +1,14 @@
 {
-  "generated_at": "2026-11-05T07:10:51.268759+00:00",
+  "generated_at": "2026-11-06T07:09:02.454063+00:00",
   "query_window_days": 30,
   "count": 19,
-  "warnings": [
-    "OpenAlex: OpenAlex request failed for \"hypergraph retrieval-augmented generation\": HTTP 429: Too Many Requests"
-  ],
+  "warnings": [],
   "papers": [
     {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7225089817",
       "title": "Caching Hyperedges: KV-Cache Reuse for Hypergraph RAG",
-      "abstract": "",
+      "abstract": "Hypergraph-based retrieval captures the n-ary relational facts that binary-graph methods fragment, but answering a query is slow: the model must read the text of many retrieved units before it can answer. We present Cachy, which removes this reading cost by precomputing a key-value (KV) cache for each retrieval unit and reusing it whenever a query retrieves that unit. Because retrieval is hyperedge-grounded, each cached unit is a short, self-contained passage, so caches fuse at query time without fine-tuning and with no detectable loss in generation quality. To keep storage tractable, Cachy caches only the units that queries actually reach (demand caching) and compresses each cache by up to 8× with INT8/INT4 quantization and 50% K-norm token pruning. Together these cut storage from 1.9~TB to 109~GB on our workload. On UltraDomain across five domains, Cachy matches the uncached hypergraph pipeline on generation quality while cutting mean query time from 21.61~s to 8.52~s, matching the latency of lightweight RAG. Code and resources are publicly available. https://github.com/PRAISELab-PicusLab/Cachy-Hypergraphrag.",
       "authors": [
         "Mariano Barone",
         "Francesco Di Serio",
@@ -20,19 +18,23 @@
         "Antonio Romano"
       ],
       "published": "2026-11-03",
-      "updated": "2026-11-03T10:50:19.383937",
+      "updated": "2026-11-04T10:54:05.112534",
       "doi": "https://doi.org/10.1145/3799682.3839896",
       "url": "https://doi.org/10.1145/3799682.3839896",
       "pdf_url": "https://doi.org/10.1145/3799682.3839896",
       "venue": "ACM International Conference on Information and Knowledge Management (CIKM)",
-      "score": 24,
+      "score": 45,
       "matched_terms": [
+        "hypergraph + RAG",
         "hypergraph rag",
-        "hypergraph + RAG"
+        "hypergraph-based retrieval",
+        "hypergraphrag"
       ],
       "ai_summary_zh": "针对超图检索增强生成中的超边处理，探讨利用KV缓存复用机制来缓存超边以提升计算效率，属于超图RAG与缓存复用相结合的研究方向。",
       "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:46:54.294987+00:00"
+      "ai_summary_updated_at": "2026-11-04T06:46:54.294987+00:00",
+      "first_seen": "2026-11-06T07:09:02.452974+00:00",
+      "last_seen": "2026-11-06T07:09:02.452974+00:00"
     },
     {
       "source": "OpenAlex",
@@ -47,7 +49,7 @@
         "Kai Wang"
       ],
       "published": "2026-10-28",
-      "updated": "2026-10-31T12:09:11.096373",
+      "updated": "2026-11-04T10:54:05.112534",
       "doi": "https://doi.org/10.1007/s44443-026-01366-2",
       "url": "https://doi.org/10.1007/s44443-026-01366-2",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44443-026-01366-2.pdf",
@@ -61,7 +63,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-31T06:00:48.704352+00:00",
       "first_seen": "2026-11-01T06:29:29.562316+00:00",
-      "last_seen": "2026-11-04T06:46:53.189700+00:00"
+      "last_seen": "2026-11-06T07:09:02.452974+00:00"
     },
     {
       "source": "OpenAlex",
@@ -88,7 +90,7 @@
         "hypergraph + RAG"
       ],
       "first_seen": "2026-10-31T06:00:47.599483+00:00",
-      "last_seen": "2026-11-04T06:46:53.189700+00:00",
+      "last_seen": "2026-11-06T07:09:02.452974+00:00",
       "ai_summary_zh": "提出HyperAddress方法，在描述标签超图上运行个性化PageRank，利用注意力头确定重启分布与转移权重，从而在查询时无需生成即可引导多跳检索；在MuSiQue、2WikiMultiHopQA和HotpotQA上平均超越最强基线3.5个Recall@5点和7.4个All@5点，且跳数越多增益越大，回答速度提升一倍以上，索引构建成本减半。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-31T06:00:50.917180+00:00"
@@ -122,7 +124,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-01T06:29:30.820740+00:00",
       "first_seen": "2026-11-02T06:30:42.692174+00:00",
-      "last_seen": "2026-11-04T06:46:53.189700+00:00"
+      "last_seen": "2026-11-06T07:09:02.452974+00:00"
     },
     {
       "source": "OpenAlex",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T06:23:18.036296+00:00",
+  "generated_at": "2026-11-09T06:57:28.637160+00:00",
   "query_window_days": 30,
   "count": 19,
   "warnings": [],
@@ -8,7 +8,7 @@
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7203662944",
       "title": "Hypergraph-based Multimodal Retrieval-Augmented Generation with Incremental Refinement",
-      "abstract": "Modern Multimodal Retrieval-Augmented Generation (M-RAG) systems are fundamentally limited by the binary connectivity paradigm of traditional simple graphs, which fails to capture the intricate, high-order correlations among heterogeneous entities, such as the N-ary relationships between a visual chart, its scattered textual descriptions, and underlying numerical data. Furthermore, existing refinement strategies often rely on exhaustive, full-page reconstruction to align cross-modal information, leading to prohibitive computational redundancy and the introduction of contextual noise in long-form document processing. In this paper, we propose Hyper-M2RAG, a novel framework that redefines multimodal document retrieval through High-order Hypergraph Representation Learning. We first formalize the document structure as a Multimodal Hypergraph, utilizing hyperedges as unified semantic containers to encapsulate multi-way associations across text, images, and tables, thereby transcending point-to-point modeling. To mitigate semantic fragmentation caused by physical pagination, we introduce an Anchor-driven Incremental Refinement mechanism. Rather than performing a global sweep, our approach identifies boundary-crossing anchor nodes and reconstructs their local hyper-topology using one-hop neighborhood contexts. This targeted refinement effectively bridges cross-page knowledge gaps with minimal computational footprints. Extensive evaluations on multimodal benchmarking datasets demonstrate that Hyper-M2RAG significantly outperforms state-of-the-art methods in both retrieval precision and generation coherence. Our code is available at https://github.com/ShenAoChen2001/MMHRAG.",
+      "abstract": "Modern Multimodal Retrieval-Augmented Generation (M-RAG) systems are fundamentally limited by the binary connectivity paradigm of traditional simple graphs, which fails to capture the intricate, high-order correlations among heterogeneous entities—such as the N-ary relationships between a visual chart, its scattered textual descriptions, and underlying numerical data. Furthermore, existing refinement strategies often rely on exhaustive, full-page reconstruction to align cross-modal information, leading to prohibitive computational redundancy and the introduction of contextual noise in long-form document processing. In this paper, we propose Hyper-M2RAG, a novel framework that redefines multimodal document retrieval through High-order Hypergraph Representation Learning. We first formalize the document structure as a Multimodal Hypergraph, utilizing hyperedges as unified semantic containers to encapsulate multi-way associations across text, images, and tables, thereby transcending point-to-point modeling. To mitigate semantic fragmentation caused by physical pagination, we introduce an Anchor-driven Incremental Refinement mechanism. Rather than performing a global sweep, our approach surgically identifies boundary-crossing anchors—nodes and reconstructs their local hyper-topology using one-hop neighborhood contexts. This targeted refinement effectively bridges cross-page knowledge gaps with minimal computational footprints. Extensive evaluations on multimodal benchmarking datasets demonstrate that Hyper-M2RAG significantly outperforms state-of-the-art methods in both retrieval precision and generation coherence. Our code is accessible at https://github.com/ShenAoChen2001/MMHRAG.",
       "authors": [
         "Shenao Chen",
         "Yidan Xu",
@@ -20,7 +20,7 @@
         "Yue Gao"
       ],
       "published": "2026-11-06",
-      "updated": "2026-11-07T11:25:07.637180",
+      "updated": "2026-11-08T12:12:28.789561",
       "doi": "https://doi.org/10.1145/3767308.3835434",
       "url": "https://doi.org/10.1145/3767308.3835434",
       "pdf_url": "https://doi.org/10.1145/3767308.3835434",
@@ -33,7 +33,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-07T06:43:06.145142+00:00",
       "first_seen": "2026-09-08T04:59:24.790456+00:00",
-      "last_seen": "2026-11-08T06:23:18.035800+00:00"
+      "last_seen": "2026-11-09T06:57:28.636696+00:00"
     },
     {
       "source": "OpenAlex",
@@ -49,7 +49,7 @@
         "Antonio Romano"
       ],
       "published": "2026-11-03",
-      "updated": "2026-11-04T10:54:05.112534",
+      "updated": "2026-11-08T12:12:28.789561",
       "doi": "https://doi.org/10.1145/3799682.3839896",
       "url": "https://doi.org/10.1145/3799682.3839896",
       "pdf_url": "https://doi.org/10.1145/3799682.3839896",
@@ -65,7 +65,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-04T06:46:54.294987+00:00",
       "first_seen": "2026-11-06T07:09:02.452974+00:00",
-      "last_seen": "2026-11-08T06:23:18.035800+00:00"
+      "last_seen": "2026-11-09T06:57:28.636696+00:00"
     },
     {
       "source": "OpenAlex",
@@ -94,7 +94,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-31T06:00:48.704352+00:00",
       "first_seen": "2026-11-01T06:29:29.562316+00:00",
-      "last_seen": "2026-11-08T06:23:18.035800+00:00"
+      "last_seen": "2026-11-09T06:57:28.636696+00:00"
     },
     {
       "source": "OpenAlex",
@@ -121,7 +121,7 @@
         "hypergraph + RAG"
       ],
       "first_seen": "2026-10-31T06:00:47.599483+00:00",
-      "last_seen": "2026-11-08T06:23:18.035800+00:00",
+      "last_seen": "2026-11-09T06:57:28.636696+00:00",
       "ai_summary_zh": "提出HyperAddress方法，在描述标签超图上运行个性化PageRank，利用注意力头确定重启分布与转移权重，从而在查询时无需生成即可引导多跳检索；在MuSiQue、2WikiMultiHopQA和HotpotQA上平均超越最强基线3.5个Recall@5点和7.4个All@5点，且跳数越多增益越大，回答速度提升一倍以上，索引构建成本减半。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-31T06:00:50.917180+00:00"
@@ -155,7 +155,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-01T06:29:30.820740+00:00",
       "first_seen": "2026-11-02T06:30:42.692174+00:00",
-      "last_seen": "2026-11-08T06:23:18.035800+00:00"
+      "last_seen": "2026-11-09T06:57:28.636696+00:00"
     },
     {
       "source": "OpenAlex",

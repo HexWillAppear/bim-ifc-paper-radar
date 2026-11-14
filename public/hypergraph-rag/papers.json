@@ -1,9 +1,43 @@
 {
-  "generated_at": "2026-11-13T07:00:07.987401+00:00",
+  "generated_at": "2026-11-14T06:48:00.188662+00:00",
   "query_window_days": 30,
-  "count": 19,
+  "count": 20,
   "warnings": [],
   "papers": [
+    {
+      "source": "OpenAlex",
+      "source_id": "https://openalex.org/W7225731289",
+      "title": "MMGraph-Agent: Agentic Multimodal RAG via Cache-Inspired Multimodal Knowledge HyperGraphs",
+      "abstract": "Driven by increasingly complex real-world applications, Retrieval-Augmented Generation (RAG) has evolved from textual pipelines to multimodal settings, comprising two complementary dimensions: knowledge organization and retrieval enhancement. However, existing methods still face challenges of high construction cost, context window limitations, and the lack of unified training across offline and online knowledge sources. To address these challenges, we propose MMGraph-Agent, a unified multimodal RAG framework based on cache-inspired multimodal knowledge hypergraphs. MMGraph-Agent enables extremely lightweight hypergraph construction with zero API cost and dynamic memory-based retrieval that alleviates long-context issues. Experiments across offline, online, and joint retrieval settings demonstrate consistent improvements in performance, efficiency, and architectural unification. Our software and data are publicly available at https://github.com/LHRLAB/MMGraph-Agent.",
+      "authors": [
+        "Haoran Luo",
+        "Ziyue Zhu",
+        "Shangyang Wu",
+        "Linhao Luo",
+        "Yikai Guo",
+        "Qika Lin",
+        "Fangzhi Xu",
+        "Jiapu Wang",
+        "Xiaobao Wu",
+        "Yifan Zhu",
+        "Luu Anh Tuan"
+      ],
+      "published": "2026-11-07",
+      "updated": "2026-11-13T13:42:25.865203",
+      "doi": "https://doi.org/10.48550/arxiv.2611.10657",
+      "url": "https://doi.org/10.48550/arxiv.2611.10657",
+      "pdf_url": "https://arxiv.org/pdf/2611.10657",
+      "venue": "arXiv (Cornell University)",
+      "score": 8,
+      "matched_terms": [
+        "hypergraph + RAG"
+      ],
+      "first_seen": "2026-11-14T06:47:58.644931+00:00",
+      "last_seen": "2026-11-14T06:47:58.644931+00:00",
+      "ai_summary_zh": "提出MMGraph-Agent统一多模态RAG框架，以缓存启发的多模态知识超图实现零API成本的轻量超图构建与动态记忆检索，缓解长上下文问题，并在离线、在线及联合检索设置中提升性能与效率。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-11-14T06:47:59.687321+00:00"
+    },
     {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7203662944",
@@ -33,7 +67,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-09-07T06:43:06.145142+00:00",
       "first_seen": "2026-09-08T04:59:24.790456+00:00",
-      "last_seen": "2026-11-13T07:00:07.985997+00:00"
+      "last_seen": "2026-11-14T06:47:58.644931+00:00"
     },
     {
       "source": "OpenAlex",
@@ -65,7 +99,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-04T06:46:54.294987+00:00",
       "first_seen": "2026-11-06T07:09:02.452974+00:00",
-      "last_seen": "2026-11-13T07:00:07.985997+00:00"
+      "last_seen": "2026-11-14T06:47:58.644931+00:00"
     },
     {
       "source": "OpenAlex",
@@ -94,7 +128,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-31T06:00:48.704352+00:00",
       "first_seen": "2026-11-01T06:29:29.562316+00:00",
-      "last_seen": "2026-11-13T07:00:07.985997+00:00"
+      "last_seen": "2026-11-14T06:47:58.644931+00:00"
     },
     {
       "source": "OpenAlex",
@@ -121,7 +155,7 @@
         "hypergraph + RAG"
       ],
       "first_seen": "2026-10-31T06:00:47.599483+00:00",
-      "last_seen": "2026-11-13T07:00:07.985997+00:00",
+      "last_seen": "2026-11-14T06:47:58.644931+00:00",
       "ai_summary_zh": "提出HyperAddress方法，在描述标签超图上运行个性化PageRank，利用注意力头确定重启分布与转移权重，从而在查询时无需生成即可引导多跳检索；在MuSiQue、2WikiMultiHopQA和HotpotQA上平均超越最强基线3.5个Recall@5点和7.4个All@5点，且跳数越多增益越大，回答速度提升一倍以上，索引构建成本减半。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-31T06:00:50.917180+00:00"
@@ -155,7 +189,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-01T06:29:30.820740+00:00",
       "first_seen": "2026-11-02T06:30:42.692174+00:00",
-      "last_seen": "2026-11-13T07:00:07.985997+00:00"
+      "last_seen": "2026-11-14T06:47:58.644931+00:00"
     },
     {
       "source": "OpenAlex",

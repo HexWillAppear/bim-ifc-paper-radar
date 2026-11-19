@@ -1,11 +1,41 @@
 {
-  "generated_at": "2026-11-18T07:47:32.974543+00:00",
+  "generated_at": "2026-11-19T07:45:48.089205+00:00",
   "query_window_days": 30,
-  "count": 1581,
+  "count": 1582,
   "warnings": [
-    "arXiv: The read operation timed out"
+    "OpenAlex: OpenAlex request failed for \"IFC schema\": HTTP 429: Too Many Requests"
   ],
   "papers": [
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2611.22307v1",
+      "title": "Learning to Edit IFC Building Models: Verifiable Checkers as the Training Signal for Dependency-Aware Editing Agents",
+      "abstract": "Editing a building information model in the Industry Foundation Classes (IFC) schema requires propagating changes to dependent elements while preserving unrelated entities. Existing language-model agents for IFC editing use prompted models without learning from edit outcomes. Target-file comparisons do not specify which alternative edits are allowed or which unrelated entities must remain unchanged. We present IfcGym, a CodeAct environment in which a language model edits IFC through executable code and four checkers verify validity relative to the input model, intent, dependency and preservation against a task specification. Their conjunction is strict success. IfcEdit distils verified teacher episodes into a Qwen3.5-9B student through supervised fine-tuning (SFT), then applies Group Relative Policy Optimization (GRPO) with strict success as the reward. On IfcEditBench, 1,990 editing tasks on 13 held-out real projects, the final student reaches 86.78% strict success, from 79.15% after SFT. The paired confidence interval for the difference from its teacher includes zero; the same recipe on a 27B model reaches 91.76% and exceeds the teacher. On the public benchmarks BIM-Edit and BIBIMBAP the final student scores 55.19 and 54.50. On IfcEditBench, the students outperform all prompted models except the teacher under matched tool access; both evaluated frameworks also score lower. Rewarding all four checkers yields 4.83 points more strict success than rewarding intent and validity alone.",
+      "authors": [
+        "Jiaxin Zhang",
+        "Yao Luo",
+        "Yuze Dan",
+        "Yunqin Li",
+        "Bowen Wang"
+      ],
+      "published": "2026-11-17T07:06:17Z",
+      "updated": "2026-11-17T07:06:17Z",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2611.22307v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.22307v1",
+      "venue": "cs.AI",
+      "score": 44,
+      "matched_terms": [
+        "industry foundation classes",
+        "building information model",
+        "ifc schema",
+        "IFC",
+        "BIM"
+      ],
+      "ai_summary_zh": "研究构建IfcGym代码执行环境，用四类检查器从有效性、意图、依赖与保持性验证IFC模型编辑，并将验证通过的教师轨迹经监督微调与GRPO强化学习蒸馏至Qwen3.5-9B学生模型；在IfcEditBench的1990个任务上严格成功率达86.78%，优于除教师外的提示模型。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-11-19T07:45:47.517421+00:00"
+    },
     {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7234161287",
@@ -2629,6 +2659,34 @@
       "ai_summary_updated_at": "2026-11-11T06:50:33.459477+00:00"
     },
     {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2611.10644v1",
+      "title": "Agent2BIM: A Systematic Evaluation of Reality-Capture Configurations and Prior Models for As-Built Modeling",
+      "abstract": "AI agents can generate as-built Building Information Models (BIMs) from reality-capture data, but the evidence required for accurate reconstruction remains unclear. This paper presents Agent2BIM, an agent-based Scan-to-BIM framework, and evaluates seven capture configurations in a research laboratory and a mechanical, electrical, and plumbing (MEP) scene. Inputs include 360° panoramas, smartphone video, smartphone LiDAR, terrestrial laser scanning (TLS), TLS with posed panoramas, and imagery supplemented by prior IFC models. Outputs are compared against TLS-verified reference models for component detection, geometric accuracy, and MEP connectivity. In the laboratory, component recall ranged from 84% to 100%, but only 9% of components reconstructed from panoramas were within 20 cm of their reference positions, compared with 86% using smartphone LiDAR. In the MEP scene, scale-free inputs recovered 11 - 43% of components, versus 75 - 93% for metric inputs. Prior IFC models improved MEP reconstruction but could propagate inaccuracies. The results highlight the complementary roles of visual and metric evidence in agent-based Scan-to-BIM.",
+      "authors": [
+        "Boyu Wang",
+        "Borja García de Soto"
+      ],
+      "published": "2026-11-07T10:31:50Z",
+      "updated": "2026-11-07T10:31:50Z",
+      "doi": "https://doi.org/10.48550/arxiv.2611.10644",
+      "url": "https://arxiv.org/abs/2611.10644v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.10644v1",
+      "venue": "cs.CV",
+      "score": 26,
+      "matched_terms": [
+        "BIM",
+        "IFC",
+        "ifc models",
+        "scan-to-bim"
+      ],
+      "ai_summary_zh": "该研究提出Agent2BIM这一基于智能体的扫描到BIM框架，在实验室与机电场景中系统评估全景影像、手机视频、手机LiDAR、地面激光扫描及先验IFC模型等七种采集配置，并按构件检测、几何精度与机电连通性对比TLS验证的参考模型，揭示视觉与度量证据在竣工BIM重建中的互补作用。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-11-10T07:32:51.994693+00:00",
+      "first_seen": "2026-11-11T06:50:17.398792+00:00",
+      "last_seen": "2026-11-19T07:45:45.550974+00:00"
+    },
+    {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7225583915",
       "title": "Evaluating the Effectiveness of Building Information Modeling (7D BIM) in Enhancing Facility Management and Maintenance of Heritage Buildings",
@@ -2656,34 +2714,6 @@
       "ai_summary_zh": "该研究以埃及及阿拉伯语境下的遗产建筑为对象，采用混合方法解释性序列设计，通过20位专家访谈与32名遗产专业人员问卷调查，运用描述统计、主成分因子分析和线性回归评估7D BIM对设施管理效率的影响。结果显示BIM采纳可解释遗产设施管理效率51.6%的变异，并识别出文档质量、运营效率、风险与安全管理、长期维护规划四个维度，提出将BIM采纳与可测量设施管理绩效相联系的框架。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-10T07:32:54.114154+00:00"
-    },
-    {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7225742568",
-      "title": "Agent2BIM: A Systematic Evaluation of Reality-Capture Configurations and Prior Models for As-Built Modeling",
-      "abstract": "AI agents can generate as-built Building Information Models (BIMs) from reality-capture data, but the evidence required for accurate reconstruction remains unclear. This paper presents Agent2BIM, an agent-based Scan-to-BIM framework, and evaluates seven capture configurations in a research laboratory and a mechanical, electrical, and plumbing (MEP) scene. Inputs include 360° panoramas, smartphone video, smartphone LiDAR, terrestrial laser scanning (TLS), TLS with posed panoramas, and imagery supplemented by prior IFC models. Outputs are compared against TLS-verified reference models for component detection, geometric accuracy, and MEP connectivity. In the laboratory, component recall ranged from 84% to 100%, but only 9% of components reconstructed from panoramas were within 20 cm of their reference positions, compared with 86% using smartphone LiDAR. In the MEP scene, scale-free inputs recovered 11 - 43% of components, versus 75 - 93% for metric inputs. Prior IFC models improved MEP reconstruction but could propagate inaccuracies. The results highlight the complementary roles of visual and metric evidence in agent-based Scan-to-BIM.",
-      "authors": [
-        "Boyu Wang",
-        "Borja García de Soto"
-      ],
-      "published": "2026-11-07",
-      "updated": "2026-11-14T11:04:58.165337",
-      "doi": "https://doi.org/10.48550/arxiv.2611.10644",
-      "url": "https://doi.org/10.48550/arxiv.2611.10644",
-      "pdf_url": "https://arxiv.org/pdf/2611.10644",
-      "venue": "arXiv (Cornell University)",
-      "score": 26,
-      "matched_terms": [
-        "BIM",
-        "IFC",
-        "ifc models",
-        "scan-to-bim"
-      ],
-      "ai_summary_zh": "该研究提出Agent2BIM这一基于智能体的扫描到BIM框架，在实验室与机电场景中系统评估全景影像、手机视频、手机LiDAR、地面激光扫描及先验IFC模型等七种采集配置，并按构件检测、几何精度与机电连通性对比TLS验证的参考模型，揭示视觉与度量证据在竣工BIM重建中的互补作用。",
-      "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-10T07:32:51.994693+00:00",
-      "first_seen": "2026-11-11T06:50:17.398792+00:00",
-      "last_seen": "2026-11-18T07:47:08.046913+00:00"
     },
     {
       "source": "OpenAlex",
@@ -2737,6 +2767,39 @@
       "ai_summary_updated_at": "2026-11-11T06:50:35.256257+00:00"
     },
     {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2611.09045v1",
+      "title": "When to Trust the BIM: Identifiability-Aware LiDAR-Inertial--BIM Fusion under As-Built Deviations",
+      "abstract": "Building information models (BIM) can provide a global geometric reference for robot localization with LiDAR-inertial odometry (LIO). However, as-built deviations from the as-designed model mean that a disagreement between a scan and the BIM may arise from a pose error, an offset wall surface (an as-built deviation or an unmodeled object in front of the wall), or a shifted room, and in some geometries these explanations produce identical observations. In this paper, we formalize this attribution problem as fault identification over three fault classes and derive a geometric criterion for when attribution is possible. Building on it, we propose an identifiability-aware method that reports an attribution only when the fault is attributable; otherwise, it retains the candidates, defers BIM updates and BIM-based pose corrections in the ambiguous directions, and recovers once new references arrive. In the pre-registered two-dimensional study, on cases whose fault is detectable but not attributable, the method's conditional error rate was 0.83%, against 31.67% for a baseline with uncertainty-based abstention at the same answer rate. On the 5,600 attributable cases, the method reported a unique attribution 5,574 times, with no incorrect attributions. In paired fault injections in a laboratory room with its IFC model and on three floors of the SLABIM dataset, it raised no off-target attribution (0 of 168 conditions in the laboratory; 0 of 1,302 on SLABIM) and attributed all eight laboratory faults predicted to be attributable, whereas both reproduced baselines raised off-target structural flags in every setting.",
+      "authors": [
+        "Yujie Zhang",
+        "Yuxuan Guo",
+        "Xinbao Sun",
+        "Chunlei Zhao",
+        "Langqi Miao",
+        "Xiaohui Jia",
+        "Jinyue Liu"
+      ],
+      "published": "2026-11-06T06:20:09Z",
+      "updated": "2026-11-06T06:20:09Z",
+      "doi": "https://doi.org/10.48550/arxiv.2611.09045",
+      "url": "https://arxiv.org/abs/2611.09045v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09045v1",
+      "venue": "cs.RO",
+      "score": 28,
+      "matched_terms": [
+        "BIM",
+        "bim-based",
+        "IFC",
+        "ifc model"
+      ],
+      "ai_summary_zh": "针对LiDAR-惯性里程计与BIM融合中扫描与模型不一致可能源于位姿误差、竣工偏差或房间偏移且部分几何下观测相同的问题，将归因形式化为三类故障识别并给出可归因性的几何判据，提出仅在可归因时报告归因、否则保留候选并暂缓BIM更新与位姿修正的可识别性感知方法；在二维预注册研究中该方法条件错误率为0.83%（基线31.67%），5,600个可归因案例中5,574次给出唯一归因且无误归因，并在实验室IFC模型与SLABIM数据集上实现零误目标归因。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-11-09T06:55:55.106680+00:00",
+      "first_seen": "2026-11-10T07:32:50.554094+00:00",
+      "last_seen": "2026-11-19T07:45:45.550974+00:00"
+    },
+    {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7225413388",
       "title": "Computational Paradigms in 4D Design Software: Spatio-Temporal Process Simulation in AECO and Inverse Material Programming in Additive Manufacturing",
@@ -2763,39 +2826,6 @@
       "ai_summary_zh": "该研究系统比较了4D设计软件的两类计算范式：AECO领域基于OpenBIM IFC时序模式（IfcWorkSchedule、IfcTask等）的4D BIM时空施工模拟，以及增材制造中4D打印逆向设计的化学—力学形变仿真。实证表明，集成3D+4D+5D BIM工作流可将基准综合精度由78.4%提升至96.7%，变更后重估时间缩短97.1%，模块化现场工期减半，并消除高达100%的时空管线碰撞。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-11-18T07:47:32.400833+00:00"
-    },
-    {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7225635503",
-      "title": "When to Trust the BIM: Identifiability-Aware LiDAR-Inertial--BIM Fusion under As-Built Deviations",
-      "abstract": "Building information models (BIM) can provide a global geometric reference for robot localization with LiDAR-inertial odometry (LIO). However, as-built deviations from the as-designed model mean that a disagreement between a scan and the BIM may arise from a pose error, an offset wall surface (an as-built deviation or an unmodeled object in front of the wall), or a shifted room, and in some geometries these explanations produce identical observations. In this paper, we formalize this attribution problem as fault identification over three fault classes and derive a geometric criterion for when attribution is possible. Building on it, we propose an identifiability-aware method that reports an attribution only when the fault is attributable; otherwise, it retains the candidates, defers BIM updates and BIM-based pose corrections in the ambiguous directions, and recovers once new references arrive. In the pre-registered two-dimensional study, on cases whose fault is detectable but not attributable, the method's conditional error rate was 0.83%, against 31.67% for a baseline with uncertainty-based abstention at the same answer rate. On the 5,600 attributable cases, the method reported a unique attribution 5,574 times, with no incorrect attributions. In paired fault injections in a laboratory room with its IFC model and on three floors of the SLABIM dataset, it raised no off-target attribution (0 of 168 conditions in the laboratory; 0 of 1,302 on SLABIM) and attributed all eight laboratory faults predicted to be attributable, whereas both reproduced baselines raised off-target structural flags in every setting.",
-      "authors": [
-        "Yujie Zhang",
-        "Yuxuan Guo",
-        "Xinbao Sun",
-        "Chunlei Zhao",
-        "Langqi Miao",
-        "Xiaohui Jia",
-        "Jinyue Liu"
-      ],
-      "published": "2026-11-06",
-      "updated": "2026-11-16T12:05:36.265796",
-      "doi": "https://doi.org/10.48550/arxiv.2611.09045",
-      "url": "https://doi.org/10.48550/arxiv.2611.09045",
-      "pdf_url": "https://arxiv.org/pdf/2611.09045",
-      "venue": "arXiv (Cornell University)",
-      "score": 28,
-      "matched_terms": [
-        "BIM",
-        "bim-based",
-        "IFC",
-        "ifc model"
-      ],
-      "ai_summary_zh": "针对LiDAR-惯性里程计与BIM融合中扫描与模型不一致可能源于位姿误差、竣工偏差或房间偏移且部分几何下观测相同的问题，将归因形式化为三类故障识别并给出可归因性的几何判据，提出仅在可归因时报告归因、否则保留候选并暂缓BIM更新与位姿修正的可识别性感知方法；在二维预注册研究中该方法条件错误率为0.83%（基线31.67%），5,600个可归因案例中5,574次给出唯一归因且无误归因，并在实验室IFC模型与SLABIM数据集上实现零误目标归因。",
-      "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-09T06:55:55.106680+00:00",
-      "first_seen": "2026-11-10T07:32:50.554094+00:00",
-      "last_seen": "2026-11-18T07:47:08.046913+00:00"
     },
     {
       "source": "OpenAlex",
@@ -6627,6 +6657,31 @@
       "ai_summary_updated_at": "2026-10-29T06:04:37.939701+00:00"
     },
     {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2611.00097v1",
+      "title": "Pano2BIM: A Geometry-Constrained Vision-Language Agent for As-Built BIM Generation from a Floor Plan and a Single 360$^\\circ$ Image",
+      "abstract": "Digital twins require accurate, up-to-date building information models (BIM) that reflect physical conditions, yet generating and maintaining as-built models remains costly and labor-intensive. Emerging image-based methods can capture visual appearance without inherently producing structured BIM information, while vision-language models (VLMs) struggle with reliable metric object placement. This paper presents Pano2BIM, a geometry-constrained VLM agent that generates approximate IFC4 models at Level of Development (LOD) 200 from a floor plan with known room dimensions and a single 360-degree photograph. The VLM identifies landmarks and objects, while deterministic tools estimate camera pose, compute metric positions through ray casting, and check spatial constraints. An optional second stage enriches the presentation model through render-and-compare feedback without modifying the primary furniture geometry. In a preliminary evaluation on one laboratory, the proposed Measure workflow achieved a mean furniture-footprint intersection over union (IoU) of 0.53, compared with 0.44 for a single-response baseline using identical modeling instructions, and matched an average of 4.0 versus 2.3 of seven fixed furniture elements across three runs. Centroid disagreements were similar for the four elements consistently identified by both approaches. The measurement stage averaged 3.8 minutes and USD 1.63 in API costs per run, while the complete demonstrated workflow required approximately 42 minutes and USD 11. These findings demonstrate the feasibility of rapid, low-cost as-built BIM generation, with potential applications in maintaining digital twins that reflect changing physical conditions.",
+      "authors": [
+        "Juan Diego Castaño Molina",
+        "Borja García de Soto"
+      ],
+      "published": "2026-10-25T12:02:06Z",
+      "updated": "2026-10-25T12:02:06Z",
+      "doi": "https://doi.org/10.48550/arxiv.2611.00097",
+      "url": "https://arxiv.org/abs/2611.00097v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.00097v1",
+      "venue": "cs.CV",
+      "score": 8,
+      "matched_terms": [
+        "BIM"
+      ],
+      "ai_summary_zh": "研究提出Pano2BIM，一种几何约束的视觉语言模型智能体，利用已知房间尺寸的平面图和单张360度照片生成LOD 200的近似IFC4模型，通过确定性工具估计相机位姿、射线投射计算度量位置并校验空间约束。在单实验室初步评估中，其测量流程的家具轮廓平均IoU达0.53（基线0.44），七件固定家具中平均匹配4.0件（基线2.3件），测量阶段约3.8分钟、API成本1.63美元，表明快速低成本生成竣工BIM具有可行性。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-11-04T06:45:26.335486+00:00",
+      "first_seen": "2026-11-05T07:05:16.593962+00:00",
+      "last_seen": "2026-11-19T07:45:45.550974+00:00"
+    },
+    {
       "source": "OpenAlex",
       "source_id": "https://openalex.org/W7223678954",
       "title": "Direct Translation Versus Semantic Reinterpretation in IFC-to-CityGML 3.0 Conversion: Assessing Traceability and Quantity Preservation Through RDF Knowledge Graphs",
@@ -6756,31 +6811,6 @@
       "ai_summary_updated_at": "2026-10-27T05:19:12.595277+00:00"
     },
     {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7225158194",
-      "title": "Pano2BIM: A Geometry-Constrained Vision-Language Agent for As-Built BIM Generation from a Floor Plan and a Single 360$^\\circ$ Image",
-      "abstract": "Digital twins require accurate, up-to-date building information models (BIM) that reflect physical conditions, yet generating and maintaining as-built models remains costly and labor-intensive. Emerging image-based methods can capture visual appearance without inherently producing structured BIM information, while vision-language models (VLMs) struggle with reliable metric object placement. This paper presents Pano2BIM, a geometry-constrained VLM agent that generates approximate IFC4 models at Level of Development (LOD) 200 from a floor plan with known room dimensions and a single 360-degree photograph. The VLM identifies landmarks and objects, while deterministic tools estimate camera pose, compute metric positions through ray casting, and check spatial constraints. An optional second stage enriches the presentation model through render-and-compare feedback without modifying the primary furniture geometry. In a preliminary evaluation on one laboratory, the proposed Measure workflow achieved a mean furniture-footprint intersection over union (IoU) of 0.53, compared with 0.44 for a single-response baseline using identical modeling instructions, and matched an average of 4.0 versus 2.3 of seven fixed furniture elements across three runs. Centroid disagreements were similar for the four elements consistently identified by both approaches. The measurement stage averaged 3.8 minutes and USD 1.63 in API costs per run, while the complete demonstrated workflow required approximately 42 minutes and USD 11. These findings demonstrate the feasibility of rapid, low-cost as-built BIM generation, with potential applications in maintaining digital twins that reflect changing physical conditions.",
-      "authors": [
-        "Juan Diego Castaño Molina",
-        "Borja García de Soto"
-      ],
-      "published": "2026-10-25",
-      "updated": "2026-11-16T12:05:36.265796",
-      "doi": "https://doi.org/10.48550/arxiv.2611.00097",
-      "url": "https://doi.org/10.48550/arxiv.2611.00097",
-      "pdf_url": "https://arxiv.org/pdf/2611.00097",
-      "venue": "arXiv (Cornell University)",
-      "score": 8,
-      "matched_terms": [
-        "BIM"
-      ],
-      "ai_summary_zh": "研究提出Pano2BIM，一种几何约束的视觉语言模型智能体，利用已知房间尺寸的平面图和单张360度照片生成LOD 200的近似IFC4模型，通过确定性工具估计相机位姿、射线投射计算度量位置并校验空间约束。在单实验室初步评估中，其测量流程的家具轮廓平均IoU达0.53（基线0.44），七件固定家具中平均匹配4.0件（基线2.3件），测量阶段约3.8分钟、API成本1.63美元，表明快速低成本生成竣工BIM具有可行性。",
-      "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-11-04T06:45:26.335486+00:00",
-      "first_seen": "2026-11-05T07:05:16.593962+00:00",
-      "last_seen": "2026-11-18T07:47:08.046913+00:00"
-    },
-    {
       "source": "arXiv",
       "source_id": "http://arxiv.org/abs/2610.33737v1",
       "title": "A SegFormer-based model for spatial Daylight Factor prediction with comprehensive obstruction encoding and regulatory validation",
@@ -6808,7 +6838,7 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-27T05:19:14.879411+00:00",
       "first_seen": "2026-10-28T05:58:21.394887+00:00",
-      "last_seen": "2026-11-17T08:11:31.306411+00:00"
+      "last_seen": "2026-11-19T07:45:45.550974+00:00"
     },
     {
       "source": "OpenAlex",
@@ -7877,21 +7907,21 @@
       "last_seen": "2026-10-28T05:58:21.394887+00:00"
     },
     {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7223367645",
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2610.30533v1",
       "title": "IFC-MCQ: Automatically Generating Multiple-Choice Benchmarks for Evaluating LLM Agents on IFC Data Retrieval",
       "abstract": "Industry Foundation Classes (IFC), the standard for building information exchange in architecture, engineering, and construction (AEC), is increasingly queried through large language models (LLMs) using natural language. Evaluating these systems at scale is difficult because free-text answers require costly human or LLM-based review. We propose IFC-MCQ, a method that automatically generates multiple-choice benchmarks from IFC files for exact option-set grading. The taxonomy covers 15 categories and 36 subtypes across four groups, with answer keys derived from the file and distractors constructed from file-derived values or predefined rules. We applied IFC-MCQ to IFC models of varying sizes and modelling characteristics to assess generation coverage and evaluated two agentic configurations on selected models using tool- and code-based retrieval. The evaluation exposed category-specific failure modes and showed that performance can vary with the source IFC model and retrieval interface. IFC-MCQ enables scalable benchmarking of LLM-based IFC retrieval in AEC workflows.",
       "authors": [
         "Rabindra Lamsal",
-        "Sisi Zlatanova B",
+        "Sisi Zlatanova",
         "Xuesong Shen"
       ],
-      "published": "2026-10-21",
-      "updated": "2026-11-17T12:49:18.490984",
+      "published": "2026-10-21T23:38:01Z",
+      "updated": "2026-10-21T23:38:01Z",
       "doi": "https://doi.org/10.48550/arxiv.2610.30533",
-      "url": "https://doi.org/10.48550/arxiv.2610.30533",
-      "pdf_url": "https://arxiv.org/pdf/2610.30533",
-      "venue": "arXiv (Cornell University)",
+      "url": "https://arxiv.org/abs/2610.30533v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30533v1",
+      "venue": "cs.CL",
       "score": 43,
       "matched_terms": [
         "IFC",
@@ -7904,7 +7934,38 @@
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-24T04:50:19.496043+00:00",
       "first_seen": "2026-10-25T04:59:06.527961+00:00",
-      "last_seen": "2026-11-18T07:47:08.046913+00:00"
+      "last_seen": "2026-11-19T07:45:45.550974+00:00"
+    },
+    {
+      "source": "arXiv",
+      "source_id": "http://arxiv.org/abs/2610.29257v1",
+      "title": "CRAB: Cuboid-based Representation for As-built BIM from Point Clouds",
+      "abstract": "As-built BIM reconstruction from point clouds demands semantic, volumetric, parametric, and editable building components, beyond 2D layouts or planar abstractions. Yet existing scan-to-BIM pipelines often rely on handcrafted rules, heuristic optimization, or manual correction, while learning-based methods fall short of recovering wall thickness, opening geometry, and component-level BIM structure. We introduce CRAB, a BIM-ready cuboid reconstruction framework that encodes walls, doors, windows, beams, and columns as compact architectural cuboids with IFC-compatible semantics and parameters. CRAB bridges point clouds and editable BIM by combining ProposalNet, which predicts coarse component cuboids, with AssemblyNet, a relation-aware Flow Matching model that refines geometry, predicts structural relationships, and enables automatic structural correction and human-guided editing. To address limited cuboid-level supervision, we extend Structured3D with component-wise cuboid annotations and construct cuboid-based procedural scenes. Experiments show CRAB surpasses floor plan and plane-based alternatives in component completeness, geometric accuracy, and generalization. For interior wall thickness estimation, CRAB achieves a mean error of 2.80 cm, with 79.50% of matched walls within 3 cm. The project page is available at https://vcc.tech/research/2026/CRAB.",
+      "authors": [
+        "Haoran Xiong",
+        "Jing Wang",
+        "Shanshan Pan",
+        "Zihao Yan",
+        "Minglun Gong",
+        "Hui Huang"
+      ],
+      "published": "2026-10-21T06:06:13Z",
+      "updated": "2026-10-21T06:06:13Z",
+      "doi": "https://doi.org/10.48550/arxiv.2610.29257",
+      "url": "https://arxiv.org/abs/2610.29257v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.29257v1",
+      "venue": "cs.CV",
+      "score": 21,
+      "matched_terms": [
+        "BIM",
+        "IFC",
+        "scan-to-bim"
+      ],
+      "ai_summary_zh": "提出CRAB框架，将墙体、门窗、梁柱等编码为具IFC兼容语义与参数的紧凑建筑长方体，结合ProposalNet预测粗粒度构件与关系感知的AssemblyNet精化几何并预测结构关系，实现可编辑竣工BIM重建；实验表明其在构件完整性、几何精度与泛化性上优于基于平面图的方案，内墙厚度估计平均误差2.80厘米。",
+      "ai_summary_model": "deepseek-v4-flash",
+      "ai_summary_updated_at": "2026-10-22T05:05:20.767393+00:00",
+      "first_seen": "2026-10-24T04:50:10.593433+00:00",
+      "last_seen": "2026-11-19T07:45:45.550974+00:00"
     },
     {
       "source": "OpenAlex",
@@ -8011,37 +8072,6 @@
       "ai_summary_zh": "该研究面向沙特基础设施加固与扩建项目，探讨将ETABS、SAP2000与基于BIM的分析相集成，用于数字化结构工程实践，以提升基础设施韧性。",
       "ai_summary_model": "deepseek-v4-flash",
       "ai_summary_updated_at": "2026-10-24T04:50:21.246659+00:00"
-    },
-    {
-      "source": "OpenAlex",
-      "source_id": "https://openalex.org/W7223253191",
-      "title": "CRAB: Cuboid-based Representation for As-built BIM from Point Clouds",
-      "abstract": "As-built BIM reconstruction from point clouds demands semantic, volumetric, parametric, and editable building components, beyond 2D layouts or planar abstractions. Yet existing scan-to-BIM pipelines often rely on handcrafted rules, heuristic optimization, or manual correction, while learning-based methods fall short of recovering wall thickness, opening geometry, and component-level BIM structure. We introduce CRAB, a BIM-ready cuboid reconstruction framework that encodes walls, doors, windows, beams, and columns as compact architectural cuboids with IFC-compatible semantics and parameters. CRAB bridges point clouds and editable BIM by combining ProposalNet, which predicts coarse component cuboids, with AssemblyNet, a relation-aware Flow Matching model that refines geometry, predicts structural relationships, and enables automatic structural correction and human-guided editing. To address limited cuboid-level supervision, we extend Structured3D with component-wise cuboid annotations and construct cuboid-based procedural scenes. Experiments show CRAB surpasses floor plan and plane-based alternatives in component completeness, geometric accuracy, and generalization. For interior wall thickness estimation, CRAB achieves a mean error of 2.80 cm, with 79.50% of matched walls within 3 cm. The project page is available at https://vcc.tech/research/2026/CRAB.",
-      "authors": [
-        "Haoran Xiong",
-        "Jing Wang",
-        "Shanshan Pan",
-        "Zihao Yan",
-        "龚明伦",
-        "Hui Huang"
-      ],
-      "published": "2026-10-21",
-      "updated": "2026-11-16T12:05:36.265796",
-      "doi": "https://doi.org/10.48550/arxiv.2610.29257",
-      "url": "https://doi.org/10.48550/arxiv.2610.29257",
-      "pdf_url": "https://arxiv.org/pdf/2610.29257",
-      "venue": "arXiv (Cornell University)",
-      "score": 21,
-      "matched_terms": [
-        "BIM",
-        "IFC",
-        "scan-to-bim"
-      ],
-      "ai_summary_zh": "提出CRAB框架，将墙体、门窗、梁柱等编码为具IFC兼容语义与参数的紧凑建筑长方体，结合ProposalNet预测粗粒度构件与关系感知的AssemblyNet精化几何并预测结构关系，实现可编辑竣工BIM重建；实验表明其在构件完整性、几何精度与泛化性上优于基于平面图的方案，内墙厚度估计平均误差2.80厘米。",
-      "ai_summary_model": "deepseek-v4-flash",
-      "ai_summary_updated_at": "2026-10-22T05:05:20.767393+00:00",
-      "first_seen": "2026-10-24T04:50:10.593433+00:00",
-      "last_seen": "2026-11-18T07:47:08.046913+00:00"
     },
     {
       "source": "OpenAlex",
